@@ -1,1 +1,64 @@
 @import "tailwindcss";
+
+@theme {
+  /* ---- Color system: "Apothecary OS" ---- */
+  --color-ink: #0E2321;         /* near-black, teal-tinted — headings, dark sections */
+  --color-ink-soft: #3E534F;    /* muted body text on light bg */
+  --color-brand: #1B6E5C;       /* pharmacy green — primary */
+  --color-brand-deep: #0F4A3D;  /* deep green — hovers, dark accents */
+  --color-brand-mist: #E4EFEA;  /* pale green tint — soft fills */
+  --color-amber: #E8A33D;       /* pill-bottle amber — accent / CTA */
+  --color-amber-deep: #C67F1E;  /* amber hover */
+  --color-rust: #C1440E;        /* alerts, expiry, low-stock */
+  --color-paper: #F5F7F4;       /* page background, cool off-white */
+  --color-surface: #FFFFFF;     /* card surfaces */
+  --color-line: #DDE5E0;        /* hairline borders */
+
+  --font-display: "Space Grotesk", "Arial Narrow", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius-label: 0.35rem;
+  --radius-card: 0.85rem;
+
+  --animate-drift: drift 14s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
+
+  @keyframes drift {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.45; }
+  }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { background-color: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); }
+  ::selection { background-color: var(--color-amber); color: var(--color-ink); }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+}
+
+@layer components {
+  .label-tag {
+    font-family: var(--font-mono);
+    letter-spacing: 0.08em;
+  }
+  .btn-focus:focus-visible {
+    outline: 2px solid var(--color-brand-deep);
+    outline-offset: 3px;
+  }
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
