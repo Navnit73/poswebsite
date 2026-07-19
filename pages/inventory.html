@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory Module — Batch Tracking, FEFO & Stock Alerts | Formulary</title>
+  <meta name="description" content="Deep dive into Formulary's inventory module: batch-level stock tracking, FEFO dispatch, low-stock alerts, expiry dashboard, and stock movement ledger for pharmacies." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.formulary.app/pages/inventory.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Formulary" />
+  <meta property="og:title" content="Inventory Module — Formulary" />
+  <meta property="og:description" content="Batch tracking, FEFO dispatch, low-stock alerts and stock movement ledger for pharmacies." />
+  <meta property="og:url" content="https://www.formulary.app/pages/inventory.html" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Inventory Module — Formulary" />
+  <meta name="twitter:description" content="Batch tracking and FEFO inventory management for pharmacies." />
+
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/output.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.formulary.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Inventory Module", "item": "https://www.formulary.app/pages/inventory.html" }
+    ]
+  }
+  </script>
+</head>
+
+<body class="font-body text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- Page header -->
+    <section class="border-b border-line bg-surface py-16">
+      <div class="mx-auto max-w-4xl px-6 text-center lg:px-10">
+        <nav aria-label="Breadcrumb" class="label-tag text-xs text-ink-soft/70">
+          <a href="/index.html" class="hover:text-brand-deep">Home</a> <span aria-hidden="true">/</span>
+          <a href="/pages/features.html" class="hover:text-brand-deep">Features</a> <span aria-hidden="true">/</span> Inventory
+        </nav>
+        <span class="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">INVENTORY MODULE</span>
+        <h1 class="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">Every batch, tracked to the unit.</h1>
+        <p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
+          Formulary's inventory system is built around how a pharmacy actually counts stock — by batch, by expiry, by rack.
+        </p>
+      </div>
+    </section>
+
+    <!-- Batch tracking -->
+    <section class="py-20">
+      <div class="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-2 lg:items-center lg:px-10">
+        <div data-reveal>
+          <span class="label-tag text-xs font-medium text-brand-deep">BATCH TRACKING</span>
+          <h2 class="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Multiple batches per product, each with its own story.</h2>
+          <p class="mt-4 leading-relaxed text-ink-soft">
+            Every product in Formulary can hold multiple batches. Each batch has its own batch number, expiry date, cost price, selling price, and supplier. When stock comes in from a purchase order, a new batch is created automatically.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm text-ink-soft">
+            <li class="flex gap-2.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Batch number, expiry, cost and selling price per batch</li>
+            <li class="flex gap-2.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Supplier linked to each batch for traceability</li>
+            <li class="flex gap-2.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Rack and shelf location for faster picking</li>
+          </ul>
+        </div>
+        <div class="rounded-[var(--radius-card)] border border-line bg-paper p-6" data-reveal>
+          <div class="flex items-center justify-between text-xs text-ink-soft">
+            <span class="label-tag">PRODUCT · AMOXICILLIN 500MG</span>
+            <span class="rounded-full bg-brand-mist px-2 py-0.5 font-medium text-brand-deep">3 batches</span>
+          </div>
+          <div class="mt-4 divide-y divide-line rounded-lg border border-line bg-surface">
+            <div class="flex items-center justify-between px-4 py-3">
+              <div>
+                <p class="text-sm font-medium text-ink">Batch AX-1187</p>
+                <p class="label-tag text-xs text-ink-soft/70">Expires 2026-08-01 · Cost ₹72 · MRP ₹96</p>
+              </div>
+              <span class="label-tag rounded-full bg-rust/10 px-2.5 py-1 text-[11px] font-semibold text-rust">Best expiry</span>
+            </div>
+            <div class="flex items-center justify-between px-4 py-3">
+              <div>
+                <p class="text-sm font-medium text-ink">Batch AX-1204</p>
+                <p class="label-tag text-xs text-ink-soft/70">Expires 2027-02-14 · Cost ₹70 · MRP ₹96</p>
+              </div>
+              <span class="label-tag text-xs text-ink-soft/70">214 units</span>
+            </div>
+            <div class="flex items-center justify-between px-4 py-3">
+              <div>
+                <p class="text-sm font-medium text-ink">Batch AX-1250</p>
+                <p class="label-tag text-xs text-ink-soft/70">Expires 2027-09-30 · Cost ₹68 · MRP ₹96</p>
+              </div>
+              <span class="label-tag text-xs text-ink-soft/70">560 units</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stock movement ledger -->
+    <section class="border-t border-line bg-surface py-20">
+      <div class="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-2 lg:items-center lg:px-10">
+        <div class="rounded-[var(--radius-card)] border border-line bg-paper p-6 lg:order-1" data-reveal>
+          <p class="label-tag text-xs text-ink-soft">STOCK MOVEMENT LEDGER</p>
+          <div class="mt-4 divide-y divide-line rounded-lg border border-line bg-surface font-mono text-xs">
+            <div class="flex justify-between px-4 py-3"><span>PURCHASE · AX-1187</span><span class="text-brand-deep">+500</span></div>
+            <div class="flex justify-between px-4 py-3"><span>SALE · INV-0831</span><span class="text-rust">−12</span></div>
+            <div class="flex justify-between px-4 py-3"><span>SALE · INV-0832</span><span class="text-rust">−6</span></div>
+            <div class="flex justify-between px-4 py-3"><span>RETURN · RET-0047</span><span class="text-brand-deep">+2</span></div>
+            <div class="flex justify-between px-4 py-3"><span>DAMAGE · DMG-0012</span><span class="text-rust">−1</span></div>
+            <div class="flex justify-between px-4 py-3"><span>ADJUSTMENT · ADJ-0003</span><span class="text-rust">−3</span></div>
+            <div class="flex justify-between px-4 py-3 font-semibold text-ink"><span>BALANCE</span><span>480 units</span></div>
+          </div>
+        </div>
+        <div class="lg:order-2" data-reveal>
+          <span class="label-tag text-xs font-medium text-brand-deep">FULL AUDIT TRAIL</span>
+          <h2 class="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Every movement, from purchase to patient.</h2>
+          <p class="mt-4 leading-relaxed text-ink-soft">
+            The stock movement ledger records every change: purchases that add stock, sales that deduct it, returns, damage write-offs, and manual adjustments. Each entry is timestamped and linked to the source document.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm text-ink-soft">
+            <li class="flex gap-2.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Five movement types: Purchase, Sale, Damage, Return, Adjustment</li>
+            <li class="flex gap-2.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Running balance per batch, verified atomically</li>
+            <li class="flex gap-2.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Linked to invoices, purchase orders, and damage reports</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <section class="py-20">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="max-w-2xl" data-reveal>
+          <span class="label-tag text-xs font-medium text-brand-deep">SMART ALERTS</span>
+          <h2 class="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Never be surprised by an empty shelf again.</h2>
+        </div>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-[var(--radius-card)] border border-line bg-surface p-6 transition hover:border-brand/30" data-reveal>
+            <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-rust/10 text-rust">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3 class="mt-4 font-display font-semibold text-ink">Low stock alerts</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-soft">Set a reorder point per product. When stock drops below that threshold, the dashboard flags it and optionally emails you.</p>
+          </div>
+          <div class="rounded-[var(--radius-card)] border border-line bg-surface p-6 transition hover:border-brand/30" data-reveal>
+            <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-amber/15 text-amber">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </div>
+            <h3 class="mt-4 font-display font-semibold text-ink">30-day expiry warnings</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-soft">Batches expiring within 30 days are highlighted on the dashboard. Push discounts, return to distributor, or flag for write-off.</p>
+          </div>
+          <div class="rounded-[var(--radius-card)] border border-line bg-surface p-6 transition hover:border-brand/30" data-reveal>
+            <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3 class="mt-4 font-display font-semibold text-ink">Daily email summary</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-soft">A PDF with today's sales, profit, top products, and all active alerts — in your inbox at a time you choose.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="border-t border-line py-20">
+      <div class="mx-auto max-w-4xl px-6 text-center lg:px-10" data-reveal>
+        <h2 class="font-display text-3xl font-bold tracking-tight text-ink">See your inventory on a live dashboard.</h2>
+        <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <a href="/pages/demo.html" class="btn-focus rounded-lg bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">Start free trial</a>
+          <a href="/pages/sales.html" class="btn-focus rounded-lg border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">Explore POS terminal →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../js/app.js" defer></script>
+</body>
+</html>
