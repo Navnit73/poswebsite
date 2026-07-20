@@ -1,0 +1,1098 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Pharmacy Inventory Management Software | Formulary</title>
+    <meta
+      name="description"
+      content="Inventory software built for small pharmacies: batch-level tracking, FEFO dispatch, low-stock alerts, expiry dashboards, and stock ledgers."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://www.formulary.app/pages/inventory.html"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Formulary" />
+    <meta property="og:title" content="Small Pharmacy Inventory Management Software | Formulary" />
+    <meta
+      property="og:description"
+      content="Batch tracking, FEFO dispatch, low-stock alerts, and a stock movement ledger built for the way a small pharmacy actually counts stock."
+    />
+    <meta
+      property="og:url"
+      content="https://www.formulary.app/pages/inventory.html"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:title" content="Small Pharmacy Inventory Management Software | Formulary" />
+    <meta
+      name="twitter:description"
+      content="Batch tracking and FEFO inventory management, sized right for a small pharmacy."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.formulary.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Features",
+              "item": "https://www.formulary.app/pages/features.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Inventory Module",
+              "item": "https://www.formulary.app/pages/inventory.html"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.formulary.app/pages/inventory.html",
+          "name": "Small Pharmacy Inventory Management Software — Batch Tracking & FEFO",
+          "url": "https://www.formulary.app/pages/inventory.html",
+          "description": "Batch-level inventory tracking, FEFO dispatch, receiving, adjustments, and stock alerts built for a small pharmacy.",
+          "publisher": {
+            "@id": "https://www.formulary.app/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "@id": "https://www.formulary.app/#software",
+          "name": "Formulary",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://www.formulary.app/",
+          "featureList": [
+            "Batch tracking",
+            "FEFO dispatch",
+            "Low stock alerts",
+            "Expiry dashboard",
+            "Stock receiving",
+            "Stock adjustments",
+            "Inventory valuation"
+          ],
+          "publisher": {
+            "@id": "https://www.formulary.app/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://www.formulary.app/#organization",
+          "name": "Formulary",
+          "url": "https://www.formulary.app/",
+          "logo": "https://www.formulary.app/images/logo.png"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is Formulary built for a small pharmacy or a hospital chain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Formulary is built for a small, independent pharmacy. The setup takes an afternoon, the screens are counter-friendly, and pricing scales with a single store instead of a multi-branch hospital network."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can a small pharmacy track batches without hiring extra staff?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Batches are created automatically when stock is received, so a single pharmacist or store owner can track expiry, cost, and supplier without a dedicated inventory clerk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Formulary support FEFO dispatch at the counter?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The point-of-sale search surfaces the batch with the nearest expiry date first and flags it as the best-expiry pick, so staff dispense the oldest stock without manual checks."
+              }
+            }
+          ]
+        }
+      ]
+    </script>
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/images/favicon.png" />
+    <meta
+      property="og:image"
+      content="https://www.formulary.app/images/favicon.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://www.formulary.app/images/favicon.png"
+    />
+  </head>
+
+  <body class="font-body text-ink antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
+      >Skip to content</a
+    >
+    <div id="site-header"></div>
+
+    <main id="main">
+      <!-- Page header -->
+      <section class="border-b border-line bg-surface py-14 sm:py-16">
+        <div class="mx-auto max-w-4xl px-5 text-center sm:px-6 lg:px-10">
+          <nav
+            aria-label="Breadcrumb"
+            class="label-tag flex flex-wrap items-center justify-center gap-1.5 text-xs text-ink-soft/70"
+          >
+            <a href="/index.html" class="hover:text-brand-deep">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="/pages/features.html" class="hover:text-brand-deep"
+              >Features</a
+            >
+            <span aria-hidden="true">/</span> Inventory
+          </nav>
+          <span
+            class="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep"
+            >BUILT FOR SMALL PHARMACIES</span
+          >
+          <h1
+            class="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl"
+          >
+            Every batch, tracked to the unit.
+          </h1>
+          <p
+            class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-ink-soft sm:text-lg"
+          >
+            Formulary is inventory management software built for a small
+            pharmacy — it counts stock the way your counter actually does:
+            by batch, by expiry, by rack, without a hospital-grade learning
+            curve.
+          </p>
+        </div>
+      </section>
+
+      <!-- Built for small pharmacies -->
+      <section class="py-16 sm:py-20" aria-labelledby="small-pharmacy-heading">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
+          <div class="mx-auto max-w-2xl text-center" data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >RIGHT-SIZED, NOT SCALED DOWN</span
+            >
+            <h2
+              id="small-pharmacy-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Made for a small pharmacy, not a hospital network.
+            </h2>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              Most pharmacy inventory software is built first for hospital
+              chains and multi-branch distributors, then cut down for a
+              smaller store. Formulary starts from the other direction. A
+              single-location, independent pharmacy is the primary customer,
+              so the setup is short, the screens fit a busy counter, and
+              nothing on the page needs a training session to understand.
+            </p>
+          </div>
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6"
+              data-reveal
+            >
+              <h3 class="font-display font-semibold text-ink">
+                A same-day setup
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Import a product list, add opening batches, and start selling
+                the same day. A small pharmacy team does not have a week to
+                spare for onboarding.
+              </p>
+            </div>
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6"
+              data-reveal
+            >
+              <h3 class="font-display font-semibold text-ink">
+                One counter, one screen
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                The point-of-sale terminal, stock list, and alerts live in one
+                dashboard, so a single pharmacist can run sales and inventory
+                without switching between separate tools.
+              </p>
+            </div>
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6"
+              data-reveal
+            >
+              <h3 class="font-display font-semibold text-ink">
+                Pricing that fits one store
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                No per-branch bundles or enterprise minimums. A small
+                pharmacy pays for what a single storefront needs, and nothing
+                it doesn't.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Batch tracking -->
+      <section class="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="batch-tracking-heading">
+        <div
+          class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-14 lg:px-10"
+        >
+          <div data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >BATCH TRACKING</span
+            >
+            <h2
+              id="batch-tracking-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Multiple batches per product, each with its own story.
+            </h2>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              Every product in Formulary can hold multiple batches. Each
+              batch keeps its own batch number, expiry date, cost price,
+              selling price, and supplier. When stock comes in from a
+              purchase order, a new batch is created automatically, so
+              nobody has to type the same details twice.
+            </p>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              For a small pharmacy with limited shelf and storage space,
+              this level of detail matters more, not less. A short-dated
+              batch sitting behind a longer-dated one is easy to lose track
+              of by hand. Formulary keeps every batch visible on one product
+              card, so a quick glance shows what is close to expiry and what
+              still has months on the shelf.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-ink-soft">
+              <li class="flex gap-2.5">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="mt-0.5 shrink-0 text-brand"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Batch number, expiry, cost and selling price per batch
+              </li>
+              <li class="flex gap-2.5">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="mt-0.5 shrink-0 text-brand"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Supplier linked to each batch for traceability
+              </li>
+              <li class="flex gap-2.5">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="mt-0.5 shrink-0 text-brand"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Rack and shelf location for faster picking
+              </li>
+            </ul>
+          </div>
+          <div
+            class="rounded-[var(--radius-card)] border border-line bg-paper p-5 sm:p-6"
+            data-reveal
+          >
+            <div
+              class="flex flex-wrap items-center justify-between gap-2 text-xs text-ink-soft"
+            >
+              <span class="label-tag">PRODUCT · AMOXICILLIN 500MG</span>
+              <span
+                class="rounded-full bg-brand-mist px-2 py-0.5 font-medium text-brand-deep"
+                >3 batches</span
+              >
+            </div>
+            <div
+              class="mt-4 divide-y divide-line rounded-lg border border-line bg-surface"
+            >
+              <div class="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
+                <div>
+                  <p class="text-sm font-medium text-ink">Batch AX-1187</p>
+                  <p class="label-tag text-xs text-ink-soft/70">
+                    Expires 2026-08-01 · Cost $72 · MRP $96
+                  </p>
+                </div>
+                <span
+                  class="label-tag rounded-full bg-rust/10 px-2.5 py-1 text-[11px] font-semibold text-rust"
+                  >Best expiry</span
+                >
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
+                <div>
+                  <p class="text-sm font-medium text-ink">Batch AX-1204</p>
+                  <p class="label-tag text-xs text-ink-soft/70">
+                    Expires 2027-02-14 · Cost $70 · MRP $96
+                  </p>
+                </div>
+                <span class="label-tag text-xs text-ink-soft/70"
+                  >214 units</span
+                >
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
+                <div>
+                  <p class="text-sm font-medium text-ink">Batch AX-1250</p>
+                  <p class="label-tag text-xs text-ink-soft/70">
+                    Expires 2027-09-30 · Cost $68 · MRP $96
+                  </p>
+                </div>
+                <span class="label-tag text-xs text-ink-soft/70"
+                  >560 units</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Receiving & adjustments -->
+      <section class="py-16 sm:py-20" aria-labelledby="receiving-heading">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
+          <div class="mx-auto max-w-2xl text-center" data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >RECEIVING & ADJUSTMENTS</span
+            >
+            <h2
+              id="receiving-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Two screens cover the whole stock room.
+            </h2>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              A small pharmacy doesn't need a separate warehouse module. It
+              needs a fast way to log what came in and a fast way to fix
+              what's wrong. Formulary keeps both to a single screen each.
+            </p>
+          </div>
+          <div class="mt-10 grid gap-5 lg:grid-cols-2">
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6 sm:p-7"
+              data-reveal
+            >
+              <h3 class="font-display text-lg font-semibold text-ink">
+                Receive stock
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Scan or search a product, enter the batch number, expiry,
+                cost, and selling price, and Formulary creates the batch and
+                updates on-hand quantity in one step. The supplier is
+                attached automatically so every unit stays traceable back to
+                where it came from.
+              </p>
+            </div>
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6 sm:p-7"
+              data-reveal
+            >
+              <h3 class="font-display text-lg font-semibold text-ink">
+                Adjust stock
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Physical counts never match the system perfectly. When they
+                don't, a manual adjustment with a required reason — count
+                correction, breakage, theft, or return — keeps the ledger
+                honest and the audit trail complete.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spreadsheet comparison -->
+      <section class="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="comparison-heading">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
+          <div class="mx-auto max-w-2xl text-center" data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >SPREADSHEETS VS. FORMULARY</span
+            >
+            <h2
+              id="comparison-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Why a small pharmacy outgrows a spreadsheet fast.
+            </h2>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              A spreadsheet works for the first few hundred products. Past
+              that point, a small pharmacy loses track of which batch is
+              closest to expiry, and stock counts drift from what's really
+              on the shelf. Formulary keeps the same information a
+              spreadsheet holds, but ties it to real sales so it updates
+              itself.
+            </p>
+          </div>
+          <div class="mt-10 overflow-x-auto rounded-[var(--radius-card)] border border-line bg-paper" data-reveal>
+            <table class="w-full min-w-[560px] border-collapse text-left text-sm">
+              <caption class="sr-only">
+                Comparison between a spreadsheet and Formulary for small pharmacy inventory
+              </caption>
+              <thead>
+                <tr class="border-b border-line text-ink">
+                  <th scope="col" class="px-5 py-4 font-display font-semibold">
+                    Task
+                  </th>
+                  <th scope="col" class="px-5 py-4 font-display font-semibold text-ink-soft">
+                    Spreadsheet
+                  </th>
+                  <th scope="col" class="px-5 py-4 font-display font-semibold text-brand-deep">
+                    Formulary
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-line text-ink-soft">
+                <tr>
+                  <td class="px-5 py-4 font-medium text-ink">Stock after a sale</td>
+                  <td class="px-5 py-4">Updated by hand, if remembered</td>
+                  <td class="px-5 py-4">Deducted automatically, per batch</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-medium text-ink">Which batch to sell first</td>
+                  <td class="px-5 py-4">Depends on who's checking dates</td>
+                  <td class="px-5 py-4">Flagged automatically by FEFO</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-medium text-ink">Expiry warnings</td>
+                  <td class="px-5 py-4">Only if someone scrolls the sheet</td>
+                  <td class="px-5 py-4">Surfaced on the dashboard daily</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-medium text-ink">Reorder timing</td>
+                  <td class="px-5 py-4">A guess based on memory</td>
+                  <td class="px-5 py-4">A low-stock alert per product</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-medium text-ink">Who changed what</td>
+                  <td class="px-5 py-4">No record of edits</td>
+                  <td class="px-5 py-4">Full audit log with timestamps</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stock movement ledger -->
+      <section class="border-t border-line py-16 sm:py-20" aria-labelledby="ledger-heading">
+        <div
+          class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-14 lg:px-10"
+        >
+          <div
+            class="overflow-x-auto rounded-[var(--radius-card)] border border-line bg-paper p-5 sm:p-6 lg:order-1"
+            data-reveal
+          >
+            <p class="label-tag text-xs text-ink-soft">STOCK MOVEMENT LEDGER</p>
+            <div
+              class="mt-4 min-w-[280px] divide-y divide-line rounded-lg border border-line bg-surface font-mono text-xs"
+            >
+              <div class="flex justify-between px-4 py-3">
+                <span>PURCHASE · AX-1187</span
+                ><span class="text-brand-deep">+500</span>
+              </div>
+              <div class="flex justify-between px-4 py-3">
+                <span>SALE · INV-0831</span><span class="text-rust">−12</span>
+              </div>
+              <div class="flex justify-between px-4 py-3">
+                <span>SALE · INV-0832</span><span class="text-rust">−6</span>
+              </div>
+              <div class="flex justify-between px-4 py-3">
+                <span>RETURN · RET-0047</span
+                ><span class="text-brand-deep">+2</span>
+              </div>
+              <div class="flex justify-between px-4 py-3">
+                <span>DAMAGE · DMG-0012</span><span class="text-rust">−1</span>
+              </div>
+              <div class="flex justify-between px-4 py-3">
+                <span>ADJUSTMENT · ADJ-0003</span
+                ><span class="text-rust">−3</span>
+              </div>
+              <div
+                class="flex justify-between px-4 py-3 font-semibold text-ink"
+              >
+                <span>BALANCE</span><span>480 units</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:order-2" data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >FULL AUDIT TRAIL</span
+            >
+            <h2
+              id="ledger-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Every movement, from purchase to patient.
+            </h2>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              The stock movement ledger records every change: purchases that
+              add stock, sales that deduct it, returns, damage write-offs,
+              and manual adjustments. Each entry is timestamped and linked
+              to the source document, so a small pharmacy owner can answer
+              "where did this stock go?" without digging through paper
+              registers.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-ink-soft">
+              <li class="flex gap-2.5">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="mt-0.5 shrink-0 text-brand"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Five movement types: Purchase, Sale, Damage, Return, Adjustment
+              </li>
+              <li class="flex gap-2.5">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="mt-0.5 shrink-0 text-brand"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Running balance per batch, verified atomically
+              </li>
+              <li class="flex gap-2.5">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="mt-0.5 shrink-0 text-brand"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Linked to invoices, purchase orders, and damage reports
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alerts -->
+      <section class="py-16 sm:py-20" aria-labelledby="alerts-heading">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
+          <div class="max-w-2xl" data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >SMART ALERTS</span
+            >
+            <h2
+              id="alerts-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Never be surprised by an empty shelf again.
+            </h2>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              A small pharmacy runs on tight cash flow and even tighter
+              shelf space. Overstocking ties up money that could go toward
+              new products; understocking loses a sale to the pharmacy next
+              door. Formulary watches both edges for you, so ordering
+              decisions come from real numbers instead of a walk down the
+              aisle.
+            </p>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink-soft">
+              Alerts sit on the dashboard where the day already starts, not
+              buried in a settings menu. A pharmacist opens the morning
+              view, sees what's low and what's expiring, and places an
+              order before either problem reaches the counter.
+            </p>
+          </div>
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6 transition hover:border-brand/30"
+              data-reveal
+            >
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-lg bg-rust/10 text-rust"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                >
+                  <path
+                    d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+                  />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </div>
+              <h3 class="mt-4 font-display font-semibold text-ink">
+                Low stock alerts
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Set a reorder point per product. When stock drops below that
+                threshold, the dashboard flags it and optionally emails you.
+              </p>
+            </div>
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6 transition hover:border-brand/30"
+              data-reveal
+            >
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-lg bg-amber/15 text-amber"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>
+              </div>
+              <h3 class="mt-4 font-display font-semibold text-ink">
+                30-day expiry warnings
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Batches expiring within 30 days are highlighted on the
+                dashboard. Push discounts, return to distributor, or flag for
+                write-off.
+              </p>
+            </div>
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6 transition hover:border-brand/30"
+              data-reveal
+            >
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <h3 class="mt-4 font-display font-semibold text-ink">
+                Daily email summary
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                A PDF with today's sales, profit, top products, and all
+                active alerts — in your inbox at a time you choose.
+              </p>
+            </div>
+            <div
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6 transition hover:border-brand/30"
+              data-reveal
+            >
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-lg bg-rust/10 text-rust"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                >
+                  <path d="M9 11l3 3L22 4" />
+                  <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                </svg>
+              </div>
+              <h3 class="mt-4 font-display font-semibold text-ink">
+                FEFO at the counter
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Point-of-sale search surfaces the batch closest to expiry
+                first and marks it "best expiry," so staff dispense the
+                right stock without checking every box by hand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inventory valuation -->
+      <section class="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="valuation-heading">
+        <div
+          class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-14 lg:px-10"
+        >
+          <div data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >INVENTORY VALUE</span
+            >
+            <h2
+              id="valuation-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Know what's on the shelf, in money and in units.
+            </h2>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              Formulary totals inventory value in real time, using the cost
+              price recorded on every batch. A small pharmacy owner can open
+              the dashboard before ordering and see exactly how much cash is
+              sitting on the shelves, category by category, without pulling
+              a spreadsheet together first.
+            </p>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              The same numbers feed the fast-moving and slow-moving product
+              reports, so reordering decisions are based on what actually
+              sells at your counter, not a guess carried over from last
+              season.
+            </p>
+          </div>
+          <div
+            class="rounded-[var(--radius-card)] border border-line bg-paper p-5 sm:p-6"
+            data-reveal
+          >
+            <p class="label-tag text-xs text-ink-soft">INVENTORY SNAPSHOT</p>
+            <div class="mt-4 grid grid-cols-2 gap-3 sm:gap-4">
+              <div class="rounded-lg border border-line bg-surface p-4">
+                <p class="label-tag text-[11px] text-ink-soft/70">
+                  Total value
+                </p>
+                <p class="mt-1 font-display text-xl font-bold text-ink">
+                  $48,210
+                </p>
+              </div>
+              <div class="rounded-lg border border-line bg-surface p-4">
+                <p class="label-tag text-[11px] text-ink-soft/70">
+                  SKUs tracked
+                </p>
+                <p class="mt-1 font-display text-xl font-bold text-ink">
+                  612
+                </p>
+              </div>
+              <div class="rounded-lg border border-line bg-surface p-4">
+                <p class="label-tag text-[11px] text-ink-soft/70">
+                  Low stock
+                </p>
+                <p class="mt-1 font-display text-xl font-bold text-rust">
+                  9 items
+                </p>
+              </div>
+              <div class="rounded-lg border border-line bg-surface p-4">
+                <p class="label-tag text-[11px] text-ink-soft/70">
+                  Expiring in 30d
+                </p>
+                <p class="mt-1 font-display text-xl font-bold text-amber">
+                  14 batches
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="testimonial-heading">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
+          <div class="mx-auto max-w-2xl text-center" data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >FROM THE COUNTER</span
+            >
+            <h2
+              id="testimonial-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              What small pharmacy owners notice first.
+            </h2>
+          </div>
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <figure
+              class="rounded-[var(--radius-card)] border border-line bg-paper p-6"
+              data-reveal
+            >
+              <blockquote class="text-sm leading-relaxed text-ink-soft">
+                "We stopped losing stock to expiry write-offs within the
+                first month. The best-expiry badge at the counter does most
+                of the work for my staff."
+              </blockquote>
+              <figcaption class="label-tag mt-4 text-xs text-ink-soft/70">
+                Owner, independent pharmacy · 1 location
+              </figcaption>
+            </figure>
+            <figure
+              class="rounded-[var(--radius-card)] border border-line bg-paper p-6"
+              data-reveal
+            >
+              <blockquote class="text-sm leading-relaxed text-ink-soft">
+                "Our old spreadsheet took an hour to reconcile every week.
+                Now the stock movement ledger does it in the background, and
+                I trust the numbers on the dashboard."
+              </blockquote>
+              <figcaption class="label-tag mt-4 text-xs text-ink-soft/70">
+                Pharmacist-in-charge · small community pharmacy
+              </figcaption>
+            </figure>
+            <figure
+              class="rounded-[var(--radius-card)] border border-line bg-paper p-6"
+              data-reveal
+            >
+              <blockquote class="text-sm leading-relaxed text-ink-soft">
+                "It's the first inventory system we've used that didn't feel
+                built for a hospital pharmacy chain. Setup took an
+                afternoon, not a week."
+              </blockquote>
+              <figcaption class="label-tag mt-4 text-xs text-ink-soft/70">
+                Store manager · retail pharmacy
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="py-16 sm:py-20" aria-labelledby="faq-heading">
+        <div class="mx-auto max-w-3xl px-5 sm:px-6 lg:px-10">
+          <div class="text-center" data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >FAQ</span
+            >
+            <h2
+              id="faq-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Common questions from small pharmacy owners.
+            </h2>
+          </div>
+          <div class="mt-10 divide-y divide-line rounded-[var(--radius-card)] border border-line bg-surface">
+            <details class="group p-5 sm:p-6" data-reveal>
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 font-display font-semibold text-ink"
+              >
+                Is Formulary built for a small pharmacy or a hospital chain?
+                <span class="shrink-0 text-brand-deep transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+                Formulary is built for a small, independent pharmacy first.
+                The setup takes an afternoon, the screens are counter-friendly,
+                and pricing scales with a single store instead of a
+                multi-branch hospital network.
+              </p>
+            </details>
+            <details class="group p-5 sm:p-6" data-reveal>
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 font-display font-semibold text-ink"
+              >
+                Can a small pharmacy track batches without hiring extra staff?
+                <span class="shrink-0 text-brand-deep transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+                Yes. Batches are created automatically when stock is
+                received, so a single pharmacist or store owner can track
+                expiry, cost, and supplier without a dedicated inventory
+                clerk.
+              </p>
+            </details>
+            <details class="group p-5 sm:p-6" data-reveal>
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 font-display font-semibold text-ink"
+              >
+                Does Formulary support FEFO dispatch at the counter?
+                <span class="shrink-0 text-brand-deep transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+                Yes. Point-of-sale search surfaces the batch with the
+                nearest expiry date first and flags it as the best-expiry
+                pick, so staff dispense the oldest stock without checking
+                every box by hand.
+              </p>
+            </details>
+            <details class="group p-5 sm:p-6" data-reveal>
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 font-display font-semibold text-ink"
+              >
+                Does the software work on a tablet or a small counter screen?
+                <span class="shrink-0 text-brand-deep transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+                The dashboard, point-of-sale terminal, and every report
+                adjust to the screen they're opened on, from a phone in the
+                stock room to a countertop monitor, so a small pharmacy team
+                isn't tied to one workstation.
+              </p>
+            </details>
+            <details class="group p-5 sm:p-6" data-reveal>
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 font-display font-semibold text-ink"
+              >
+                What happens to old stock counts kept on paper or in Excel?
+                <span class="shrink-0 text-brand-deep transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+                Product lists and opening stock import from a spreadsheet
+                during setup, so a small pharmacy switching from paper
+                registers or Excel keeps its existing catalog instead of
+                re-typing it.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Getting started -->
+      <section class="border-t border-line py-16 sm:py-20" aria-labelledby="getting-started-heading">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
+          <div class="mx-auto max-w-2xl text-center" data-reveal>
+            <span class="label-tag text-xs font-medium text-brand-deep"
+              >GETTING STARTED</span
+            >
+            <h2
+              id="getting-started-heading"
+              class="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl"
+            >
+              Three steps from spreadsheet to live inventory.
+            </h2>
+            <p class="mt-4 leading-relaxed text-ink-soft">
+              A small pharmacy doesn't have a week to spend on migration.
+              Here is the full path from an existing product list to a
+              working, batch-tracked inventory system.
+            </p>
+          </div>
+          <ol class="mt-10 grid gap-5 sm:grid-cols-3">
+            <li
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6"
+              data-reveal
+            >
+              <span
+                class="label-tag inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-mist text-sm font-semibold text-brand-deep"
+                >1</span
+              >
+              <h3 class="mt-4 font-display font-semibold text-ink">
+                Import your product list
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Upload a CSV of your existing catalog — names, categories,
+                barcodes, and prices carry over, so nobody re-types a
+                product list by hand.
+              </p>
+            </li>
+            <li
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6"
+              data-reveal
+            >
+              <span
+                class="label-tag inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-mist text-sm font-semibold text-brand-deep"
+                >2</span
+              >
+              <h3 class="mt-4 font-display font-semibold text-ink">
+                Enter opening batches
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Count what's on the shelf once, enter it as opening batches
+                with expiry and cost, and every sale from that point on
+                updates the ledger on its own.
+              </p>
+            </li>
+            <li
+              class="rounded-[var(--radius-card)] border border-line bg-surface p-6"
+              data-reveal
+            >
+              <span
+                class="label-tag inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-mist text-sm font-semibold text-brand-deep"
+                >3</span
+              >
+              <h3 class="mt-4 font-display font-semibold text-ink">
+                Set your alerts and sell
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                Set a low-stock threshold per product, turn on the daily
+                email summary, and open the POS terminal — a small pharmacy
+                is fully live the same day.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="border-t border-line py-16 sm:py-20">
+        <div class="mx-auto max-w-4xl px-5 text-center sm:px-6 lg:px-10" data-reveal>
+          <h2 class="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+            See your inventory on a live dashboard.
+          </h2>
+          <p class="mx-auto mt-4 max-w-xl leading-relaxed text-ink-soft">
+            Free for the first 14 days. No hospital-scale contract, no
+            per-branch pricing — just inventory management sized for a
+            small pharmacy.
+          </p>
+          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href="/pages/demo.html"
+              class="btn-focus rounded-lg bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+              >Start free trial</a
+            >
+            <a
+              href="/pages/sales.html"
+              class="btn-focus rounded-lg border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40"
+              >Explore POS terminal →</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../js/app.js" defer></script>
+  </body>
+</html>

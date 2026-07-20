@@ -8,7 +8,8 @@
     "watch:css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
     "serve": "npx --yes serve . -l 5500",
     "build:blog": "node scripts/build-blog.js",
-    "build": "npm run build:css && npm run build:blog"
+    "build:dist": "rm -rf dist && mkdir -p dist && cp index.html sitemap.xml llms.txt dist/ 2>/dev/null || : && cp -r pages css js images dist/",
+    "build": "npm run build:css && npm run build:blog && npm run build:dist"
   },
   "keywords": [],
   "author": "",
