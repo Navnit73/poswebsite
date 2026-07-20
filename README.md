@@ -37,7 +37,7 @@ Don't hand-edit `css/output.css` — it's generated.
   the testimonial section on `index.html` are all placeholders.
 - **`og:image`**: points to `/images/og-cover.png`, which doesn't exist yet —
   add a 1200×630 image at that path (used when the site is shared on social).
-- **Prices**: $39 / $89 on the homepage and `pages/pricing.html`, plus the
+- **Prices**: $149 / $199 on the homepage and `pages/pricing.html`, plus the
   matching numbers in the `Offer` / `AggregateOffer` JSON-LD, are placeholder
   figures — set your real plan prices in both the visible cards and the
   schema so they stay in sync.
