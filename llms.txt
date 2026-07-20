@@ -1,0 +1,38 @@
+# Pharmacy POS - Project Overview
+
+This project is a static website for a Pharmacy Point of Sale (POS) system. It features various marketing pages, a dashboard, and a blog. The site uses Tailwind CSS for styling and includes a simple Node.js script to build the blog and CSS.
+
+## Main Pages
+
+- `index.html`: The landing page of the POS system.
+- `pages/features.html`: Detailed features of the Pharmacy POS.
+- `pages/pricing.html`: Pricing plans for the system.
+- `pages/aboutUs.html`: Information about the company.
+- `pages/contact.html`: Contact information and form.
+- `pages/demo.html`: A page to request or view a demo.
+- `pages/casestudy.html`: Case studies of clients using the system.
+- `pages/inventory.html`: Information related to inventory management.
+- `pages/sales.html`: Information related to sales management.
+- `pages/dashboard.html`: A preview or layout of the system's dashboard.
+
+## Legal Pages
+
+- `pages/privacy.html`: Privacy Policy.
+- `pages/tmc.html`: Terms and Conditions.
+- `pages/refundPolicy.html`: Refund Policy.
+
+## Blog
+
+- `pages/blog.html`: The main blog index.
+- `pages/blog/hello-world.html`: A sample blog post.
+
+## Technical Stack
+
+- **HTML5**: For page structure.
+- **Tailwind CSS**: For styling (built using `npm run build:css`).
+- **JavaScript / Node.js**: Used for build scripts (`npm run build:blog` using marked and gray-matter).
+
+## Build Commands
+
+- `npm run build`: Builds both CSS and Blog.
+- `npm run serve`: Serves the project locally.
