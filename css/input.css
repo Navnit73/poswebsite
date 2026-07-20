@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  /* ---- Color system: "Apothecary OS" ---- */
-  --color-ink: #0E2321;         /* near-black, teal-tinted — headings, dark sections */
-  --color-ink-soft: #3E534F;    /* muted body text on light bg */
-  --color-brand: #1B6E5C;       /* pharmacy green — primary */
-  --color-brand-deep: #0F4A3D;  /* deep green — hovers, dark accents */
-  --color-brand-mist: #E4EFEA;  /* pale green tint — soft fills */
-  --color-amber: #E8A33D;       /* pill-bottle amber — accent / CTA */
-  --color-amber-deep: #C67F1E;  /* amber hover */
-  --color-rust: #C1440E;        /* alerts, expiry, low-stock */
-  --color-paper: #F5F7F4;       /* page background, cool off-white */
+  /* ---- Color system: "Terracotta & Sand" ---- */
+  --color-ink: #292524;         /* stone-800 — headings, text */
+  --color-ink-soft: #78716C;    /* stone-500 — muted body text */
+  --color-brand: #EA580C;       /* orange-600 — primary */
+  --color-brand-deep: #C2410C;  /* orange-700 — hovers */
+  --color-brand-mist: #FFEDD5;  /* orange-100 — soft fills */
+  --color-amber: #F59E0B;       /* amber-500 — accent / CTA */
+  --color-amber-deep: #D97706;  /* amber-600 — amber hover */
+  --color-rust: #BE123C;        /* rose-700 — alerts */
+  --color-paper: #FFFBF7;       /* warm off-white bg */
   --color-surface: #FFFFFF;     /* card surfaces */
-  --color-line: #DDE5E0;        /* hairline borders */
+  --color-line: #E7E5E4;        /* stone-200 — hairline borders */
 
   --font-display: "Space Grotesk", "Arial Narrow", sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
