@@ -30,6 +30,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://www.formulary.app/#organization",
     "name": "Formulary Software",
     "url": "https://www.formulary.app/",
     "logo": "https://www.formulary.app/images/favicon.svg",
@@ -40,8 +41,13 @@
       "telephone": "+91-12345-67890",
       "contactType": "customer support",
       "email": "hello@formulary.app",
-      "areaServed": ["IN", "US"],
-      "availableLanguage": ["English"]
+      "areaServed": [
+        "IN",
+        "US"
+      ],
+      "availableLanguage": [
+        "English"
+      ]
     },
     "sameAs": [
       "https://twitter.com/yourhandle",
@@ -57,7 +63,15 @@
     "@type": "WebSite",
     "name": "Formulary",
     "url": "https://www.formulary.app/",
-    "inLanguage": "en"
+    "inLanguage": "en",
+    "publisher": {
+      "@id": "https://www.formulary.app/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.formulary.app/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 
@@ -67,6 +81,9 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Formulary",
+    "publisher": {
+      "@id": "https://www.formulary.app/#organization"
+    },
     "applicationCategory": "BusinessApplication",
     "applicationSubCategory": "Pharmacy Inventory Management and Point of Sale Software",
     "operatingSystem": "Web",
@@ -99,6 +116,9 @@
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Formulary Pharmacy Software",
+    "publisher": {
+      "@id": "https://www.formulary.app/#organization"
+    },
     "description": "Pharmacy inventory and POS system",
     "brand": {
       "@type": "Brand",
@@ -109,11 +129,6 @@
       "priceCurrency": "USD",
       "lowPrice": "99",
       "highPrice": "149"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "120"
     }
   }
   </script>
@@ -124,8 +139,11 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Pharmacy Inventory Software with POS",
+    "publisher": {
+      "@id": "https://www.formulary.app/#organization"
+    },
     "url": "https://www.formulary.app/",
-    "description": "Formulary is pharmacy inventory management software with pos built for small pharmacies and medical stores: batch and expiry tracking, FEFO billing, medicine stock management, low-stock alerts, and a pharmacy point of sale system — live in an afternoon."
+    "description": "Formulary is pharmacy inventory management software with pos built for small pharmacies and medical stores: batch and expiry tracking, FEFO billing, medicine stock management, low-stock alerts, and a pharmacy point of sale system \u2014 live in an afternoon."
   }
   </script>
 
@@ -135,9 +153,24 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.formulary.app/" },
-      { "@type": "ListItem", "position": 2, "name": "Pharmacy Software", "item": "https://www.formulary.app/pharmacy-software" },
-      { "@type": "ListItem", "position": 3, "name": "Inventory Management", "item": "https://www.formulary.app/inventory-management" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.formulary.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pharmacy Software",
+        "item": "https://www.formulary.app/pharmacy-software"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Inventory Management",
+        "item": "https://www.formulary.app/inventory-management"
+      }
     ]
   }
   </script>
@@ -147,6 +180,7 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "publisher": { "@id": "https://www.formulary.app/#organization" },
     "mainEntity": [
       {
         "@type": "Question",
