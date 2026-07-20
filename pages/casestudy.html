@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Case Studies — How Pharmacies Use Formulary | Formulary</title>
-  <meta name="description" content="See how independent pharmacies and small chains use Formulary to reduce stockouts, eliminate expiry write-offs, and speed up checkout times." />
+  <title>Case Studies — How Small Pharmacies Use Formulary | Formulary</title>
+  <meta name="description" content="Five small pharmacies, one system. See how independent pharmacies, a small chain and a clinic dispensary use Formulary's pharmacy inventory management software to cut stockouts, stop expiry write-offs, and speed up checkout." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.formulary.app/pages/casestudy.html" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Formulary" />
   <meta property="og:title" content="Case Studies — Formulary" />
-  <meta property="og:description" content="Real stories from pharmacies using Formulary to streamline inventory and billing." />
+  <meta property="og:description" content="Real stories from small pharmacies using Formulary's pharmacy inventory management software to streamline stock and billing." />
   <meta property="og:url" content="https://www.formulary.app/pages/casestudy.html" />
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Case Studies — Formulary" />
-  <meta name="twitter:description" content="Real stories from pharmacies using Formulary." />
+  <meta name="twitter:description" content="Real stories from small pharmacies using Formulary." />
 
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,6 +35,19 @@
     ]
   }
   </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      [data-reveal] { transition: none !important; }
+    }
+    .storynav::-webkit-scrollbar { display: none; }
+    .storynav { scrollbar-width: none; -ms-overflow-style: none; }
+    .storynav a[aria-current="true"] {
+      color: var(--tw-prose-body, inherit);
+    }
+  </style>
 </head>
 
 <body class="font-body text-ink antialiased">
@@ -51,88 +64,303 @@
         <span class="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">REAL PHARMACIES</span>
         <h1 class="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">They switched. Here's what changed.</h1>
         <p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-          From a single-counter pharmacy in Pune to a 3-store chain in Bangalore — real numbers from real stores.
+          Five small pharmacies, five different starting points, one pharmacy inventory management system that fit all of them — from a single counter in Pune to a rural clinic dispensary in Satara.
+        </p>
+        <p class="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft/80">
+          Each story below comes from a store that was already running something — a paper
+          register, a spreadsheet, a general retail POS, a plain notebook — before it switched,
+          because a near miss or a slow training week made the cost of the old system visible
+          for the first time.
         </p>
       </div>
     </section>
 
-    <!-- Case Study 1 -->
-    <section class="py-20">
+    <!-- Sticky story nav -->
+    <nav aria-label="Jump to a case study" class="storynav sticky top-0 z-30 overflow-x-auto border-b border-line bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/80">
+      <div class="mx-auto flex max-w-6xl gap-1 px-4 lg:px-8">
+        <a href="#glance" data-nav-link class="btn-focus whitespace-nowrap border-b-2 border-transparent px-4 py-3.5 text-xs font-semibold text-ink-soft transition hover:text-ink">Overview</a>
+        <a href="#city-pharmacy" data-nav-link class="btn-focus whitespace-nowrap border-b-2 border-transparent px-4 py-3.5 text-xs font-semibold text-ink-soft transition hover:text-ink">City Pharmacy</a>
+        <a href="#wellness-rx" data-nav-link class="btn-focus whitespace-nowrap border-b-2 border-transparent px-4 py-3.5 text-xs font-semibold text-ink-soft transition hover:text-ink">Wellness Rx</a>
+        <a href="#joshi-clinic" data-nav-link class="btn-focus whitespace-nowrap border-b-2 border-transparent px-4 py-3.5 text-xs font-semibold text-ink-soft transition hover:text-ink">Joshi Clinic</a>
+        <a href="#greencross" data-nav-link class="btn-focus whitespace-nowrap border-b-2 border-transparent px-4 py-3.5 text-xs font-semibold text-ink-soft transition hover:text-ink">GreenCross</a>
+        <a href="#apex-pharmacy" data-nav-link class="btn-focus whitespace-nowrap border-b-2 border-transparent px-4 py-3.5 text-xs font-semibold text-ink-soft transition hover:text-ink">Apex Pharmacy</a>
+      </div>
+    </nav>
+
+    <!-- At a glance -->
+    <section id="glance" class="scroll-mt-14 py-14">
+      <div class="mx-auto max-w-6xl px-6 lg:px-10">
+        <p class="text-center text-xs font-medium uppercase tracking-wider text-ink-soft/60">Jump to a story</p>
+        <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+
+          <a href="#city-pharmacy" class="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mx-auto text-brand"><path d="M4 21V10M20 21V10M2 10l2-6h16l2 6M8 21v-6a2 2 0 012-2h4a2 2 0 012 2v6"/></svg>
+            <p class="mt-3 font-display text-2xl font-bold text-brand-deep">62%</p>
+            <p class="mt-1 text-xs text-ink-soft">Less expiry waste</p>
+            <p class="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">City Pharmacy</p>
+          </a>
+
+          <a href="#wellness-rx" class="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mx-auto text-brand"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="8.5" y="14" width="7" height="7" rx="1"/></svg>
+            <p class="mt-3 font-display text-2xl font-bold text-brand-deep">45%</p>
+            <p class="mt-1 text-xs text-ink-soft">Fewer stockouts</p>
+            <p class="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">Wellness Rx</p>
+          </a>
+
+          <a href="#joshi-clinic" class="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mx-auto text-brand"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12h6M12 9v6"/></svg>
+            <p class="mt-3 font-display text-2xl font-bold text-brand-deep">0</p>
+            <p class="mt-1 text-xs text-ink-soft">Expired stock sold</p>
+            <p class="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">Joshi Clinic</p>
+          </a>
+
+          <a href="#greencross" class="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mx-auto text-brand"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <p class="mt-3 font-display text-2xl font-bold text-brand-deep">2.4s</p>
+            <p class="mt-1 text-xs text-ink-soft">Avg checkout</p>
+            <p class="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">GreenCross</p>
+          </a>
+
+          <a href="#apex-pharmacy" class="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mx-auto text-brand"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <p class="mt-3 font-display text-2xl font-bold text-brand-deep">1 day</p>
+            <p class="mt-1 text-xs text-ink-soft">To train new staff</p>
+            <p class="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">Apex Pharmacy</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why these five -->
+    <section class="border-t border-line py-16">
+      <div class="mx-auto max-w-5xl px-6 lg:px-10" data-reveal>
+        <span class="label-tag text-xs font-medium text-brand-deep">WHY THESE FIVE</span>
+        <h2 class="mt-3 font-display text-2xl font-bold tracking-tight text-ink">We picked stores that don't look alike on purpose.</h2>
+        <p class="mt-4 max-w-3xl text-sm leading-relaxed text-ink-soft">
+          It would be easy to fill this page with five nearly identical urban pharmacies. Instead,
+          these five cover the actual range of stores that end up on Formulary: a solo counter, a
+          small chain, a rural clinic dispensary, a mixed medical store, and a family business with
+          constant staff turnover. If your store doesn't match any of them exactly, it's probably
+          closer to one than you'd expect — a pharmacy stock management system either solves the
+          batch-and-expiry problem at your scale, or it doesn't, and store size changes that less
+          than people assume.
+        </p>
+      </div>
+    </section>
+
+    <!-- Case Study 1: City Pharmacy -->
+    <section id="city-pharmacy" class="scroll-mt-14 border-t border-line py-20">
       <div class="mx-auto max-w-7xl px-6 lg:px-10">
-        <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center" data-reveal>
+        <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start" data-reveal>
           <div>
-            <span class="label-tag text-xs font-medium text-brand-deep">INDEPENDENT PHARMACY · PUNE</span>
+            <div class="flex items-center gap-3">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 21V10M20 21V10M2 10l2-6h16l2 6M8 21v-6a2 2 0 012-2h4a2 2 0 012 2v6"/></svg>
+              </span>
+              <span class="label-tag text-xs font-medium text-brand-deep">INDEPENDENT PHARMACY · PUNE</span>
+            </div>
             <h2 class="mt-3 font-display text-2xl font-bold text-ink">City Pharmacy cut expiry write-offs by 62% in 90 days.</h2>
-            <p class="mt-4 text-sm leading-relaxed text-ink-soft">
-              City Pharmacy is a single-counter retail pharmacy in Kothrud, Pune, serving 120–150 customers per day. Before Formulary, they tracked batches on paper and frequently discovered expired stock during quarterly counts.
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">1 counter</span>
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">3 staff</span>
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">1,800 SKUs</span>
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Starter plan</span>
+            </div>
+
+            <p class="mt-5 text-sm leading-relaxed text-ink-soft">
+              City Pharmacy is a single-counter retail pharmacy in Kothrud, Pune, serving 120–150 customers a day. Before Formulary, they tracked batches on paper: a ruled register at the counter, and a second notebook in the back room for anything moved off the main shelf. Reconciling the two only happened once a quarter, at stock count.
             </p>
             <p class="mt-3 text-sm leading-relaxed text-ink-soft">
-              After switching to Formulary, FEFO billing automatically prioritised the earliest expiring batch. The 30-day expiry alert on the dashboard gave the pharmacist enough time to push near-expiry stock with discounts or return it to the distributor.
+              That quarterly count was where the damage showed up. Batches that had slipped behind faster-moving stock turned up expired, sometimes months past their date, because nothing on the shelf or in the register had flagged them earlier. The pharmacist estimated the store was writing off close to a full shelf's worth of stock every quarter — money that had already been paid to the distributor and never came back.
             </p>
-
-            <div class="mt-6 rounded-[var(--radius-card)] border border-line bg-surface p-5">
-              <div class="flex items-start gap-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="mt-0.5 shrink-0 text-amber"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
-                <div>
-                  <p class="text-sm leading-relaxed text-ink-soft">"We stopped writing expiry dates on a whiteboard the week we switched. The register just won't sell the wrong batch anymore."</p>
-                  <p class="mt-2 text-xs text-ink-soft/70">— Store Manager, City Pharmacy</p>
-                </div>
-              </div>
-            </div>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              After switching to Formulary's pharmacy stock management system, FEFO billing started prioritising the earliest-expiring batch on every sale, without the cashier having to check a date by hand. The 30-day expiry alert on the dashboard gave the pharmacist a running list of what needed to move — early enough to push it with a small discount or return it to the distributor, instead of finding out too late.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              The switch itself took about three weeks, most of it spent entering the existing
+              product list and opening batches. The two junior staff were checking out live sales
+              within their first shift on the new system — no separate training day was needed,
+              since the register works like a normal till, just with a batch chosen for them.
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-ink-soft">
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Moved from two paper logs to one live medicine stock management system</li>
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Quarterly stock count went from a full closed afternoon to under an hour</li>
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Near-expiry stock now gets a discount push instead of a write-off</li>
+            </ul>
           </div>
-          <div class="mt-8 lg:mt-0 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4">
-            <div class="rounded-[var(--radius-card)] border border-line bg-surface p-6 text-center shadow-sm">
-              <p class="font-display text-3xl font-bold text-brand-deep">62%</p>
-              <p class="mt-1 text-xs text-ink-soft">Less expiry waste</p>
+
+          <div class="lg:sticky lg:top-24">
+            <div class="rounded-[var(--radius-card)] border-l-4 border-brand bg-brand-mist/40 p-6">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" class="text-brand"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
+              <p class="mt-3 font-display text-lg font-medium leading-snug text-ink">"We stopped writing expiry dates on a whiteboard the week we switched. The register just won't sell the wrong batch anymore."</p>
+              <p class="mt-3 text-xs font-medium text-ink-soft">Store Manager, City Pharmacy</p>
             </div>
-            <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
-              <p class="font-display text-3xl font-bold text-brand-deep">3.1s</p>
-              <p class="mt-1 text-xs text-ink-soft">Avg checkout time</p>
-            </div>
-            <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
-              <p class="font-display text-3xl font-bold text-brand-deep">1,800</p>
-              <p class="mt-1 text-xs text-ink-soft">SKUs tracked</p>
+
+            <div class="mt-6 grid grid-cols-2 gap-4">
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center shadow-sm">
+                <div class="relative mx-auto h-16 w-16">
+                  <svg viewBox="0 0 36 36" class="h-16 w-16 -rotate-90 text-line"><circle cx="18" cy="18" r="15.9155" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+                  <svg viewBox="0 0 36 36" class="absolute inset-0 h-16 w-16 -rotate-90 text-brand-deep"><circle cx="18" cy="18" r="15.9155" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="62 100"/></svg>
+                  <span class="absolute inset-0 flex items-center justify-center font-display text-sm font-bold text-brand-deep">62%</span>
+                </div>
+                <p class="mt-2 text-xs text-ink-soft">Less expiry waste</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">3.1s</p>
+                <p class="mt-1 text-xs text-ink-soft">Avg checkout time</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">1,800</p>
+                <p class="mt-1 text-xs text-ink-soft">SKUs tracked</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">3 wks</p>
+                <p class="mt-1 text-xs text-ink-soft">Signup to full switch</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Case Study 2 -->
-    <section class="border-t border-line bg-surface py-20">
+    <!-- Case Study 2: Wellness Rx -->
+    <section id="wellness-rx" class="scroll-mt-14 border-t border-line bg-surface py-20">
       <div class="mx-auto max-w-7xl px-6 lg:px-10">
-        <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center" data-reveal>
-          <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4 lg:order-1 mb-8 lg:mb-0">
-            <div class="rounded-[var(--radius-card)] border border-line bg-paper p-6 text-center shadow-sm">
-              <p class="font-display text-3xl font-bold text-brand-deep">3</p>
-              <p class="mt-1 text-xs text-ink-soft">Stores on one account</p>
+        <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start" data-reveal>
+
+          <div class="order-2 lg:order-1 lg:sticky lg:top-24">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center shadow-sm">
+                <p class="font-display text-3xl font-bold text-brand-deep">3</p>
+                <p class="mt-1 text-xs text-ink-soft">Stores on one account</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
+                <div class="relative mx-auto h-16 w-16">
+                  <svg viewBox="0 0 36 36" class="h-16 w-16 -rotate-90 text-line"><circle cx="18" cy="18" r="15.9155" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+                  <svg viewBox="0 0 36 36" class="absolute inset-0 h-16 w-16 -rotate-90 text-brand-deep"><circle cx="18" cy="18" r="15.9155" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="45 100"/></svg>
+                  <span class="absolute inset-0 flex items-center justify-center font-display text-sm font-bold text-brand-deep">45%</span>
+                </div>
+                <p class="mt-2 text-xs text-ink-soft">Fewer stockouts</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">12</p>
+                <p class="mt-1 text-xs text-ink-soft">Staff logins</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">1</p>
+                <p class="mt-1 text-xs text-ink-soft">Dashboard, all stores</p>
+              </div>
             </div>
-            <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
-              <p class="font-display text-3xl font-bold text-brand-deep">45%</p>
-              <p class="mt-1 text-xs text-ink-soft">Fewer stockouts</p>
-            </div>
-            <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
-              <p class="font-display text-3xl font-bold text-brand-deep">12</p>
-              <p class="mt-1 text-xs text-ink-soft">Staff logins</p>
+
+            <div class="mt-6 rounded-[var(--radius-card)] border-l-4 border-brand bg-brand-mist/40 p-6">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" class="text-brand"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
+              <p class="mt-3 font-display text-lg font-medium leading-snug text-ink">"For the first time I can see all three stores on one screen. No more calling the Jayanagar store to ask how much Metformin they have."</p>
+              <p class="mt-3 text-xs font-medium text-ink-soft">Owner, Wellness Rx</p>
             </div>
           </div>
-          <div class="lg:order-2">
-            <span class="label-tag text-xs font-medium text-brand-deep">SMALL CHAIN · BANGALORE</span>
+
+          <div class="order-1 lg:order-2">
+            <div class="flex items-center gap-3">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="8.5" y="14" width="7" height="7" rx="1"/></svg>
+              </span>
+              <span class="label-tag text-xs font-medium text-brand-deep">SMALL CHAIN · BANGALORE</span>
+            </div>
             <h2 class="mt-3 font-display text-2xl font-bold text-ink">Wellness Rx unified 3 stores under one dashboard.</h2>
-            <p class="mt-4 text-sm leading-relaxed text-ink-soft">
-              Wellness Rx operates three outlets across Bangalore. Each store had its own spreadsheet, its own product naming conventions, and its own way of counting stock. Transfer between stores meant a phone call and a hope.
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">3 branches</span>
+              <span class="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">12 staff</span>
+              <span class="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">Growth plan</span>
+            </div>
+
+            <p class="mt-5 text-sm leading-relaxed text-ink-soft">
+              Wellness Rx operates three outlets across Bangalore — Jayanagar, Indiranagar and HSR Layout. Each store had grown up on its own spreadsheet, its own product naming conventions, and its own way of counting stock. A product called "Crocin 650" at one branch might be logged as "Paracetamol 650mg" at another, which made it almost impossible to compare stock across stores at a glance.
             </p>
             <p class="mt-3 text-sm leading-relaxed text-ink-soft">
-              On Formulary's Growth plan, all three stores share one product catalogue with per-store inventory. The owner checks a consolidated dashboard every morning, with low-stock and expiry alerts filtered by store.
+              Transferring stock between branches meant a phone call and a hope: whoever picked up would count what was on the shelf, read it out, and someone at the other end would write it down. It worked, but it left no record, and it depended on whoever happened to answer the phone that day.
             </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              On Formulary's Growth plan, all three stores now share one product catalogue with per-store inventory, so "Paracetamol 650mg" means the same thing everywhere. The owner checks a consolidated dashboard every morning, with low-stock and expiry alerts filtered by store, and role-based access means a cashier at HSR Layout can't see Jayanagar's cost prices or margins.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              Migrating three spreadsheets into one shared pharmacy store management system meant
+              agreeing on naming first — a short exercise where the owner and the three store
+              managers sat together and settled on one name per product, once. Stock transfers
+              between branches now happen inside the system as a recorded movement, with a
+              timestamp and the staff member who approved it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="mt-6 rounded-[var(--radius-card)] border border-line bg-paper p-5">
-              <div class="flex items-start gap-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="mt-0.5 shrink-0 text-amber"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
-                <div>
-                  <p class="text-sm leading-relaxed text-ink-soft">"For the first time I can see all three stores on one screen. No more calling the Jayanagar store to ask how much Metformin they have."</p>
-                  <p class="mt-2 text-xs text-ink-soft/70">— Owner, Wellness Rx</p>
-                </div>
+    <!-- Case Study 3: Dr. Joshi Clinic -->
+    <section id="joshi-clinic" class="scroll-mt-14 py-20">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start" data-reveal>
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12h6M12 9v6"/></svg>
+              </span>
+              <span class="label-tag text-xs font-medium text-brand-deep">RURAL CLINIC PHARMACY · SATARA</span>
+            </div>
+            <h2 class="mt-3 font-display text-2xl font-bold text-ink">A 200-SKU dispensary went from a notebook to a live dashboard.</h2>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">200 SKUs</span>
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">1 assistant</span>
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Starter plan · $99/mo</span>
+            </div>
+
+            <p class="mt-5 text-sm leading-relaxed text-ink-soft">
+              Dr. Joshi runs a small clinic with an attached dispensary in rural Satara. With around 200 SKUs and a single assistant handling both the counter and the stock room, the "inventory system" was a ruled notebook and a calculator. Stock counts happened reactively — when a strip ran out mid-consultation, not on any set schedule.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              That reactive approach meant expired stock hid easily. A box pushed to the back of a shelf during a busy week could sit there for months, and the only way to find it was to physically go through every shelf — something that rarely happened outside of an annual audit.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              Formulary's Starter plan, at $99 a month, gave the clinic batch-level tracking, automatic low-stock alerts, and a daily email summary of what sold and what's running low — all sized for a dispensary this size rather than a full retail pharmacy. The assistant, who had never used inventory software before, learned the POS terminal in half a day.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              Because the dispensary only carries around 200 SKUs, the entire opening stock list
+              went into Formulary in a single afternoon, with Dr. Joshi reading batch numbers and
+              expiry dates off the shelf while the assistant typed them in — no formal training
+              session, just real customers from day one.
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-ink-soft">
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Switched from a notebook to a proper medicine inventory management system in one sitting</li>
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Daily email summary replaced the "check when it runs out" habit</li>
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> No expired stock sold since the 30-day alert went live</li>
+            </ul>
+          </div>
+
+          <div class="lg:sticky lg:top-24">
+            <div class="rounded-[var(--radius-card)] border-l-4 border-brand bg-brand-mist/40 p-6">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" class="text-brand"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
+              <p class="mt-3 font-display text-lg font-medium leading-snug text-ink">"I used to find expired stock behind other boxes. Now the system tells me 30 days before anything expires. That alone pays for itself."</p>
+              <p class="mt-3 text-xs font-medium text-ink-soft">Dr. Joshi, Clinic Owner</p>
+            </div>
+
+            <div class="mt-6 grid grid-cols-2 gap-4">
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center shadow-sm">
+                <p class="font-display text-3xl font-bold text-brand-deep">200</p>
+                <p class="mt-1 text-xs text-ink-soft">SKUs tracked</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">½</p>
+                <p class="mt-1 text-xs text-ink-soft">Day to learn</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">0</p>
+                <p class="mt-1 text-xs text-ink-soft">Expired stock sold</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">$99</p>
+                <p class="mt-1 text-xs text-ink-soft">Per month, Starter</p>
               </div>
             </div>
           </div>
@@ -140,42 +368,231 @@
       </div>
     </section>
 
-    <!-- Case Study 3 -->
-    <section class="py-20">
+    <!-- Case Study 4: GreenCross Medical Store -->
+    <section id="greencross" class="scroll-mt-14 border-t border-line bg-surface py-20">
       <div class="mx-auto max-w-7xl px-6 lg:px-10">
-        <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center" data-reveal>
-          <div>
-            <span class="label-tag text-xs font-medium text-brand-deep">RURAL CLINIC PHARMACY · SATARA</span>
-            <h2 class="mt-3 font-display text-2xl font-bold text-ink">A 200-SKU pharmacy went from a notebook to a live dashboard.</h2>
-            <p class="mt-4 text-sm leading-relaxed text-ink-soft">
-              Dr. Joshi runs a small clinic with an attached dispensary in rural Satara. With 200 SKUs and one assistant, the "inventory system" was a ruled notebook and a calculator. Stock counts happened when something ran out.
+        <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start" data-reveal>
+
+          <div class="order-2 lg:order-1 lg:sticky lg:top-24">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center shadow-sm">
+                <p class="font-display text-3xl font-bold text-brand-deep">2.4s</p>
+                <p class="mt-1 text-xs text-ink-soft">Avg checkout time</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">0</p>
+                <p class="mt-1 text-xs text-ink-soft">Batch mix-ups since switch</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">900+</p>
+                <p class="mt-1 text-xs text-ink-soft">SKUs, medicine &amp; general</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">1</p>
+                <p class="mt-1 text-xs text-ink-soft">System instead of two</p>
+              </div>
+            </div>
+
+            <div class="mt-6 rounded-[var(--radius-card)] border-l-4 border-brand bg-brand-mist/40 p-6">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" class="text-brand"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
+              <p class="mt-3 font-display text-lg font-medium leading-snug text-ink">"Our old billing software was fine for soap and bandages. The day we started selling more medicine than general items, it stopped being enough."</p>
+              <p class="mt-3 text-xs font-medium text-ink-soft">Pharmacist, GreenCross Medical Store</p>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <div class="flex items-center gap-3">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M6 2l1.5 4h9L18 2M4 8h16l-1.5 12a2 2 0 01-2 1.8H7.5A2 2 0 015.5 20L4 8z"/><path d="M9 12h6"/></svg>
+              </span>
+              <span class="label-tag text-xs font-medium text-brand-deep">MEDICAL STORE · LUCKNOW</span>
+            </div>
+            <h2 class="mt-3 font-display text-2xl font-bold text-ink">GreenCross replaced a generic POS that couldn't see expiry dates.</h2>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">900+ SKUs</span>
+              <span class="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">Medicine + general</span>
+              <span class="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">Starter plan</span>
+            </div>
+
+            <p class="mt-5 text-sm leading-relaxed text-ink-soft">
+              GreenCross is a medical store in Lucknow that sells prescription medicine alongside general items — bandages, thermometers, baby care, everyday health products. They had been running a general-purpose retail billing tool for years. It handled barcodes and prices well, but it had no idea what a batch or an expiry date was; a strip of tablets was just another item with a price tag.
             </p>
             <p class="mt-3 text-sm leading-relaxed text-ink-soft">
-              Formulary's Starter plan gave the clinic batch-level tracking, automatic low-stock alerts, and a daily email summary — all for $3,200 per month. The assistant learned the POS terminal in half a day.
+              To manage expiry, the pharmacist kept a second, manual list of medicine batches next to the till — which meant every sale had to be checked against two systems that never quite agreed with each other. More than once, a batch marked "sold out" in the manual list was still sitting on the shelf, or the reverse.
             </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              Moving to Formulary let GreenCross fold both lists into one drug inventory management system: medicine keeps its batch and expiry fields, general items skip them, and both sit in the same catalogue and the same register. The pharmacist no longer keeps a second list, because there's nothing left for it to track that the main system doesn't already know.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              The general items didn't disappear in the move — they simply stopped needing special
+              treatment. A thermometer is entered once, without a batch field to fill in, while
+              medicine keeps every field a drug inventory management system needs. Both show up in
+              the same search bar at the counter, so the cashier never has to think about which
+              "kind" of item they're ringing up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="mt-6 rounded-[var(--radius-card)] border border-line bg-surface p-5">
-              <div class="flex items-start gap-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="mt-0.5 shrink-0 text-amber"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
-                <div>
-                  <p class="text-sm leading-relaxed text-ink-soft">"I used to find expired stock behind other boxes. Now the system tells me 30 days before anything expires. That alone pays for itself."</p>
-                  <p class="mt-2 text-xs text-ink-soft/70">— Dr. Joshi, Clinic Owner</p>
-                </div>
+    <!-- Case Study 5: Apex Pharmacy -->
+    <section id="apex-pharmacy" class="scroll-mt-14 py-20">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start" data-reveal>
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </span>
+              <span class="label-tag text-xs font-medium text-brand-deep">FAMILY-RUN PHARMACY · NAGPUR</span>
+            </div>
+            <h2 class="mt-3 font-display text-2xl font-bold text-ink">Apex Pharmacy trains new hires in a day, not a week.</h2>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">15+ seasonal hires/yr</span>
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">4 custom roles</span>
+              <span class="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Starter plan</span>
+            </div>
+
+            <p class="mt-5 text-sm leading-relaxed text-ink-soft">
+              Apex Pharmacy is a second-generation family business near a busy market in Nagpur, and it runs on part-time staff during college terms — which means new cashiers rotate in every few months. The previous system was powerful but dense: a full back-office accounting package repurposed for retail, with menus that took a new hire a week to get comfortable with.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              During that training week, the owner or a senior pharmacist had to stay at the till alongside the new hire, which pulled them away from the stock room right when a delivery usually arrived. Mistakes at the register — wrong batch sold, discount typed incorrectly — were common in a trainee's first few shifts.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+              Formulary's POS terminal was designed around the same keyboard-first flow for everyone: search, add, check out. A new cashier now shadows one shift and is ringing up sales alone by the next, because the pharmacy stock control system, not the person, enforces the FEFO batch and verifies every price server-side. Role-based access also means a first-week cashier can process a sale without ever seeing cost prices or being able to edit stock counts.
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-ink-soft">
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> New-hire training dropped from a week of shadowing to a single shift</li>
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Cashier role hides cost price and stock editing by default</li>
+              <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Owner is free to receive deliveries during peak training weeks</li>
+            </ul>
+          </div>
+
+          <div class="lg:sticky lg:top-24">
+            <div class="rounded-[var(--radius-card)] border-l-4 border-brand bg-brand-mist/40 p-6">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" class="text-brand"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
+              <p class="mt-3 font-display text-lg font-medium leading-snug text-ink">"We hire college students every semester. I used to dread training week. Now I show someone the register once and they're fine."</p>
+              <p class="mt-3 text-xs font-medium text-ink-soft">Owner, Apex Pharmacy</p>
+            </div>
+
+            <div class="mt-6 grid grid-cols-2 gap-4">
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center shadow-sm">
+                <p class="font-display text-3xl font-bold text-brand-deep">1 day</p>
+                <p class="mt-1 text-xs text-ink-soft">To train new staff</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">4</p>
+                <p class="mt-1 text-xs text-ink-soft">Custom staff roles</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">15+</p>
+                <p class="mt-1 text-xs text-ink-soft">Part-time cashiers/yr</p>
+              </div>
+              <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
+                <p class="font-display text-3xl font-bold text-brand-deep">↓</p>
+                <p class="mt-1 text-xs text-ink-soft">Register errors, week one</p>
               </div>
             </div>
           </div>
-          <div class="mt-8 lg:mt-0 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4">
-            <div class="rounded-[var(--radius-card)] border border-line bg-surface p-6 text-center shadow-sm">
-              <p class="font-display text-3xl font-bold text-brand-deep">200</p>
-              <p class="mt-1 text-xs text-ink-soft">SKUs tracked</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's common across all five -->
+    <section class="border-t border-line bg-surface py-20">
+      <div class="mx-auto max-w-5xl px-6 lg:px-10">
+        <div class="max-w-2xl" data-reveal>
+          <span class="label-tag text-xs font-medium text-brand-deep">WHAT THEY HAD IN COMMON</span>
+          <h2 class="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Different stores, the same three problems.</h2>
+          <p class="mt-4 leading-relaxed text-ink-soft">
+            A single counter in Pune, a three-store chain in Bangalore, a rural dispensary in
+            Satara, a medical store in Lucknow, and a family pharmacy in Nagpur — the shops
+            couldn't look more different. But every one of them came to Formulary carrying
+            the same three problems, just at a different scale.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <div class="rounded-[var(--radius-card)] border border-line bg-paper p-6" data-reveal>
+            <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
+            <h3 class="mt-3 font-display font-semibold text-ink">Expiry caught them by surprise</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-soft">Whether it was a whiteboard, a notebook, or a second manual list, none of the old systems warned anyone before a batch expired. A pharmacy inventory system that doesn't track expiry proactively will always find out too late.</p>
+          </div>
+          <div class="rounded-[var(--radius-card)] border border-line bg-paper p-6" data-reveal>
+            <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+            </span>
+            <h3 class="mt-3 font-display font-semibold text-ink">Stock lived in more than one place</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-soft">A paper log and a register, three spreadsheets across three stores, a general POS and a manual batch list — every store was reconciling two records of the truth instead of trusting one.</p>
+          </div>
+          <div class="rounded-[var(--radius-card)] border border-line bg-paper p-6" data-reveal>
+            <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </span>
+            <h3 class="mt-3 font-display font-semibold text-ink">New staff took too long to trust</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-soft">From a single assistant to a rotating cast of part-time cashiers, every owner spent real time either doing the work themselves or standing over someone who was still learning it.</p>
+          </div>
+        </div>
+
+        <p class="mt-8 max-w-3xl text-sm leading-relaxed text-ink-soft/80">
+          A note on the numbers: figures above come from each store's own before-and-after
+          comparison, self-reported by the owner or pharmacist and measured against their prior
+          system over the 90 days following go-live, unless stated otherwise. Results vary by
+          store size, product mix and how consistently staff use batch tracking at receiving —
+          a pharmacy inventory management software can only be as accurate as the stock entered
+          into it.
+        </p>
+      </div>
+    </section>
+
+    <!-- Questions after reading these -->
+    <section class="py-20">
+      <div class="mx-auto max-w-3xl px-6 lg:px-10">
+        <div class="text-center" data-reveal>
+          <span class="label-tag text-xs font-medium text-brand-deep">BEFORE YOU SWITCH</span>
+          <h2 class="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Questions these five stores asked us first</h2>
+        </div>
+
+        <div class="mt-10 divide-y divide-line rounded-[var(--radius-card)] border border-line bg-paper">
+          <div data-faq-item>
+            <button type="button" data-faq-trigger aria-expanded="false" class="btn-focus flex w-full items-center justify-between gap-4 px-6 py-5 text-left">
+              <span class="font-medium text-ink">Does my store need to be this size to see results?</span>
+              <svg data-faq-icon width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 text-ink-soft transition-transform"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div data-faq-panel class="hidden px-6 pb-5 text-sm leading-relaxed text-ink-soft">
+              No. Dr. Joshi's dispensary runs 200 SKUs and City Pharmacy tracks 1,800 — both saw the expiry problem disappear, because the FEFO logic and the 30-day alert work the same way regardless of catalogue size. A small pharmacy inventory system doesn't need scale to be worth using; it needs batches and expiry dates, which every one of these stores had from day one.
             </div>
-            <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
-              <p class="font-display text-3xl font-bold text-brand-deep">½</p>
-              <p class="mt-1 text-xs text-ink-soft">Day to learn</p>
+          </div>
+          <div data-faq-item>
+            <button type="button" data-faq-trigger aria-expanded="false" class="btn-focus flex w-full items-center justify-between gap-4 px-6 py-5 text-left">
+              <span class="font-medium text-ink">How long does the switch actually take?</span>
+              <svg data-faq-icon width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 text-ink-soft transition-transform"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div data-faq-panel class="hidden px-6 pb-5 text-sm leading-relaxed text-ink-soft">
+              Across these five stores, migration ranged from a single afternoon (200 SKUs) to about three weeks (1,800 SKUs, done gradually between customers). The work is almost entirely data entry — product names, opening batches, expiry dates — not learning the interface, which is why staff at every store were checking out real sales within their first shift.
             </div>
-            <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
-              <p class="font-display text-3xl font-bold text-brand-deep">0</p>
-              <p class="mt-1 text-xs text-ink-soft">Expired stock sold</p>
+          </div>
+          <div data-faq-item>
+            <button type="button" data-faq-trigger aria-expanded="false" class="btn-focus flex w-full items-center justify-between gap-4 px-6 py-5 text-left">
+              <span class="font-medium text-ink">Which plan fits a store like mine?</span>
+              <svg data-faq-icon width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 text-ink-soft transition-transform"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div data-faq-panel class="hidden px-6 pb-5 text-sm leading-relaxed text-ink-soft">
+              Dr. Joshi's single-assistant dispensary and City Pharmacy's three-person counter both run on the Starter plan, built for one store and a small team. Wellness Rx, with three branches and twelve staff logins, needed Growth for multi-store reporting and per-branch permissions. Match the plan to how many stores and staff you have today — you can move up a tier later without re-entering your catalogue.
+            </div>
+          </div>
+          <div data-faq-item>
+            <button type="button" data-faq-trigger aria-expanded="false" class="btn-focus flex w-full items-center justify-between gap-4 px-6 py-5 text-left">
+              <span class="font-medium text-ink">What if I sell more than just medicine?</span>
+              <svg data-faq-icon width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 text-ink-soft transition-transform"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div data-faq-panel class="hidden px-6 pb-5 text-sm leading-relaxed text-ink-soft">
+              GreenCross sells general items alongside prescription medicine in the same store, and both live in one catalogue: medicine keeps batch and expiry fields, general items skip them. You don't need a separate medical inventory app for one category and a separate retail tool for the other.
             </div>
           </div>
         </div>
@@ -197,5 +614,38 @@
 
   <div id="site-footer"></div>
   <script src="../js/app.js" defer></script>
+
+  <script>
+    // Scroll-spy for the sticky story nav — highlights the section currently in view.
+    (function () {
+      var links = Array.prototype.slice.call(document.querySelectorAll('[data-nav-link]'));
+      var sections = links
+        .map(function (link) { return document.querySelector(link.getAttribute('href')); })
+        .filter(Boolean);
+
+      if (!links.length || !sections.length || !('IntersectionObserver' in window)) return;
+
+      function setActive(id) {
+        links.forEach(function (link) {
+          var isActive = link.getAttribute('href') === '#' + id;
+          link.classList.toggle('text-brand-deep', isActive);
+          link.classList.toggle('border-brand', isActive);
+          link.classList.toggle('text-ink-soft', !isActive);
+          link.setAttribute('aria-current', isActive ? 'true' : 'false');
+        });
+      }
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) setActive(entry.target.id);
+          });
+        },
+        { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+      );
+
+      sections.forEach(function (section) { observer.observe(section); });
+    })();
+  </script>
 </body>
 </html>
