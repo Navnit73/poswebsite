@@ -128,9 +128,16 @@ function initPricingToggle() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const isInPages = location.pathname.includes("/pages/");
-  const headerUrl = isInPages ? "header.html" : "pages/header.html";
-  const footerUrl = isInPages ? "footor.html" : "pages/footor.html";
+  const path = location.pathname;
+  let prefix = "pages/";
+  if (path.includes("/pages/blog/")) {
+    prefix = "../";
+  } else if (path.includes("/pages/")) {
+    prefix = "";
+  }
+  
+  const headerUrl = prefix + "header.html";
+  const footerUrl = prefix + "footor.html";
   await loadPartial("#site-header", headerUrl);
   await loadPartial("#site-footer", footerUrl);
   initHeader();

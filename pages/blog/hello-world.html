@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World: Our first blog post | Formulary Blog</title>
+  <meta name="description" content="This is a sample blog post showing how the dynamic markdown rendering works." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/output.css" />
+</head>
+<body class="font-body text-ink antialiased">
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="border-b border-line bg-surface py-16">
+      <div class="mx-auto max-w-3xl px-6 lg:px-10">
+        <nav aria-label="Breadcrumb" class="label-tag text-xs text-ink-soft/70">
+          <a href="/index.html" class="hover:text-brand-deep">Home</a> <span aria-hidden="true">/</span> <a href="/pages/blog.html" class="hover:text-brand-deep">Blog</a>
+        </nav>
+        <span class="label-tag mt-6 inline-block rounded-full bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep uppercase">Announcement</span>
+        <h1 class="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">Hello World: Our first blog post</h1>
+        <div class="mt-6 flex items-center gap-4 text-sm text-ink-soft">
+          <span>Aug 01, 2026</span>
+          <span aria-hidden="true">·</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="mx-auto max-w-3xl px-6 lg:px-10 markdown-content">
+        <h2>Welcome to the new blog</h2>
+<p>This is the first dynamic blog post in our system. It is written completely in <strong>Markdown</strong> and automatically converted to an HTML page by our build script.</p>
+<h3>Why Markdown?</h3>
+<p>Writing in Markdown allows you to focus on the content without worrying about the HTML structure. You can easily add:</p>
+<ul>
+<li>Bullet points</li>
+<li><strong>Bold text</strong></li>
+<li><a href="/">Links</a></li>
+<li>Code blocks:</li>
+</ul>
+<pre><code class="language-javascript">console.log(&quot;Hello World&quot;);
+</code></pre>
+<blockquote>
+<p>&quot;The best inventory system is the one you actually use.&quot;</p>
+</blockquote>
+<h3>What&#39;s next?</h3>
+<p>Whenever you want to add a new article, simply create a new <code>.md</code> file in the <code>content/blog/</code> directory with the frontmatter at the top (like this file), and run <code>npm run build:blog</code>. The index page and the post page will automatically be generated!</p>
+
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../../js/app.js" defer></script>
+</body>
+</html>
