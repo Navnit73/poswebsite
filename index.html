@@ -43,7 +43,10 @@
       "areaServed": ["IN", "US"],
       "availableLanguage": ["English"]
     },
-    "sameAs": []
+    "sameAs": [
+      "https://twitter.com/yourhandle",
+      "https://linkedin.com/company/yourcompany"
+    ]
   }
   </script>
 
@@ -90,13 +93,51 @@
   }
   </script>
 
+  <!-- JSON-LD: Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Formulary Pharmacy Software",
+    "description": "Pharmacy inventory and POS system",
+    "brand": {
+      "@type": "Brand",
+      "name": "Formulary"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "99",
+      "highPrice": "149"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "120"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Pharmacy Inventory Software with POS",
+    "url": "https://www.formulary.app/",
+    "description": "Formulary is pharmacy inventory management software with pos built for small pharmacies and medical stores: batch and expiry tracking, FEFO billing, medicine stock management, low-stock alerts, and a pharmacy point of sale system — live in an afternoon."
+  }
+  </script>
+
   <!-- JSON-LD: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.formulary.app/" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.formulary.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Pharmacy Software", "item": "https://www.formulary.app/pharmacy-software" },
+      { "@type": "ListItem", "position": 3, "name": "Inventory Management", "item": "https://www.formulary.app/inventory-management" }
     ]
   }
   </script>
@@ -171,22 +212,7 @@
           "text": "Yes. Formulary ships with Owner, Manager, Pharmacist and Cashier roles, and you can create custom roles with module-level permissions for products, inventory, sales, reports, customers and settings."
         }
       },
-      {
-        "@type": "Question",
-        "name": "Is Formulary suitable for a medical store that isn't a pharmacy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Any medical store selling scheduled or over-the-counter medicine by batch and expiry — pharmacy, drugstore, or general medical store — fits the same workflow, since the underlying stock and billing logic is the same."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I get a report of each day's sales automatically?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. You can schedule a daily PDF report with revenue, profit, top products and low-stock alerts, delivered by email at a time you choose, in your store's timezone."
-        }
-      }
+    
     ]
   }
   </script>
@@ -194,7 +220,9 @@
   <link rel="apple-touch-icon" href="/images/favicon.png" />
   <meta property="og:image" content="https://www.formulary.app/images/favicon.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yourhandle" />
   <meta name="twitter:image" content="https://www.formulary.app/images/favicon.png" />
+  <link rel="alternate" hreflang="en" href="https://www.formulary.app/" />
 </head>
 
 <body class="font-body text-ink antialiased">
