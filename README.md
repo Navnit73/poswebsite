@@ -1,4 +1,4 @@
-# Formulary — Pharmacy Inventory & POS marketing site
+# Medishelf — Pharmacy Inventory & POS marketing site
 
 Plain HTML + Tailwind CSS v4 (real CLI build, not the CDN version). Header and
 footer are single shared partials (`pages/header.html`, `pages/footor.html`)
@@ -28,10 +28,10 @@ npm run watch:css      # rebuilds on every save while you work
 Don't hand-edit `css/output.css` — it's generated.
 
 ## Before you publish — replace these placeholders
-- **Domain**: `https://www.formulary.app/` appears in canonical tags, Open
+- **Domain**: `https://medishelf.co/` appears in canonical tags, Open
   Graph tags and every JSON-LD block across all pages. Swap it for your real
-  domain everywhere (`grep -rn "formulary.app" .` finds every instance).
-- **Brand name**: "Formulary" is a placeholder name (it's the real pharmacy
+  domain everywhere (`grep -rn "medishelf.co" .` finds every instance).
+- **Brand name**: "Medishelf" is a placeholder name (it's the real pharmacy
   term for an approved-drug list) — rename it if you have your own brand.
 - **Contact details**: email, phone, and the "Store Manager, Pune" quote in
   the testimonial section on `index.html` are all placeholders.

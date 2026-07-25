@@ -29,16 +29,16 @@ def fix_file(file_path):
                 for k, v in data.items():
                     new_data[k] = v
                     if k == '@type':
-                        new_data['@id'] = 'https://www.formulary.app/#organization'
+                        new_data['@id'] = 'https://medishelf.co/#organization'
                 data = new_data
                 
         # 2. WebSite
         if data.get('@type') == 'WebSite':
-            data['publisher'] = { "@id": "https://www.formulary.app/#organization" }
+            data['publisher'] = { "@id": "https://medishelf.co/#organization" }
             if 'potentialAction' not in data:
                 data['potentialAction'] = {
                     "@type": "SearchAction",
-                    "target": "https://www.formulary.app/search?q={search_term_string}",
+                    "target": "https://medishelf.co/search?q={search_term_string}",
                     "query-input": "required name=search_term_string"
                 }
                 
@@ -50,7 +50,7 @@ def fix_file(file_path):
         if data.get('@type') in types_needing_publisher:
             # Add publisher if not exists
             if 'publisher' not in data:
-                data['publisher'] = { "@id": "https://www.formulary.app/#organization" }
+                data['publisher'] = { "@id": "https://medishelf.co/#organization" }
                 
         # 4. Remove aggregateRating from Product
         if data.get('@type') == 'Product':
