@@ -41,6 +41,7 @@ for (const file of files) {
     .replace(/{{category}}/g, data.category || 'Update')
     .replace(/{{date}}/g, data.date || '')
     .replace(/{{readTime}}/g, data.readTime ? `${data.readTime} min read` : '')
+    .replace(/{{slug}}/g, slug)
     .replace(/{{content}}/g, content);
     
   fs.writeFileSync(path.join(PAGES_DIR, `${slug}.html`), html);

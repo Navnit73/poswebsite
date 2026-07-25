@@ -2,7 +2,7 @@ import os
 import json
 import re
 
-target_dir = '/Users/navnitrai/Desktop/pharmacy_pos'
+target_dir = os.path.dirname(os.path.abspath(__file__))
 
 def fix_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -34,7 +34,7 @@ def fix_file(file_path):
                 
         # 2. WebSite
         if data.get('@type') == 'WebSite':
-            data['publisher'] = { "@id": "https://medishelf.co/#organization" }
+            data['publisher'] = { "@type": "Organization", "@id": "https://medishelf.co/#organization" }
             if 'potentialAction' not in data:
                 data['potentialAction'] = {
                     "@type": "SearchAction",
@@ -50,7 +50,7 @@ def fix_file(file_path):
         if data.get('@type') in types_needing_publisher:
             # Add publisher if not exists
             if 'publisher' not in data:
-                data['publisher'] = { "@id": "https://medishelf.co/#organization" }
+                data['publisher'] = { "@type": "Organization", "@id": "https://medishelf.co/#organization" }
                 
         # 4. Remove aggregateRating from Product
         if data.get('@type') == 'Product':

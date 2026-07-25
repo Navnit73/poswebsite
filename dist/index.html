@@ -35,23 +35,34 @@
     "url": "https://medishelf.co/",
     "logo": "https://medishelf.co/images/favicon.svg",
     "description": "Medishelf builds pharmacy inventory management software with pos system and point-of-sale software for retail pharmacies and medical stores, covering batch tracking, FEFO billing and compliance reporting.",
-    "email": "hello@medishelf.co",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-12345-67890",
-      "contactType": "customer support",
-      "email": "hello@medishelf.co",
-      "areaServed": [
-        "IN",
-        "US"
-      ],
-      "availableLanguage": [
-        "English"
-      ]
-    },
-    "sameAs": [
-      "https://twitter.com/yourhandle",
-      "https://linkedin.com/company/yourcompany"
+    "email": "sales@medishelf.co",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-12345-67890",
+        "contactType": "sales",
+        "email": "sales@medishelf.co",
+        "areaServed": [
+          "IN",
+          "US"
+        ],
+        "availableLanguage": [
+          "English"
+        ]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-12345-67890",
+        "contactType": "customer support",
+        "email": "support@medishelf.co",
+        "areaServed": [
+          "IN",
+          "US"
+        ],
+        "availableLanguage": [
+          "English"
+        ]
+      }
     ]
   }
   </script>
@@ -65,6 +76,7 @@
     "url": "https://medishelf.co/",
     "inLanguage": "en",
     "publisher": {
+      "@type": "Organization",
       "@id": "https://medishelf.co/#organization"
     },
     "potentialAction": {
@@ -82,6 +94,7 @@
     "@type": "SoftwareApplication",
     "name": "Medishelf",
     "publisher": {
+      "@type": "Organization",
       "@id": "https://medishelf.co/#organization"
     },
     "applicationCategory": "BusinessApplication",
@@ -117,6 +130,7 @@
     "@type": "Product",
     "name": "Medishelf Pharmacy Software",
     "publisher": {
+      "@type": "Organization",
       "@id": "https://medishelf.co/#organization"
     },
     "description": "Pharmacy inventory and POS system",
@@ -140,6 +154,7 @@
     "@type": "WebPage",
     "name": "Pharmacy Inventory Software with POS",
     "publisher": {
+      "@type": "Organization",
       "@id": "https://medishelf.co/#organization"
     },
     "url": "https://medishelf.co/",
@@ -180,7 +195,7 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "publisher": { "@id": "https://medishelf.co/#organization" },
+    "publisher": { "@type": "Organization", "@id": "https://medishelf.co/#organization" },
     "mainEntity": [
       {
         "@type": "Question",
@@ -245,8 +260,7 @@
           "@type": "Answer",
           "text": "Yes. Medishelf ships with Owner, Manager, Pharmacist and Cashier roles, and you can create custom roles with module-level permissions for products, inventory, sales, reports, customers and settings."
         }
-      },
-    
+      }
     ]
   }
   </script>
@@ -254,7 +268,7 @@
   <link rel="apple-touch-icon" href="/images/favicon.png" />
   <meta property="og:image" content="https://medishelf.co/images/favicon.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@yourhandle" />
+  
   <meta name="twitter:image" content="https://medishelf.co/images/favicon.png" />
   <link rel="alternate" hreflang="en" href="https://medishelf.co/" />
 </head>
