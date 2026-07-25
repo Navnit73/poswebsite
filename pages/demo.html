@@ -48,6 +48,23 @@
   <meta property="og:image" content="https://medishelf.co/images/favicon.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://medishelf.co/images/favicon.png" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xrutgigzx0");
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLHGBEKNMQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KLHGBEKNMQ');
+  </script>
 </head>
 
 <body class="font-body text-ink antialiased">
@@ -77,24 +94,29 @@
             <h2 class="font-display text-2xl font-bold text-ink">Create your store</h2>
             <p class="mt-2 text-sm text-ink-soft">Fill in the basics and we'll spin up your account in seconds.</p>
 
-            <form id="demo-form" class="mt-8 space-y-5" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.classList.add('hidden');">
+            <form id="demo-form" action="https://formsubmit.co/sales@medishelf.co" method="POST" class="mt-8 space-y-5">
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_subject" value="New Free Trial Request — Medishelf POS" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+
               <div>
                 <label for="full-name" class="block text-sm font-medium text-ink">Full name</label>
-                <input id="full-name" type="text" required placeholder="Dr. Priya Sharma" class="mt-1.5 w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand" />
+                <input id="full-name" name="name" type="text" required placeholder="Dr. Priya Sharma" class="mt-1.5 w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand" />
               </div>
               <div>
                 <label for="email" class="block text-sm font-medium text-ink">Work email</label>
-                <input id="email" type="email" required placeholder="priya@citypharmacy.in" class="mt-1.5 w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand" />
+                <input id="email" name="email" type="email" required placeholder="priya@citypharmacy.in" class="mt-1.5 w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand" />
               </div>
               <div>
                 <label for="pharmacy-name" class="block text-sm font-medium text-ink">Pharmacy name</label>
-                <input id="pharmacy-name" type="text" required placeholder="City Pharmacy" class="mt-1.5 w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand" />
+                <input id="pharmacy-name" name="pharmacy_name" type="text" required placeholder="City Pharmacy" class="mt-1.5 w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand" />
               </div>
               <div>
                 <label for="phone" class="block text-sm font-medium text-ink">Phone number</label>
-                <input id="phone" type="tel" placeholder="+91 98765 43210" class="mt-1.5 w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand" />
+                <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" class="mt-1.5 w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand" />
               </div>
-              <button type="submit" class="btn-focus w-full rounded-lg bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">
+              <button type="submit" id="demo-submit-btn" class="btn-focus w-full rounded-lg bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">
                 Start my free trial
               </button>
               <p class="text-center text-xs text-ink-soft/70">
@@ -106,6 +128,10 @@
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mx-auto text-brand"><path d="M20 6L9 17l-5-5"/></svg>
               <h3 class="mt-4 font-display text-xl font-bold text-ink">You're in!</h3>
               <p class="mt-2 text-sm text-ink-soft">Check your inbox for your login link. Your store is being set up now.</p>
+            </div>
+
+            <div id="demo-error" class="hidden mt-4 rounded-lg bg-red-50 p-4 text-center text-sm text-red-600 border border-red-200">
+              Something went wrong setting up your trial. Please email us directly at <a href="mailto:sales@medishelf.co" class="underline font-semibold">sales@medishelf.co</a>.
             </div>
           </div>
         </div>
