@@ -297,44 +297,80 @@
 
   <main id="main">
     <!-- ============ HERO ============ -->
-    <section class="relative overflow-hidden">
-      <div class="mx-auto grid max-w-7xl gap-14 px-6 py-16 lg:grid-cols-2 lg:items-center lg:gap-10 lg:px-10 lg:py-24">
-        <div>
-          <span class="label-tag inline-flex items-center gap-2 rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
-            BUILT FOR SMALL & MEDIUM PHARMACIES & MEDICAL STORES
-          </span>
-          <h1 class="mt-5 font-display text-4xl font-bold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem]">
-            Know what's on the shelf.
-            <span class="text-brand">Sell it before it expires.</span>
-          </h1>
-          <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-            Medishelf is <strong class="text-ink font-semibold">pharmacy inventory management software with pos </strong> built specifically for small to medium size pharmacies and medical stores. It runs around how you actually count stock — by batch, by expiry, by rack — instead of forcing you into a generic retail inventory system. Ring up a sale in seconds, and let the system pick the batch that expires first.
-          </p>
+<section class="relative overflow-hidden">
+  <!-- soft ambient glow, purely decorative -->
+  <div class="pointer-events-none absolute -top-24 right-0 h-[420px] w-[420px] rounded-full bg-brand/10 blur-3xl" aria-hidden="true"></div>
 
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="/pages/demo.html" class="btn-focus rounded-lg bg-brand px-6 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">
-              Start free trial
-            </a>
-            <a href="/pages/features.html" class="btn-focus rounded-lg border border-line bg-surface px-6 py-3.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40">
-              See how it works
-            </a>
-          </div>
+  <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-6 sm:py-16 lg:grid-cols-2 lg:items-center lg:gap-10 lg:px-10 lg:py-24">
 
-          <div class="mt-9 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-soft/80">
-            <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-brand"><path d="M20 6L9 17l-5-5"/></svg> No card required</span>
-            <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-brand"><path d="M20 6L9 17l-5-5"/></svg> 14-day trial</span>
-            <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-brand"><path d="M20 6L9 17l-5-5"/></svg> Live in an afternoon</span>
-          </div>
-        </div>
+    <div class="order-2 lg:order-1">
+      <span class="label-tag inline-flex items-center gap-2 rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium leading-none text-brand-deep">
+        BUILT FOR INDEPENDENT &amp; SMALL-CHAIN PHARMACIES
+      </span>
 
-        <!-- Signature visual: generated hero image -->
-        <div class="relative" data-reveal>
-          <div >
-            <img src="images/hero-pos.png" alt="Pharmacy inventory management software showing a point-of-sale screen" class="w-full h-auto rounded-lg object-cover" />
-          </div>
+      <h1 class="mt-5 font-display font-bold leading-[1.1] tracking-tight text-ink text-[clamp(1.75rem,5vw,3.5rem)]">
+        Know what's on the shelf.
+        <span class="text-brand">Sell it before it expires.</span>
+      </h1>
+
+      <p class="mt-5 max-w-xl text-base leading-relaxed text-ink-soft sm:text-lg">
+        Medishelf is <strong class="font-semibold text-ink">pharmacy inventory, POS &amp; reporting software</strong> built for independent and small-chain pharmacies and medical stores. Ring up a sale in seconds at the counter, track every lot by NDC and expiry date, and pull audit-ready sales &amp; inventory reports at close-out — without forcing a generic retail system to work like a pharmacy.
+      </p>
+
+      <!-- three things this page needs to sell: POS speed, expiry tracking, reporting -->
+      <ul class="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-3 sm:gap-3">
+        <li class="flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2.5 text-sm text-ink-soft">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 text-brand"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4M2 11h20"/></svg>
+          Ring up sales in seconds
+        </li>
+        <li class="flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2.5 text-sm text-ink-soft">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 text-brand"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          Auto-picks nearest-expiry lot
+        </li>
+        <li class="flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2.5 text-sm text-ink-soft">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 text-brand"><path d="M3 3v18h18"/><path d="M7 15l4-6 3 3 5-7"/></svg>
+          Audit-ready sales &amp; stock reports
+        </li>
+      </ul>
+
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="/pages/demo.html" class="btn-focus w-full rounded-lg bg-brand px-6 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep sm:w-auto">
+          Start free trial
+        </a>
+        <a href="/pages/features.html" class="btn-focus w-full rounded-lg border border-line bg-surface px-6 py-3.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40 sm:w-auto">
+          See how it works
+        </a>
+      </div>
+
+      <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-soft/80">
+        <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-brand"><path d="M20 6L9 17l-5-5"/></svg> No credit card required</span>
+        <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-brand"><path d="M20 6L9 17l-5-5"/></svg> 14-day free trial</span>
+        <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-brand"><path d="M20 6L9 17l-5-5"/></svg> Live in an afternoon</span>
+      </div>
+    </div>
+
+    <!-- Signature visual: generated hero image -->
+    <div class="relative order-1 lg:order-2" data-reveal>
+      <div class="relative mx-auto max-w-md lg:max-w-none">
+        <img
+          src="images/hero-pos.webp"
+          alt="Medishelf point-of-sale screen showing a pharmacy sale with lot and expiry detail"
+          class="h-auto w-full rounded-xl object-cover shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)]"
+          width="720" height="640"
+          loading="eager"
+          fetchpriority="high"
+        />
+
+        <!-- floating proof-point card, hidden on very small screens to avoid clutter -->
+        <div class="absolute -bottom-5 -left-4 hidden max-w-[220px] rounded-lg border border-line bg-surface px-4 py-3 shadow-lg sm:block">
+          <p class="text-xs font-medium text-ink-soft">Expiry alert</p>
+          <p class="mt-0.5 text-sm font-semibold text-ink">Amoxicillin 500mg <span class="text-brand">· 12 days left</span></p>
         </div>
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
 
     <!-- ============ TRUST STRIP ============ -->
     <section class="border-y border-line bg-surface py-8">
