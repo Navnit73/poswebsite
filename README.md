@@ -33,7 +33,7 @@ Don't hand-edit `css/output.css` — it's generated.
   domain everywhere (`grep -rn "medishelf.co" .` finds every instance).
 - **Brand name**: "Medishelf" is a placeholder name (it's the real pharmacy
   term for an approved-drug list) — rename it if you have your own brand.
-- **Contact details**: email, phone, and the "Store Manager, Pune" quote in
+- **Contact details**: email, phone, and the "Store Manager, Austin" quote in
   the testimonial section on `index.html` are all placeholders.
 - **`og:image`**: points to `/images/og-cover.png`, which doesn't exist yet —
   add a 1200×630 image at that path (used when the site is shared on social).
