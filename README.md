@@ -49,13 +49,18 @@ Don't hand-edit `css/output.css` — it's generated.
 - `pages/header.html`, `pages/footor.html` — shared nav/footer partials
 - `js/app.js` — partial loader, mobile nav, count-up stats, scroll reveal, FAQ accordion, pricing toggle
 
-Schema included per page: `Organization`, `WebSite`, `SoftwareApplication`,
-`Product`/`AggregateOffer`, `FAQPage`, `BreadcrumbList`, `ItemList` — matched
-to what's actually visible on that page (Google penalizes JSON-LD that
-doesn't match on-page content).
+## Deployment (Vercel)
 
-## Not built yet
-The other pages already in your file tree — `aboutUs`, `blog`, `casestudy`,
-`contact`, `dashboard`, `demo`, `inventory`, `privacy`, `refundPolicy`,
-`sales`, `tmc` — are still empty. Same design system, so say the word and
-I'll keep going page by page.
+The repository is configured for **Vercel** deployment:
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- `vercel.json` is pre-configured with `buildCommand`, `outputDirectory`, and `cleanUrls`.
+
+### Deploy via Vercel CLI:
+```bash
+npx vercel
+```
+
+### Deploy via GitHub / Vercel Dashboard:
+1. Connect your repository to Vercel.
+2. Vercel will automatically detect `vercel.json` and build the project using `npm run build` into `dist/`.
