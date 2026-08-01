@@ -55,7 +55,7 @@ posts.sort((a, b) => b.parsedDate - a.parsedDate);
 let gridHtml = '';
 for (const post of posts) {
   gridHtml += `
-          <a href="/pages/blog/${post.slug}.html" class="block">
+          <a href="/pages/blog/${post.slug}" class="block">
             <article class="group rounded-[var(--radius-card)] border border-line bg-surface transition hover:border-brand/30 hover:shadow-sm h-full flex flex-col" data-reveal>
               <div class="h-44 rounded-t-[var(--radius-card)] bg-gradient-to-br from-brand-mist to-brand/10 shrink-0"></div>
               <div class="p-6 flex flex-col flex-1">
