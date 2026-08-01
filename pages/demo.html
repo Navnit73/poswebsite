@@ -94,7 +94,7 @@
             <h2 class="font-display text-2xl font-bold text-ink">Create your store</h2>
             <p class="mt-2 text-sm text-ink-soft">Fill in the basics and we'll spin up your account in seconds.</p>
 
-            <form id="demo-form" action="https://formsubmit.co/sales@medishelf.co" method="POST" class="mt-8 space-y-5">
+            <form id="demo-form" action="https://formsubmit.co/navnitrai5389@gmail.com" method="POST" class="mt-8 space-y-5">
               <!-- FormSubmit Configuration -->
               <input type="hidden" name="_subject" value="New Free Trial Request — Medishelf POS" />
               <input type="hidden" name="_template" value="table" />
@@ -191,5 +191,51 @@
 
   <div id="site-footer"></div>
   <script src="../js/app.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('demo-form');
+      if (!form) return;
+
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const submitBtn = document.getElementById('demo-submit-btn');
+        const originalText = submitBtn.innerHTML;
+        const errorDiv = document.getElementById('demo-error');
+        const successDiv = document.getElementById('form-success');
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="inline-flex items-center justify-center gap-2"><svg class="animate-spin h-4 w-4 text-white" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Creating store…</span>';
+
+        if (errorDiv) errorDiv.classList.add('hidden');
+
+        try {
+          const formData = new FormData(form);
+          const data = {};
+          formData.forEach((value, key) => { data[key] = value; });
+
+          const res = await fetch('https://formsubmit.co/ajax/navnitrai5389@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(data)
+          });
+
+          if (res.ok) {
+            form.classList.add('hidden');
+            if (successDiv) successDiv.classList.remove('hidden');
+          } else {
+            throw new Error('Trial registration failed');
+          }
+        } catch (err) {
+          console.error('Demo submission error:', err);
+          if (errorDiv) errorDiv.classList.remove('hidden');
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
