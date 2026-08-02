@@ -25,6 +25,8 @@ This project is a static website for a Pharmacy Point of Sale (POS) system. It f
 
 - `pages/blog.html`: The main blog index.
 - `pages/blog/hello-world.html`: A sample blog post.
+- `pages/blog/pharmacy-stock-management-system.html`: Guide to pharmacy stock control and FEFO optimization.
+- `pages/blog/pharmaceutical-inventory-management-software.html`: Features, regulatory compliance, and ROI guide.
 
 ## Technical Stack
 
