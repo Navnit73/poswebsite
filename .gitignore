@@ -6,7 +6,7 @@
 /.yarn/cache
 /.yarn/compiler-options.json
 
-# testingnj
+# testing
 /coverage
 
 # next.js
