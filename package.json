@@ -1,23 +1,30 @@
 {
   "name": "pharmacy_pos",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "build:css": "tailwindcss -i ./css/input.css -o ./css/output.css --minify",
-    "watch:css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
-    "serve": "npx --yes serve . -l 5500",
-    "build:blog": "node scripts/build-blog.js",
-    "build:dist": "rm -rf dist && mkdir -p dist && cp index.html sitemap.xml robots.txt llms.txt dist/ 2>/dev/null || : && cp -r pages css js images dist/",
-    "build": "npm run build:css && npm run build:blog && npm run build:dist"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/postcss": "^4.0.0",
     "gray-matter": "^4.0.3",
     "marked": "^18.0.6",
-    "tailwindcss": "^4.3.3"
+    "next": "14.2.15",
+    "postcss": "^8.4.38",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "styled-jsx": "^5.1.7",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.15",
+    "typescript": "^5.3.3"
   }
 }
