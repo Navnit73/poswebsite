@@ -4,36 +4,37 @@ import { getAllPosts } from "@/lib/blog";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://medishelf.co";
 
-  const staticPages = [
-    "",
-    "/aboutus",
-    "/blog",
-    "/casestudy",
-    "/contact",
-    "/demo",
-    "/features",
-    "/inventory",
-    "/pricing",
-    "/privacy",
-    "/refundPolicy",
-    "/sales",
-    "/tmc",
+  const staticPages: { route: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" }[] = [
+    { route: "", priority: 1.0, changeFrequency: "daily" },
+    { route: "/features", priority: 0.95, changeFrequency: "weekly" },
+    { route: "/inventory", priority: 0.9, changeFrequency: "weekly" },
+    { route: "/sales", priority: 0.9, changeFrequency: "weekly" },
+    { route: "/pricing", priority: 0.9, changeFrequency: "weekly" },
+    { route: "/demo", priority: 0.85, changeFrequency: "weekly" },
+    { route: "/casestudy", priority: 0.85, changeFrequency: "monthly" },
+    { route: "/blog", priority: 0.85, changeFrequency: "daily" },
+    { route: "/aboutus", priority: 0.7, changeFrequency: "monthly" },
+    { route: "/contact", priority: 0.7, changeFrequency: "monthly" },
+    { route: "/privacy", priority: 0.5, changeFrequency: "monthly" },
+    { route: "/refundPolicy", priority: 0.5, changeFrequency: "monthly" },
+    { route: "/tmc", priority: 0.5, changeFrequency: "monthly" },
   ];
 
-  const routes: MetadataRoute.Sitemap = staticPages.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === "" ? "daily" : route === "/blog" ? "weekly" : "monthly",
-    priority: route === "" ? 1.0 : route === "/features" || route === "/pricing" ? 0.9 : 0.8,
+  const routes: MetadataRoute.Sitemap = staticPages.map((page) => ({
+    url: `${baseUrl}${page.route}`,
+    lastModified: new Date("2026-08-20T00:00:00.000Z"),
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
   }));
 
   const posts = getAllPosts();
   const blogRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: post.parsedDate,
-    changeFrequency: "monthly",
+    changeFrequency: "weekly",
     priority: 0.8,
   }));
 
   return [...routes, ...blogRoutes];
 }
+

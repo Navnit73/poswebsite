@@ -5,25 +5,25 @@ import FaqAccordion from "@/components/FaqAccordion";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Pricing for Pharmacies & Chains | Medishelf",
+  title: "Pharmacy POS & Inventory Software Pricing | Medishelf",
   description:
-    "Medishelf pricing: Starter at $50/mo for one store, Growth at $99/mo for up to three stores. 7-day free trial, no card required.",
+    "Transparent pharmacy software pricing: Starter at $50/mo for single store, Growth at $99/mo for up to 3 stores. Includes batch tracking, FEFO POS billing, and a 7-day free trial.",
   alternates: {
     canonical: "https://medishelf.co/pricing",
   },
   openGraph: {
     type: "website",
     siteName: "Medishelf",
-    title: "Pricing — Medishelf Pharmacy Inventory & POS",
-    description: "Plans for one store or a whole chain, starting at $50/month with a 7-day free trial.",
+    title: "Pricing — Medishelf Pharmacy Inventory & POS Software",
+    description: "Plans for single stores or pharmacy chains, starting at $50/month with a 7-day free trial.",
     url: "https://medishelf.co/pricing",
-    images: [{ url: "/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Pricing Plans" }],
+    images: [{ url: "https://medishelf.co/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Pricing Plans" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pricing — Medishelf Pharmacy Inventory & POS",
+    title: "Pricing — Medishelf Pharmacy Inventory & POS Software",
     description: "Plans for one store or a whole chain, starting at $50/month.",
-    images: ["/images/hero-pos.png"],
+    images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
 
@@ -50,7 +50,7 @@ export default function PricingPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "Pricing", item: "https://medishelf.co/pricing" },
     ],
   };
@@ -84,11 +84,14 @@ export default function PricingPage() {
           <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Pricing
           </nav>
-          <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            Priced by store, not by headache.
+          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+            SIMPLE, TRANSPARENT PRICING
+          </span>
+          <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
+            Pharmacy POS &amp; Inventory Software Pricing Plans
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-ink-soft">
-            Every plan includes batch tracking, FEFO billing and the full POS terminal. Purpose-built for small to medium size pharmacies and medical stores. Trial for 14 days, no card required.
+            Every plan includes batch tracking, FEFO billing, and the full POS terminal. Purpose-built for small to medium size pharmacies and medical stores. Start your 7-day free trial with no credit card required.
           </p>
         </div>
       </section>

@@ -31,7 +31,7 @@ export default function DemoPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "Free Trial", item: "https://medishelf.co/demo" },
     ],
   };
@@ -52,11 +52,11 @@ export default function DemoPage() {
           <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
             7-DAY FREE TRIAL
           </span>
-          <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            Start your free trial today.
+          <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
+            Try Medishelf Pharmacy Inventory &amp; POS Software Free
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            Full access to Medishelf for 7 days. No credit card required, no download needed, cancel anytime.
+            Full access to Medishelf for 7 days. Explore batch tracking, FEFO billing, and automated inventory reports with no credit card required.
           </p>
         </div>
       </section>

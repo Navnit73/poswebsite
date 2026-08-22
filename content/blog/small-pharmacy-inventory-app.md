@@ -103,4 +103,4 @@ Medishelf is built for independent pharmacies that need real inventory control w
 No IT team, no multi-location configuration, no features you'll never use — just the tools a small pharmacy actually needs to stop losing money to expired stock and missed reorders.
 
 ### Ready to Simplify Your Pharmacy's Stock?
-Explore [Medishelf Features](/pages/features.html) or [Book a Live Demo](/pages/demo.html) to see how Medishelf keeps a small pharmacy stocked, compliant, and easy to run.
+Explore [Medishelf Features](/features), check [Pricing Plans](/pricing), or [Start your 7-Day Free Trial](/demo) to see how Medishelf keeps a small pharmacy stocked, compliant, and easy to run.

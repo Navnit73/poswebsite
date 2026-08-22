@@ -4,9 +4,9 @@ import FaqAccordion from "@/components/FaqAccordion";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Pharmacy Software Case Studies | Medishelf",
+  title: "Pharmacy Software Case Studies & Store Results | Medishelf",
   description:
-    "Read how 5 small pharmacies cut expiry waste by 62%, unified multi-store stock, and trained new cashiers in one day with Medishelf pharmacy software.",
+    "Read how 5 independent pharmacies cut expiry waste by 62%, unified multi-store stock, and trained new cashiers in one day with Medishelf pharmacy software.",
   alternates: {
     canonical: "https://medishelf.co/casestudy",
   },
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     description:
       "Real stories from single counters, small chains, and dispensaries that switched to Medishelf pharmacy inventory management software.",
     url: "https://medishelf.co/casestudy",
-    images: [{ url: "/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Case Studies" }],
+    images: [{ url: "https://medishelf.co/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Case Studies" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Case Studies — How Pharmacies Transformed Stock with Medishelf",
     description: "Read real stories of independent pharmacies using Medishelf.",
-    images: ["/images/hero-pos.png"],
+    images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
 
@@ -55,9 +55,22 @@ export default function CaseStudyPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "Case Studies", item: "https://medishelf.co/casestudy" },
     ],
+  };
+
+  const jsonLdFaq = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: CASESTUDY_FAQS.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 
   return (
@@ -65,6 +78,10 @@ export default function CaseStudyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
       />
 
       {/* Header */}
@@ -74,10 +91,10 @@ export default function CaseStudyPage() {
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Case studies
           </nav>
           <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
-            REAL PHARMACIES
+            REAL PHARMACY SUCCESS STORIES
           </span>
-          <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            They switched. Here&apos;s what changed.
+          <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
+            Pharmacy Software Case Studies: How Independent Stores Scaled
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
             Five small pharmacies, five different starting points, one pharmacy inventory management system that fit all of them — from a single counter in Austin to a community clinic dispensary in Travis County.

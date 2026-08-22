@@ -60,10 +60,23 @@ export default function InventoryPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "Features", item: "https://medishelf.co/features" },
       { "@type": "ListItem", position: 3, name: "Inventory", item: "https://medishelf.co/inventory" },
     ],
+  };
+
+  const jsonLdFaq = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: INVENTORY_FAQS.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 
   return (
@@ -71,6 +84,10 @@ export default function InventoryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
       />
 
       {/* Header */}
@@ -86,13 +103,13 @@ export default function InventoryPage() {
             <span aria-hidden="true">/</span> Inventory
           </nav>
           <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
-            BUILT FOR SMALL PHARMACIES
+            PHARMACY INVENTORY &amp; BATCH MANAGEMENT
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
-            Every batch, tracked to the unit.
+            Pharmacy Inventory Management &amp; Batch Tracking Software
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-ink-soft sm:text-lg">
-            Medishelf is inventory management software built for a small pharmacy — it counts stock the way your counter actually does: by batch, by expiry, by rack, without a hospital-grade learning curve.
+            Track every medicine batch to the unit with automatic FEFO picking, 30/60/90-day expiry alerts, and real-time stock reconciliation built for independent pharmacies and medical stores.
           </p>
         </div>
       </section>

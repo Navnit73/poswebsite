@@ -33,7 +33,8 @@ export default function Header() {
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
           {NAV_ITEMS.map((item) => {
-            const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+            const currentPath = pathname || "";
+            const isActive = currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href));
             return (
               <Link
                 key={item.href}
@@ -83,7 +84,8 @@ export default function Header() {
         <div className="border-t border-line bg-paper lg:hidden">
           <nav className="flex flex-col gap-1 px-6 py-4" aria-label="Mobile">
             {NAV_ITEMS.map((item) => {
-              const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+              const currentPath = pathname || "";
+              const isActive = currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href));
               return (
                 <Link
                   key={item.href}

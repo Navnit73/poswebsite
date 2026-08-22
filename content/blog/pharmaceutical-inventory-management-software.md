@@ -80,6 +80,6 @@ Skipping this checklist often means paying for a second migration within two yea
 Medishelf is built specifically for pharmacies that need modern, fast, and reliable **pharmaceutical inventory management software**. Whether you run a single community pharmacy or manage a multi-location chain, Medishelf gives you the real-time visibility, automated reordering, and compliance tools required to protect margins and reduce risk.
 
 ### Get Started Today
-- Explore the [Complete Feature Suite](/pages/features.html)
-- Compare our [Pricing Plans](/pages/pricing.html)
-- Schedule a personalized [Product Demo](/pages/demo.html)
+- Explore the [Complete Feature Suite](/features)
+- Compare our [Pricing Plans](/pricing)
+- Start your [7-Day Free Trial](/demo)

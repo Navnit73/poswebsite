@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Pharmacy POS System & Billing Software | Medishelf",
   description:
-    "Medishelf POS terminal is built for small pharmacy counters: keyboard-driven checkout, FEFO batch selection, split payments, and server-verified pricing.",
+    "Fast, keyboard-driven pharmacy POS software & billing terminal: FEFO batch picking, split payments, barcode scanning, and instant receipt printing for small medical stores.",
   alternates: {
     canonical: "https://medishelf.co/sales",
   },
@@ -14,15 +14,15 @@ export const metadata: Metadata = {
     siteName: "Medishelf",
     title: "Pharmacy POS System & Billing Software | Medishelf",
     description:
-      "A register built for the small pharmacy counter: search, discount, checkout from the keyboard, with server-verified prices and automatic FEFO batching.",
+      "A register built for the small pharmacy counter: search, discount, and checkout from the keyboard with automatic FEFO batch selection and barcode scanning.",
     url: "https://medishelf.co/sales",
-    images: [{ url: "/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Pharmacy POS Terminal" }],
+    images: [{ url: "https://medishelf.co/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Pharmacy POS Terminal" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pharmacy POS System & Billing Software | Medishelf",
-    description: "A register built for the small pharmacy counter.",
-    images: ["/images/hero-pos.png"],
+    description: "Fast billing software built for the small pharmacy counter.",
+    images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
 
@@ -31,7 +31,7 @@ export default function SalesPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "Features", item: "https://medishelf.co/features" },
       { "@type": "ListItem", position: 3, name: "POS Terminal", item: "https://medishelf.co/sales" },
     ],
@@ -52,13 +52,13 @@ export default function SalesPage() {
             <Link href="/features" className="hover:text-brand-deep">Features</Link> <span aria-hidden="true">/</span> POS Terminal
           </nav>
           <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
-            POS TERMINAL FOR SMALL PHARMACY
+            PHARMACY POINT OF SALE &amp; BILLING
           </span>
-          <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            A register built for the small pharmacy counter.
+          <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
+            Pharmacy POS System &amp; Counter Billing Software
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            Search, add, discount, checkout — all from the keyboard. Built for the pace of a small pharmacy, where one cashier serves the whole queue and every second at the counter counts.
+            Search, add, discount, and checkout — all from the keyboard. Built for the rapid pace of a pharmacy counter, where one cashier serves the whole queue with automated FEFO batching and barcode verification.
           </p>
           <ul className="mx-auto mt-6 flex max-w-2xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-ink-soft" aria-label="Key benefits">
             <li className="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-brand"><path d="M20 6L9 17l-5-5"/></svg> No dedicated IT staff needed</li>

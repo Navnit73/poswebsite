@@ -30,8 +30,21 @@ export const metadata: Metadata = {
 export default function BlogIndexPage() {
   const posts = getAllPosts();
 
+  const jsonLdBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://medishelf.co/blog" },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
+      />
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
           <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
@@ -41,7 +54,7 @@ export default function BlogIndexPage() {
             PHARMACY MANAGEMENT ARTICLES &amp; GUIDES
           </span>
           <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            Insights for Modern Pharmacy Owners
+            Pharmacy Management &amp; Inventory Insights
           </h1>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed">
             Practical advice on reducing drug expiry write-offs, speeding up POS counters, and growing retail medicine profit margins.

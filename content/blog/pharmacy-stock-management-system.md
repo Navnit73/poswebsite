@@ -98,4 +98,4 @@ Medishelf delivers an intuitive, cloud-connected pharmacy stock management syste
 Whether you operate a single community pharmacy or a multi-location chain, Medishelf scales with your business without forcing a painful software switch down the road.
 
 ### Ready to Optimize Your Pharmacy Stock?
-Explore [Medishelf Features](/pages/features.html) or [Book a Live Demo](/pages/demo.html) today to see how our stock control system can elevate your business.
+Explore [Medishelf Features](/features), compare our [Pricing Plans](/pricing), or [Start a Free Trial](/demo) today to see how our stock control system can elevate your business.

@@ -8,25 +8,25 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Pharmacy Inventory Software & POS System | Medishelf",
   description:
-    "Medishelf is pharmacy inventory management and POS software built for small medical stores with batch tracking, FEFO billing, and low-stock alerts.",
+    "Medishelf is all-in-one pharmacy inventory management & POS software for independent pharmacies and medical stores: batch tracking, FEFO billing, and low-stock alerts.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://medishelf.co/",
+    canonical: "https://medishelf.co",
   },
   openGraph: {
     type: "website",
     siteName: "Medishelf",
     title: "Medishelf — Pharmacy Inventory Management Software with POS System",
     description:
-      "Batch and expiry tracking, FEFO billing, medicine stock management and a pharmacy point of sale system — inventory software built for how small pharmacies actually count stock.",
-    url: "https://medishelf.co/",
+      "Batch and expiry tracking, FEFO billing, medicine stock management, and a pharmacy point-of-sale system built for retail pharmacies.",
+    url: "https://medishelf.co",
     locale: "en_US",
     images: [
       {
-        url: "/images/hero-pos.png",
+        url: "https://medishelf.co/images/hero-pos.png",
         width: 1200,
         height: 630,
         alt: "Medishelf Pharmacy Software POS",
@@ -35,10 +35,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Medishelf — Pharmacy Inventory Management Software With POS System ",
+    title: "Medishelf — Pharmacy Inventory Management Software With POS System",
     description:
-      "Batch and expiry tracking, FEFO billing, medicine stock management, and a pharmacy point of sale system, built for small pharmacies.",
-    images: ["/images/hero-pos.png"],
+      "Batch and expiry tracking, FEFO billing, medicine stock management, and pharmacy point of sale built for small pharmacies.",
+    images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
 
@@ -101,52 +101,61 @@ export default function HomePage() {
     "@type": "Organization",
     "@id": "https://medishelf.co/#organization",
     name: "Medishelf Software",
-    url: "https://medishelf.co/",
+    url: "https://medishelf.co",
     logo: "https://medishelf.co/images/favicon.png",
     description:
-      "Medishelf builds pharmacy inventory management software with pos system and point-of-sale software for retail pharmacies and medical stores, covering batch tracking, FEFO billing and compliance reporting.",
+      "Medishelf builds pharmacy inventory management software and POS billing systems for independent pharmacies and medical stores, covering batch tracking, FEFO billing, and compliance reporting.",
     email: "sales@medishelf.co",
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+1-555-234-5678",
         contactType: "sales",
         email: "sales@medishelf.co",
-        areaServed: ["IN", "US"],
         availableLanguage: ["English"],
       },
       {
         "@type": "ContactPoint",
-        telephone: "+1-555-234-5678",
         contactType: "customer support",
         email: "support@medishelf.co",
-        areaServed: ["IN", "US"],
         availableLanguage: ["English"],
       },
     ],
   };
 
+  const jsonLdWebsite = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://medishelf.co/#website",
+    url: "https://medishelf.co",
+    name: "Medishelf",
+    description: "Pharmacy inventory management software and POS system for small pharmacies and medical stores.",
+    publisher: {
+      "@type": "Organization",
+      "@id": "https://medishelf.co/#organization",
+    },
+  };
+
   const jsonLdApp = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Medishelf",
+    name: "Medishelf Pharmacy POS & Inventory Software",
     publisher: {
       "@type": "Organization",
       "@id": "https://medishelf.co/#organization",
     },
     applicationCategory: "BusinessApplication",
     applicationSubCategory: "Pharmacy Inventory Management and Point of Sale Software",
-    operatingSystem: "Web",
-    url: "https://medishelf.co/",
+    operatingSystem: "Web Browser, Cloud-based",
+    url: "https://medishelf.co",
     description:
-      "Cloud-based pharmacy inventory management software with pos system and point-of-sale system for small pharmacies and medical stores, with batch and expiry tracking, FEFO billing, medicine stock management, low-stock alerts and automated reporting.",
+      "Cloud-based pharmacy inventory management software with POS billing system for independent pharmacies and medical stores, featuring batch and expiry tracking, FEFO billing, medicine stock management, low-stock alerts, and automated daily reporting.",
     offers: [
       {
         "@type": "Offer",
         name: "Starter",
         price: "50.00",
         priceCurrency: "USD",
-        priceValidUntil: "2026-12-31",
+        priceValidUntil: "2027-12-31",
         url: "https://medishelf.co/pricing",
       },
       {
@@ -154,55 +163,23 @@ export default function HomePage() {
         name: "Growth",
         price: "99.00",
         priceCurrency: "USD",
-        priceValidUntil: "2026-12-31",
+        priceValidUntil: "2027-12-31",
         url: "https://medishelf.co/pricing",
       },
     ],
   };
 
-  const jsonLdProduct = {
+  const jsonLdFaq = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    name: "Medishelf Pharmacy Software",
-    image: "https://medishelf.co/images/hero-pos.png",
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://medishelf.co/#organization",
-    },
-    description: "Pharmacy inventory and POS system",
-    brand: {
-      "@type": "Brand",
-      name: "Medishelf",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.7",
-      reviewCount: "127",
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: {
-      "@type": "Review",
-      author: {
-        "@type": "Person",
-        name: "Dr. Sarah Mitchell",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
       },
-      datePublished: "2024-01-15",
-      reviewBody:
-        "Medishelf transformed our pharmacy operations. Batch tracking and FEFO billing save us hours every week. The POS is intuitive and staff learned it in hours.",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-      },
-    },
-    offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "USD",
-      lowPrice: "50",
-      highPrice: "99",
-      offerCount: "2",
-    },
+    })),
   };
 
   return (
@@ -213,11 +190,15 @@ export default function HomePage() {
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebsite) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdApp) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
       />
 
       {/* HERO SECTION */}

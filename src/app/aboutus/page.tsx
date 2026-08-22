@@ -3,9 +3,9 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "About Us | Medishelf Pharmacy Software",
+  title: "About Medishelf | Pharmacy Inventory & POS Software",
   description:
-    "Learn about Medishelf: built by people who've counted tablets to give independent pharmacies and medical stores software that actually fits.",
+    "Learn about Medishelf: dedicated pharmacy inventory management and POS software built by pharmacists for independent medical stores and small retail chains.",
   alternates: {
     canonical: "https://medishelf.co/aboutus",
   },
@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     title: "About Us — Medishelf Pharmacy Inventory & POS",
     description: "Built for independent and small-chain pharmacies.",
     url: "https://medishelf.co/aboutus",
-    images: [{ url: "/images/hero-pos.png", width: 1200, height: 630, alt: "About Medishelf" }],
+    images: [{ url: "https://medishelf.co/images/hero-pos.png", width: 1200, height: 630, alt: "About Medishelf" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About Us — Medishelf Pharmacy Inventory & POS",
     description: "Built for independent and small-chain pharmacies.",
-    images: ["/images/hero-pos.png"],
+    images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
 
@@ -30,7 +30,7 @@ export default function AboutUsPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "About Us", item: "https://medishelf.co/aboutus" },
     ],
   };
@@ -49,13 +49,13 @@ export default function AboutUsPage() {
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> About us
           </nav>
           <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
-            OUR STORY
+            OUR STORY &amp; MISSION
           </span>
-          <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            Built by people who&apos;ve counted tablets.
+          <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
+            About Medishelf: Pharmacy Software Built by Pharmacists
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            Medishelf started because small to medium independent pharmacies &amp; medical stores were tracking expiry dates on whiteboards or notebooks. We thought software could do better.
+            Medishelf started because independent pharmacies and medical stores were tracking drug expiry dates on whiteboards or paper ledgers. We built purpose-fit software to protect pharmacy margins.
           </p>
         </div>
       </section>

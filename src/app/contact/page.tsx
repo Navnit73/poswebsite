@@ -3,9 +3,9 @@ import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Sales & Support | Medishelf Pharmacy Software",
+  title: "Contact Medishelf | Pharmacy Software Support & Sales",
   description:
-    "Have questions about batch tracking, pricing, or setting up your store? Contact the Medishelf team — we reply within one business day.",
+    "Have questions about batch tracking, pricing, or setting up your store? Contact the Medishelf pharmacy software team — we reply within one business day.",
   alternates: {
     canonical: "https://medishelf.co/contact",
   },
@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     description:
       "Talk to someone who knows pharmacy operations. Fast support and sales assistance for your medical store.",
     url: "https://medishelf.co/contact",
-    images: [{ url: "/images/hero-pos.png", width: 1200, height: 630, alt: "Contact Medishelf Support" }],
+    images: [{ url: "https://medishelf.co/images/hero-pos.png", width: 1200, height: 630, alt: "Contact Medishelf Support" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Sales & Support — Medishelf Pharmacy POS",
     description: "Talk to someone who knows pharmacy operations.",
-    images: ["/images/hero-pos.png"],
+    images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
 
@@ -31,7 +31,7 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "Contact", item: "https://medishelf.co/contact" },
     ],
   };
@@ -52,11 +52,11 @@ export default function ContactPage() {
           <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
             WE&apos;RE HERE TO HELP
           </span>
-          <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            Talk to someone who knows pharmacy.
+          <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
+            Contact Medishelf Pharmacy Software Support &amp; Sales
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            Have questions about batch tracking, pricing, or setting up your store? Drop us a note — our team replies within one business day.
+            Have questions about batch tracking, pricing, migration, or setting up your medical store? Drop us a note — our pharmacy specialists reply quickly.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

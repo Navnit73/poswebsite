@@ -3,26 +3,26 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Pharmacy Inventory Software Features | Medishelf",
+  title: "Pharmacy POS & Inventory Software Features | Medishelf",
   description:
-    "Explore Medishelf's modules: batch/expiry tracking, FEFO billing, a fast POS terminal, customer loyalty, RBAC, audit logs, and automated reports.",
+    "Explore Medishelf's complete pharmacy software features: batch and expiry tracking, fast FEFO POS billing terminal, customer loyalty, RBAC, and automated sales reports.",
   alternates: {
     canonical: "https://medishelf.co/features",
   },
   openGraph: {
     type: "website",
     siteName: "Medishelf",
-    title: "Features — Medishelf Pharmacy Inventory Management Software",
+    title: "Features — Medishelf Pharmacy Inventory Management & POS Software",
     description:
-      "Batch tracking, FEFO billing, a pharmacy POS terminal, RBAC, customer loyalty, audit logs and automated reports — every module in Medishelf.",
+      "Batch tracking, FEFO billing, pharmacy POS terminal, RBAC, customer loyalty, audit logs, and automated reports — every module in Medishelf.",
     url: "https://medishelf.co/features",
-    images: [{ url: "/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Features Overview" }],
+    images: [{ url: "https://medishelf.co/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Features Overview" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Features — Medishelf Pharmacy Inventory Management Software",
     description: "Every module inside Medishelf, from batch tracking to daily PDF reports.",
-    images: ["/images/hero-pos.png"],
+    images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
 
@@ -31,7 +31,7 @@ export default function FeaturesPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "Features", item: "https://medishelf.co/features" },
     ],
   };
@@ -39,16 +39,17 @@ export default function FeaturesPage() {
   const jsonLdItemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Medishelf pharmacy inventory management software modules",
+    name: "Medishelf Pharmacy Inventory Management & POS System Modules",
+    description: "Comprehensive software modules built for independent pharmacies and medical stores.",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Pharmaceutical product data" },
-      { "@type": "ListItem", position: 2, name: "Batch & expiry tracking" },
-      { "@type": "ListItem", position: 3, name: "POS terminal" },
-      { "@type": "ListItem", position: 4, name: "Customer accounts & loyalty" },
-      { "@type": "ListItem", position: 5, name: "Role-based access control" },
-      { "@type": "ListItem", position: 6, name: "Reports & analytics" },
-      { "@type": "ListItem", position: 7, name: "Audit logging" },
-      { "@type": "ListItem", position: 8, name: "Security & multi-store isolation" },
+      { "@type": "ListItem", position: 1, name: "Pharmaceutical Product & Master Data" },
+      { "@type": "ListItem", position: 2, name: "Batch, Expiry & FEFO Inventory Tracking" },
+      { "@type": "ListItem", position: 3, name: "High-Speed Pharmacy POS Terminal" },
+      { "@type": "ListItem", position: 4, name: "Customer Accounts & Loyalty Management" },
+      { "@type": "ListItem", position: 5, name: "Role-Based Access Control (RBAC)" },
+      { "@type": "ListItem", position: 6, name: "Automated Sales Reports & Analytics" },
+      { "@type": "ListItem", position: 7, name: "Full Audit Trail & Compliance Logging" },
+      { "@type": "ListItem", position: 8, name: "Multi-Store Isolation & Cloud Security" },
     ],
   };
 
@@ -70,13 +71,13 @@ export default function FeaturesPage() {
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Features
           </nav>
           <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
-            BUILT FOR SMALL &amp; MEDIUM PHARMACIES &amp; MEDICAL STORES
+            COMPLETE PHARMACY SOFTWARE MODULES
           </span>
-          <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            Eight modules. One pharmacy.
+          <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
+            Pharmacy POS &amp; Inventory Software Features
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            From the rack number on a bottle of syrup to end-of-day sales reports — purpose-built for small to medium size pharmacies and medical stores.
+            Eight essential modules engineered for independent pharmacies and medical stores — from rack-level lot tracking to fast counter checkout and audit-ready reports.
           </p>
         </div>
       </section>

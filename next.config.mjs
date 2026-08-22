@@ -38,6 +38,56 @@ const nextConfig = {
         destination: '/:path',
         permanent: true,
       },
+      {
+        source: '/refund-policy',
+        destination: '/refundPolicy',
+        permanent: true,
+      },
+      {
+        source: '/refundpolicy',
+        destination: '/refundPolicy',
+        permanent: true,
+      },
+      {
+        source: '/terms',
+        destination: '/tmc',
+        permanent: true,
+      },
+      {
+        source: '/terms-and-conditions',
+        destination: '/tmc',
+        permanent: true,
+      },
+      {
+        source: '/case-studies',
+        destination: '/casestudy',
+        permanent: true,
+      },
+      {
+        source: '/case-study',
+        destination: '/casestudy',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/aboutus',
+        permanent: true,
+      },
+      {
+        source: '/about-us',
+        destination: '/aboutus',
+        permanent: true,
+      },
+      {
+        source: '/trial',
+        destination: '/demo',
+        permanent: true,
+      },
+      {
+        source: '/pos',
+        destination: '/sales',
+        permanent: true,
+      },
     ];
   },
 };

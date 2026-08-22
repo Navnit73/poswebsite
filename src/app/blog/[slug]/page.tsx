@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: post.title,
+    title: `${post.title} | Medishelf Blog`,
     description: post.metaDescription,
     alternates: {
       canonical: `https://medishelf.co/blog/${post.slug}`,
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://medishelf.co/blog/${post.slug}`,
       images: [
         {
-          url: "/images/hero-pos.png",
+          url: "https://medishelf.co/images/hero-pos.png",
           width: 1200,
           height: 630,
           alt: post.title,
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: "summary_large_image",
       title: post.title,
       description: post.metaDescription,
-      images: ["/images/hero-pos.png"],
+      images: ["https://medishelf.co/images/hero-pos.png"],
     },
   };
 }
@@ -65,8 +65,10 @@ export default function BlogPostPage({ params }: PageProps) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.metaDescription,
+    image: ["https://medishelf.co/images/hero-pos.png"],
     datePublished: post.parsedDate.toISOString(),
     dateModified: post.parsedDate.toISOString(),
+    articleSection: post.category,
     author: {
       "@type": "Organization",
       name: "Medishelf Editorial Team",
@@ -78,6 +80,8 @@ export default function BlogPostPage({ params }: PageProps) {
       logo: {
         "@type": "ImageObject",
         url: "https://medishelf.co/images/favicon.png",
+        width: 60,
+        height: 60,
       },
     },
     mainEntityOfPage: {
@@ -90,7 +94,7 @@ export default function BlogPostPage({ params }: PageProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medishelf.co" },
       { "@type": "ListItem", position: 2, name: "Blog", item: "https://medishelf.co/blog" },
       { "@type": "ListItem", position: 3, name: post.title, item: `https://medishelf.co/blog/${post.slug}` },
     ],
