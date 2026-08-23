@@ -9,7 +9,7 @@ readTime: 10
 
 Managing medication stock is nothing like managing standard retail inventory. Pharmacies juggle strict regulatory requirements, perishable products with rolling expiration dates, batch and lot numbers, controlled substances, and demand that swings with every flu season. One missed expiry date or misplaced narcotic log can cost a pharmacy far more than lost revenue — it can cost a license.
 
-A dedicated **pharmacy stock management system** solves these problems at the root. This guide explains how modern systems work, which challenges they eliminate, and what to prioritize when you choose one.
+A dedicated **[pharmacy stock management system](/)** solves these problems at the root. This guide explains how modern systems work, which challenges they eliminate, and what to prioritize when you choose one.
 
 ---
 
@@ -93,9 +93,9 @@ Pharmacies that follow this sequence typically see measurable ROI within the fir
 
 ## Why Modern Pharmacies Trust Medishelf
 
-Medishelf delivers an intuitive, cloud-connected pharmacy stock management system built specifically for retail and hospital pharmacies. It combines automated FEFO dispatch guidance, electronic supplier ordering, and real-time inventory visibility in a single platform. Pharmacy teams using Medishelf spend less time managing shelves and counting stock, and more time caring for patients.
+[Medishelf](/) delivers an intuitive, cloud-connected **[small pharmacy inventory software](/)** and stock management platform built specifically for retail, chemist, and independent community pharmacies. It combines automated FEFO dispatch guidance, electronic supplier ordering, and real-time inventory visibility in a single unified POS interface. Pharmacy teams using Medishelf spend less time managing shelves and counting stock, and more time caring for patients.
 
 Whether you operate a single community pharmacy or a multi-location chain, Medishelf scales with your business without forcing a painful software switch down the road.
 
 ### Ready to Optimize Your Pharmacy Stock?
-Explore [Medishelf Features](/features), compare our [Pricing Plans](/pricing), or [Start a Free Trial](/demo) today to see how our stock control system can elevate your business.
+Visit [Medishelf Home](/), explore [Medishelf Features](/features), compare our [Pricing Plans](/pricing), or [Start a Free Trial](/demo) today to see how our stock control system can elevate your business.

@@ -112,7 +112,7 @@ export default function BlogPostPage({ params }: PageProps) {
       />
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70 mb-4">
+          <nav aria-label="Breadcrumb" className="label-tag mb-4 text-xs text-ink-soft/70">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span>{" "}
             <Link href="/blog" className="hover:text-brand-deep">Blog</Link> <span aria-hidden="true">/</span> {post.category}
           </nav>
@@ -137,12 +137,52 @@ export default function BlogPostPage({ params }: PageProps) {
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
 
-          <div className="mt-16 pt-8 border-t border-line flex items-center justify-between">
+          {/* Contextual Product Box linking back to Homepage and Trial */}
+          <div className="mt-14 rounded-xl border border-line bg-paper p-6 sm:p-8">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <span className="label-tag text-xs font-semibold text-brand-deep">
+                  ABOUT MEDISHELF
+                </span>
+                <h3 className="mt-1 font-display text-lg font-bold text-ink sm:text-xl">
+                  Simple Pharmacy Inventory Software &amp; POS
+                </h3>
+                <p className="mt-2 text-sm text-ink-soft leading-relaxed">
+                  <Link href="/" className="font-semibold text-brand hover:underline">
+                    Medishelf
+                  </Link>{" "}
+                  helps small and independent pharmacies manage batch expiry dates, FEFO counter sales, supplier purchases, and stock reports without hospital-scale complexity.
+                </p>
+              </div>
+              <div className="flex shrink-0 gap-2.5 sm:flex-col">
+                <Link
+                  href="/"
+                  className="btn-focus rounded-lg border border-line bg-surface px-4 py-2 text-center text-xs font-semibold text-ink transition hover:border-brand/40"
+                >
+                  Explore Medishelf
+                </Link>
+                <Link
+                  href="/demo"
+                  className="btn-focus rounded-lg bg-brand px-4 py-2 text-center text-xs font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+                >
+                  Start Free Trial
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 flex items-center justify-between border-t border-line pt-8">
             <Link
               href="/blog"
               className="inline-flex items-center gap-2 font-display text-sm font-semibold text-brand hover:text-brand-deep"
             >
               ← Back to All Blog Posts
+            </Link>
+            <Link
+              href="/"
+              className="font-display text-sm font-semibold text-ink-soft hover:text-ink"
+            >
+              Medishelf Home →
             </Link>
           </div>
         </article>

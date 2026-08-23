@@ -9,7 +9,7 @@ readTime: 9
 
 In retail merchandising and general warehousing, **FIFO (First-In, First-Out)** is the standard operating procedure. Goods that arrive first at the loading dock are placed at the front of the shelf to be sold first.
 
-However, in **pharmacy inventory management**, blindly following FIFO is one of the most expensive mistakes a store owner can make. In a pharmaceutical setting, the arrival date of a drug shipment often has very little to do with when that medication will expire.
+However, in **[pharmacy inventory management](/)**, blindly following FIFO is one of the most expensive mistakes a store owner can make. In a pharmaceutical setting, the arrival date of a drug shipment often has very little to do with when that medication will expire.
 
 To protect profit margins and patient safety, retail pharmacies and medical dispensaries must use **FEFO (First-Expiry, First-Out)**.
 
@@ -71,13 +71,14 @@ Independent pharmacies operating without automated FEFO systems write off betwee
 
 ## Enforce Automated FEFO with Medishelf
 
-Medishelf is built from the ground up to enforce **First-Expiry, First-Out (FEFO)** workflows at every stage:
+[Medishelf](/) is **[small pharmacy inventory software](/)** built from the ground up to enforce **First-Expiry, First-Out (FEFO)** workflows at every stage:
 
 - **Receiving**: Automatically validates batch codes and expiration dates.
 - **POS Terminal**: Recommends the nearest-expiry batch on every prescription search.
 - **Dashboard Alerts**: Proactively notifies managers of stock expiring in 30, 60, or 90 days.
 
 ### Eliminate Expiry Losses Today
+- Visit [Medishelf Home](/)
 - Learn more about [Medishelf Inventory Features](/inventory)
 - Compare our simple [Pricing Plans](/pricing)
 - Start your [7-Day Free Trial](/demo) with no credit card required

@@ -73,13 +73,13 @@ Run monthly stock velocity reports to identify:
 
 ## 7. Adopt Cloud-Based Pharmacy Inventory Software
 
-Relying on physical paper registers or unlinked spreadsheets creates blind spots. Modern cloud-based pharmacy software unifies inward stock receiving, counter POS billing, supplier purchase orders, and profit-and-loss analytics into a single dashboard accessible from desktop or mobile.
+Relying on physical paper registers or unlinked spreadsheets creates blind spots. Modern cloud-based **[pharmacy software for small business](/)** unifies inward stock receiving, counter POS billing, supplier purchase orders, and profit-and-loss analytics into a single dashboard accessible from desktop or mobile.
 
 ---
 
 ## Why Chemist Shops Choose Medishelf
 
-Medishelf is purpose-built for independent medical stores and community pharmacies that need powerful stock control without bloated complexity:
+[Medishelf](/) is **[small pharmacy inventory software](/)** purpose-built for independent medical stores and community pharmacies that need powerful stock control without bloated complexity:
 
 - **Automated Reordering**: Never run out of fast-moving prescription medicines.
 - **Batch & Expiry Controls**: Enforces FEFO picking and triggers 30/60/90-day expiry notifications.
@@ -87,6 +87,7 @@ Medishelf is purpose-built for independent medical stores and community pharmaci
 - **Multi-Store Visibility**: Manage multiple counters and branches from one account.
 
 ### Ready to Upgrade Your Medical Store?
+- Learn more on the [Medishelf Home](/) page
 - Explore [Medishelf Pharmacy Features](/features)
 - See how other stores succeed in our [Case Studies](/casestudy)
 - Start your [7-Day Free Trial](/demo) today

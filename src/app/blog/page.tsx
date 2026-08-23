@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pharmacy Software & Inventory Management Blog | Medishelf",
     description: "Guides, insights, and practical tips on pharmaceutical stock management.",
-    images: ["/images/hero-pos.png"],
+    images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
 
@@ -56,9 +56,45 @@ export default function BlogIndexPage() {
           <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
             Pharmacy Management &amp; Inventory Insights
           </h1>
-          <p className="mt-4 text-lg text-ink-soft leading-relaxed">
-            Practical advice on reducing drug expiry write-offs, speeding up POS counters, and growing retail medicine profit margins.
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-soft leading-relaxed">
+            Practical advice, strategies, and industry guides on using{" "}
+            <Link href="/" className="font-semibold text-brand hover:underline">
+              small pharmacy inventory software
+            </Link>{" "}
+            to stop expiry write-offs, speed up counter checkout, and grow retail dispensary profit margins.
           </p>
+        </div>
+      </section>
+
+      {/* Featured Callout Banner linking to Homepage */}
+      <section className="border-b border-line bg-paper py-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-center sm:flex-row sm:text-left lg:px-10">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand-deep">
+              Looking for modern pharmacy software?
+            </p>
+            <p className="mt-1 text-sm text-ink-soft">
+              Discover how{" "}
+              <Link href="/" className="font-semibold text-ink hover:text-brand">
+                Medishelf&apos;s all-in-one pharmacy inventory &amp; POS software
+              </Link>{" "}
+              helps small independent pharmacies manage stock, batch expiry, and counter sales.
+            </p>
+          </div>
+          <div className="flex shrink-0 gap-3">
+            <Link
+              href="/"
+              className="btn-focus rounded-lg border border-line bg-surface px-4 py-2 text-xs font-semibold text-ink transition hover:border-brand/40"
+            >
+              Explore Medishelf Home
+            </Link>
+            <Link
+              href="/demo"
+              className="btn-focus rounded-lg bg-brand px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+            >
+              Start Free Trial
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -100,6 +136,46 @@ export default function BlogIndexPage() {
               ))}
             </div>
           )}
+
+          {/* Bottom internal linking block */}
+          <div className="mt-20 rounded-2xl border border-line bg-surface p-8 text-center sm:p-12">
+            <h2 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+              Take Control of Your Pharmacy Inventory Today
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft sm:text-base">
+              Learn why hundreds of community chemists and independent drugstores choose{" "}
+              <Link href="/" className="font-semibold text-brand hover:underline">
+                Medishelf small pharmacy inventory software
+              </Link>{" "}
+              to eliminate expired stock, speed up customer billing, and keep shelf counts 100% accurate.
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link
+                href="/"
+                className="btn-focus rounded-lg border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
+              >
+                Learn About Medishelf
+              </Link>
+              <Link
+                href="/inventory"
+                className="btn-focus rounded-lg border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
+              >
+                Inventory Module
+              </Link>
+              <Link
+                href="/sales"
+                className="btn-focus rounded-lg border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
+              >
+                POS Billing Terminal
+              </Link>
+              <Link
+                href="/demo"
+                className="btn-focus rounded-lg bg-brand px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+              >
+                Start 7-Day Free Trial
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>

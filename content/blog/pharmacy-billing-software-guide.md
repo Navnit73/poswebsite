@@ -9,7 +9,7 @@ readTime: 8
 
 In a busy retail pharmacy or neighborhood chemist shop, the checkout counter is where customer loyalty is won or lost. Customers picking up urgent prescriptions, painkillers, or pediatric antibiotics do not want to wait in a slow-moving line while a cashier manually searches through thousands of similarly named drug molecules.
 
-Choosing dedicated **pharmacy billing software** transforms the checkout experience. Unlike generic retail point-of-sale systems, pharmacy-specific billing tools are engineered around drug schedules, batch numbers, expiry dates, and regulatory invoice requirements.
+Choosing dedicated **[pharmacy billing and inventory software](/)** transforms the checkout experience. Unlike generic retail point-of-sale systems, pharmacy-specific billing tools are engineered around drug schedules, batch numbers, expiry dates, and regulatory invoice requirements.
 
 ---
 
@@ -76,9 +76,10 @@ Pharmacy invoices must clearly display:
 
 ## Transform Your Counter with Medishelf POS
 
-Medishelf delivers a lightning-fast, keyboard-driven **pharmacy POS and billing system** built specifically for independent chemists and small retail pharmacies. With automated FEFO lot selection, barcode verification, customer loyalty tracking, and instant tax-compliant receipts, Medishelf keeps your checkout queue moving smoothly.
+[Medishelf](/) delivers a lightning-fast, keyboard-driven **[small pharmacy POS software](/)** and inventory billing system built specifically for independent chemists and small retail pharmacies. With automated FEFO lot selection, barcode verification, customer loyalty tracking, and instant tax-compliant receipts, Medishelf keeps your checkout queue moving smoothly.
 
 ### Take the Next Step
+- Visit the [Medishelf Homepage](/)
 - Explore our [POS Terminal Features](/sales)
 - Check our transparent [Pricing Plans](/pricing)
 - Start your [7-Day Free Trial](/demo) today

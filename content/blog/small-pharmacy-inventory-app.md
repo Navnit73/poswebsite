@@ -9,7 +9,7 @@ readTime: 9
 
 Running a small pharmacy comes with all the regulatory weight of a large chain — batch tracking, expiry compliance, controlled-substance logs — but almost none of the staff or budget to manage it. A single owner-pharmacist is often the buyer, the counter staff, the compliance officer, and the inventory clerk all at once. When stock is tracked on paper or in a basic spreadsheet, something eventually slips: a batch that expires unnoticed, a bestseller that runs out on a Friday afternoon, or a narcotic count that doesn't add up at month-end.
 
-A **small pharmacy inventory** system built for independent stores — not scaled-down hospital software — solves this without adding staff or complexity. This guide covers what these systems do, the problems they fix, and what to look for if you're evaluating one.
+A **[small pharmacy inventory software](/)** system built for independent stores — not scaled-down hospital software — solves this without adding staff or complexity. This guide covers what these systems do, the problems they fix, and what to look for if you're evaluating one.
 
 ---
 
@@ -98,9 +98,9 @@ Most independent pharmacies are fully comfortable with a new system within a wee
 
 ## Why Small Pharmacies Choose Medishelf
 
-Medishelf is built for independent pharmacies that need real inventory control without hospital-scale complexity or cost. It combines automated expiry alerts, FEFO dispensing guidance, low-stock reorder notifications, and a digital controlled-substance register — all in one simple platform a single pharmacist can set up and run.
+[Medishelf](/) is **[small pharmacy inventory software](/)** built for independent pharmacies that need real inventory control without hospital-scale complexity or cost. It combines automated expiry alerts, FEFO dispensing guidance, low-stock reorder notifications, and a digital controlled-substance register — all in one simple platform a single pharmacist can set up and run.
 
 No IT team, no multi-location configuration, no features you'll never use — just the tools a small pharmacy actually needs to stop losing money to expired stock and missed reorders.
 
 ### Ready to Simplify Your Pharmacy's Stock?
-Explore [Medishelf Features](/features), check [Pricing Plans](/pricing), or [Start your 7-Day Free Trial](/demo) to see how Medishelf keeps a small pharmacy stocked, compliant, and easy to run.
+Visit the [Medishelf Home](/) page, explore [Medishelf Features](/features), check [Pricing Plans](/pricing), or [Start your 7-Day Free Trial](/demo) to see how Medishelf keeps a small pharmacy stocked, compliant, and easy to run.
