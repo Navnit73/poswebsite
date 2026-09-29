@@ -98,6 +98,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "3XjoEqReVrnGX9iKD4QlDZDWQSHeC19u6NcsmQcD00U",
+    other: {
+      "msvalidate.01": "6BFE4F80CD650E2E0CA99EA3C6C7664F",
+    },
   },
 };
 
