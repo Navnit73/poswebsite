@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import PolicyShell, { PolicySection, CheckList, Callout, DataTable, linkClass } from "@/components/PolicyShell";
+import PolicyShell, { PolicySection, CheckList, DataTable, linkClass } from "@/components/PolicyShell";
 
 const TITLE = "Support & Service Levels (SLA)";
 const DESCRIPTION =
-  "Medishelf support channels, response-time targets by plan and severity, 99.9% uptime target, planned maintenance, escalation path and onboarding help for pharmacies.";
+  "Medishelf support channels, response-time targets by severity, 99.9% uptime target, planned maintenance, escalation path and onboarding help for pharmacies.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const TOC = [
   { id: "channels", label: "How to reach us" },
-  { id: "plans", label: "Support by plan" },
+  { id: "plans", label: "What's included" },
   { id: "severity", label: "Severity & response targets" },
   { id: "uptime", label: "Uptime & maintenance" },
   { id: "onboarding", label: "Onboarding & migration" },
@@ -35,7 +35,7 @@ export default function SupportPage() {
       toc={TOC}
       highlights={[
         { title: "Humans only", text: "Every reply comes from a person on our team — never a bot." },
-        { title: "< 1 business day", text: "First-response commitment on every plan, including Starter." },
+        { title: "< 1 business day", text: "First-response commitment for every customer." },
         { title: "99.9% uptime target", text: "Planned maintenance announced in advance, outside trading hours." },
         { title: "Free onboarding", text: "Help importing your catalogue and opening stock at no extra cost." },
       ]}
@@ -46,28 +46,25 @@ export default function SupportPage() {
           head={["Channel", "Best for", "Details"]}
           rows={[
             ["Email", "Everything — how-to, bugs, billing, refunds", <a key="e" href="mailto:support@medishelf.co" className={linkClass}>support@medishelf.co</a>],
-            ["Contact form", "Sales, demos, enterprise questions", <Link key="c" href="/contact" className={linkClass}>medishelf.co/contact</Link>],
-            ["Phone", "Urgent issues for Enterprise customers", "Direct line shared with your account manager"],
+            ["Contact form", "Sales and demo questions", <Link key="c" href="/contact" className={linkClass}>medishelf.co/contact</Link>],
             ["Security", "Reporting a vulnerability", <a key="s" href="mailto:security@medishelf.co" className={linkClass}>security@medishelf.co</a>],
           ]}
         />
         <p>Business hours are Monday to Friday, 9:00–18:00 US Central Time. Critical counter-down issues are monitored outside business hours.</p>
       </PolicySection>
 
-      <PolicySection id="plans" number={2} title="Support by plan">
+      <PolicySection id="plans" number={2} title="What's included">
         <DataTable
-          caption="Support included by plan"
-          head={["", "Starter", "Growth", "Enterprise"]}
+          caption="Support included with every account"
+          head={["", "Included"]}
           rows={[
-            ["Channel", "Email", "Priority email", "Email + phone"],
-            ["First response", "Within 1 business day", "Within 4 business hours", "Within 1 hour (critical)"],
-            ["Onboarding help", "Guided setup + import", "Guided setup + import", "Dedicated onboarding"],
-            ["Account manager", "—", "—", "Dedicated manager"],
-            ["Formal uptime SLA", "—", "—", "Available with service credits"],
+            ["Channel", "Email"],
+            ["First response", "Within 1 business day (1 hour for critical issues)"],
+            ["Onboarding help", "Guided setup + import"],
           ]}
         />
         <p>
-          See full plan details on our <Link href="/pricing" className={linkClass}>pricing page</Link>.
+          See what the $49/month plan includes on our <Link href="/pricing" className={linkClass}>pricing page</Link>.
         </p>
       </PolicySection>
 
@@ -94,9 +91,6 @@ export default function SupportPage() {
             "During an incident, we email account owners with updates until it's resolved, followed by a short written summary.",
           ]}
         />
-        <Callout title="Enterprise SLA">
-          Enterprise agreements can include a contractual uptime commitment with service credits if we miss it. <Link href="/contact" className={linkClass}>Talk to sales</Link> for terms.
-        </Callout>
       </PolicySection>
 
       <PolicySection id="onboarding" number={5} title="Onboarding & migration">
@@ -117,7 +111,7 @@ export default function SupportPage() {
           items={[
             "Repairing your own hardware, network or printers (we'll gladly help confirm compatible devices).",
             "Clinical, legal, regulatory or tax advice — see our Disclaimer.",
-            "Custom development or integrations outside an Enterprise agreement.",
+            "Custom development or integrations.",
           ]}
         />
       </PolicySection>

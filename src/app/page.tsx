@@ -143,24 +143,14 @@ export default function HomePage() {
     url: "https://medishelf.co/",
     description:
       "Cloud-based small pharmacy inventory software and POS billing system for independent pharmacies and medical stores. Features batch and expiry tracking, FEFO billing, medicine stock management, low-stock alerts, and automated sales reporting.",
-    offers: [
-      {
-        "@type": "Offer",
-        name: "Starter",
-        price: "50.00",
-        priceCurrency: "USD",
-        priceValidUntil: "2027-12-31",
-        url: "https://medishelf.co/pricing",
-      },
-      {
-        "@type": "Offer",
-        name: "Growth",
-        price: "99.00",
-        priceCurrency: "USD",
-        priceValidUntil: "2027-12-31",
-        url: "https://medishelf.co/pricing",
-      },
-    ],
+    offers: {
+      "@type": "Offer",
+      name: "Medishelf",
+      price: "49.00",
+      priceCurrency: "USD",
+      priceValidUntil: "2027-12-31",
+      url: "https://medishelf.co/pricing",
+    },
   };
 
   const jsonLdFaq = {
@@ -273,7 +263,7 @@ export default function HomePage() {
                 >
                   <path d="M20 6L9 17l-5-5" />
                 </svg>
-                Plans from $50/month
+                $49/month, everything included
               </span>
             </div>
           </div>
@@ -1172,60 +1162,33 @@ export default function HomePage() {
               Transparent Pricing Built for Small Pharmacies
             </h2>
             <p className="mt-3 text-ink-soft">
-              No setup fees, no per-transaction charges, and no long-term contracts. Start with a 7-day free trial.
+              One plan at $49 a month. No setup fees, no per-transaction charges, and no long-term contracts.
             </p>
           </ScrollReveal>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-surface p-7">
-              <h3 className="font-display font-semibold text-ink">Starter</h3>
-              <p className="mt-3 font-display text-3xl font-bold text-ink">
-                $50<span className="text-base font-normal text-ink-soft">/mo</span>
-              </p>
-              <p className="mt-1 text-sm text-ink-soft">
-                Ideal for a single-counter pharmacy inventory setup with up to 3 staff logins.
-              </p>
+          <ScrollReveal className="mx-auto mt-10 max-w-md rounded-[var(--radius-card)] border-2 border-brand bg-surface p-7 text-center">
+            <h3 className="font-display font-semibold text-ink">Medishelf</h3>
+            <p className="mt-3 font-display text-4xl font-bold text-ink">
+              $49<span className="text-base font-normal text-ink-soft">/month</span>
+            </p>
+            <p className="mt-2 text-sm text-ink-soft">
+              One plan with every feature: batch &amp; expiry tracking, FEFO billing, POS, all reports and unlimited staff logins.
+            </p>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="https://core.medishelf.co/auth/register"
+                className="btn-focus flex-1 rounded-full bg-brand py-2.5 text-center text-sm font-semibold text-white transition hover:bg-brand-deep"
+              >
+                Register
+              </a>
               <Link
                 href="/pricing"
-                className="btn-focus mt-6 block rounded-lg border border-line py-2.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40"
+                className="btn-focus flex-1 rounded-full border border-line py-2.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40"
               >
-                View Plan Details
+                See what&apos;s included
               </Link>
-            </ScrollReveal>
-
-            <ScrollReveal className="relative rounded-[var(--radius-card)] border-2 border-brand bg-surface p-7">
-              <span className="label-tag absolute -top-3 left-7 rounded-full bg-brand px-2.5 py-1 text-[11px] font-semibold text-white">
-                Most Popular
-              </span>
-              <h3 className="font-display font-semibold text-ink">Growth</h3>
-              <p className="mt-3 font-display text-3xl font-bold text-ink">
-                $99<span className="text-base font-normal text-ink-soft">/mo</span>
-              </p>
-              <p className="mt-1 text-sm text-ink-soft">
-                Up to 3 store locations, unlimited staff accounts, and consolidated sales reporting.
-              </p>
-              <Link
-                href="/demo"
-                className="btn-focus mt-6 block rounded-full bg-brand py-2.5 text-center text-sm font-semibold text-white transition hover:bg-brand-deep"
-              >
-                Start free trial
-              </Link>
-            </ScrollReveal>
-
-            <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-surface p-7">
-              <h3 className="font-display font-semibold text-ink">Enterprise</h3>
-              <p className="mt-3 font-display text-3xl font-bold text-ink">Custom</p>
-              <p className="mt-1 text-sm text-ink-soft">
-                For pharmacy chains with 10+ locations needing custom integrations, dedicated onboarding, and SLA.
-              </p>
-              <Link
-                href="/pricing"
-                className="btn-focus mt-6 block rounded-lg border border-line py-2.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40"
-              >
-                Contact Sales
-              </Link>
-            </ScrollReveal>
-          </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

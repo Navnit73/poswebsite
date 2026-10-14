@@ -251,6 +251,10 @@ export default function DemoForm() {
           <p className="text-center text-xs text-ink-soft">
             By signing up you agree to our <Link href="/tmc" className="underline hover:text-brand-deep">Terms</Link> and <Link href="/privacy" className="underline hover:text-brand-deep">Privacy Policy</Link>.
           </p>
+
+          <p className="text-center text-sm text-ink-soft">
+            Prefer to create your account directly? <a href="https://core.medishelf.co/auth/register" className="font-semibold text-brand-deep hover:underline">Sign up</a>
+          </p>
         </form>
       )}
 

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import PricingToggle from "@/components/PricingToggle";
+import PricingPlan from "@/components/PricingPlan";
 import FaqAccordion from "@/components/FaqAccordion";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Pharmacy POS & Inventory Software Pricing | Medishelf",
   description:
-    "Transparent pharmacy software pricing: Starter at $50/mo for single store, Growth at $99/mo for up to 3 stores. Includes batch tracking, FEFO POS billing, and a 7-day free trial.",
+    "Simple pharmacy software pricing: one plan at $49/month with everything included — batch tracking, FEFO POS billing, reports and unlimited staff.",
   alternates: {
     canonical: "https://medishelf.co/pricing",
   },
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Medishelf",
     title: "Pricing — Medishelf Pharmacy Inventory & POS Software",
-    description: "Plans for single stores or pharmacy chains, starting at $50/month with a 7-day free trial.",
+    description: "One simple plan at $49/month with every feature included.",
     url: "https://medishelf.co/pricing",
-    images: [{ url: "https://medishelf.co/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Pricing Plans" }],
+    images: [{ url: "https://medishelf.co/images/hero-pos.png", width: 1200, height: 630, alt: "Medishelf Pricing" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pricing — Medishelf Pharmacy Inventory & POS Software",
-    description: "Plans for one store or a whole chain, starting at $50/month.",
+    description: "One simple plan at $49/month with every feature included.",
     images: ["https://medishelf.co/images/hero-pos.png"],
   },
 };
@@ -34,9 +34,9 @@ const PRICING_FAQS = [
       "Every plan starts with a 7-day free trial, no card required. You can invite staff and load real stock during the trial.",
   },
   {
-    question: "Can I switch plans later?",
+    question: "Are there different plans or tiers?",
     answer:
-      "Yes. You can move between Starter and Growth at any time from account settings, and the change is prorated for the current billing cycle.",
+      "No. There is one plan at $49 per month, billed monthly, and it includes every feature. No setup fees, no per-transaction charges and no long-term contract.",
   },
   {
     question: "What happens to my data if I cancel?",
@@ -88,48 +88,18 @@ export default function PricingPage() {
             SIMPLE, TRANSPARENT PRICING
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
-            Pharmacy POS &amp; Inventory Software Pricing Plans
+            Pharmacy POS &amp; Inventory Software Pricing
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-ink-soft">
-            Every plan includes batch tracking, FEFO billing, and the full POS terminal. Purpose-built for small to medium size pharmacies and medical stores. Start your 7-day free trial with no credit card required.
+            One plan, $49 a month, with batch tracking, FEFO billing, the full POS terminal and every report included. Purpose-built for small to medium size pharmacies and medical stores.
           </p>
         </div>
       </section>
 
-      {/* Plan Cards & Toggle */}
+      {/* Plan */}
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
-          <PricingToggle />
-        </div>
-      </section>
-
-      {/* Comparison table */}
-      <section className="border-t border-line bg-surface py-16">
-        <div className="mx-auto max-w-5xl px-6 lg:px-10">
-          <ScrollReveal>
-            <h2 className="text-center font-display text-2xl font-bold text-ink">Compare plans in detail</h2>
-            <div className="mt-8 overflow-x-auto rounded-[var(--radius-card)] border border-line bg-paper">
-              <table className="w-full min-w-[560px] text-left text-sm">
-                <thead>
-                  <tr className="border-b border-line text-ink-soft">
-                    <th scope="col" className="px-5 py-4 font-medium">Feature</th>
-                    <th scope="col" className="px-5 py-4 font-medium">Starter</th>
-                    <th scope="col" className="px-5 py-4 font-medium">Growth</th>
-                    <th scope="col" className="px-5 py-4 font-medium">Enterprise</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-line">
-                  <tr><th scope="row" className="px-5 py-4 font-normal text-ink-soft">Stores</th><td className="px-5 py-4 text-ink">1</td><td className="px-5 py-4 text-ink">Up to 3</td><td className="px-5 py-4 text-ink">Unlimited</td></tr>
-                  <tr><th scope="row" className="px-5 py-4 font-normal text-ink-soft">Staff logins</th><td className="px-5 py-4 text-ink">3</td><td className="px-5 py-4 text-ink">Unlimited</td><td className="px-5 py-4 text-ink">Unlimited</td></tr>
-                  <tr><th scope="row" className="px-5 py-4 font-normal text-ink-soft">Custom roles</th><td className="px-5 py-4 text-ink-soft/50">—</td><td className="px-5 py-4 text-ink">✓</td><td className="px-5 py-4 text-ink">✓</td></tr>
-                  <tr><th scope="row" className="px-5 py-4 font-normal text-ink-soft">Daily PDF reports</th><td className="px-5 py-4 text-ink-soft/50">—</td><td className="px-5 py-4 text-ink">✓</td><td className="px-5 py-4 text-ink">✓</td></tr>
-                  <tr><th scope="row" className="px-5 py-4 font-normal text-ink-soft">Audit log</th><td className="px-5 py-4 text-ink">Basic</td><td className="px-5 py-4 text-ink">Full</td><td className="px-5 py-4 text-ink">Full</td></tr>
-                  <tr><th scope="row" className="px-5 py-4 font-normal text-ink-soft">SSO</th><td className="px-5 py-4 text-ink-soft/50">—</td><td className="px-5 py-4 text-ink-soft/50">—</td><td className="px-5 py-4 text-ink">✓</td></tr>
-                  <tr><th scope="row" className="px-5 py-4 font-normal text-ink-soft">Support</th><td className="px-5 py-4 text-ink">Email</td><td className="px-5 py-4 text-ink">Priority</td><td className="px-5 py-4 text-ink">Phone + dedicated manager</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </ScrollReveal>
+          <PricingPlan />
         </div>
       </section>
 
@@ -149,9 +119,9 @@ export default function PricingPage() {
       <section className="border-t border-line py-20">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
           <ScrollReveal>
-            <h2 className="font-display text-3xl font-bold tracking-tight text-ink">Still deciding? Try it with your own data.</h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-ink">Ready to run your pharmacy on Medishelf?</h2>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/demo" className="btn-focus rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep">Start free trial</Link>
+              <a href="https://core.medishelf.co/auth/register" className="btn-focus rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep">Register</a>
               <Link href="/contact" className="btn-focus rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">Talk to sales</Link>
             </div>
           </ScrollReveal>

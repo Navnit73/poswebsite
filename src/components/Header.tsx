@@ -24,7 +24,7 @@ export default function Header() {
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6 lg:px-10">
         <Link href="/" className="flex items-center gap-2.5 group">
           <svg width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="1" y="1" width="32" height="32" rx="9" fill="#1d1d1f"/>
+            <rect x="1" y="1" width="32" height="32" rx="9" fill="#b25000"/>
             <path d="M17 8v18M8 17h18" stroke="#ffffff" strokeWidth="3.4" strokeLinecap="round"/>
             <circle cx="25.5" cy="8.5" r="3.4" fill="#2997ff"/>
           </svg>
@@ -48,12 +48,12 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Link
-            href="/demo"
+          <a
+            href="https://core.medishelf.co/auth/register"
             className="btn-focus rounded-full bg-brand px-4 py-1.5 text-[13px] font-normal text-white hover:bg-brand-deep"
           >
-            Start free trial
-          </Link>
+            Register
+          </a>
         </div>
 
         <button
@@ -96,13 +96,12 @@ export default function Header() {
               );
             })}
             <div className="mt-2 flex flex-col gap-2 border-t border-line pt-3">
-              <Link
-                href="/demo"
-                onClick={() => setMobileMenuOpen(false)}
+              <a
+                href="https://core.medishelf.co/auth/register"
                 className="rounded-full bg-brand px-3 py-2.5 text-center text-sm font-semibold text-white"
               >
-                Start free trial
-              </Link>
+                Register
+              </a>
             </div>
           </nav>
         </div>

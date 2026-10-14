@@ -383,7 +383,7 @@ export default function SalesPage() {
               </div>
               <div className="py-5">
                 <h3 className="font-display text-base font-semibold text-ink">Is this priced for a small pharmacy budget, not just a chain?</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">The plans scale with product count and staff seats, so a single-counter small pharmacy pays for what it actually uses instead of a flat enterprise rate built for a multi-branch chain.</p>
+                <p className="mt-2 text-sm leading-relaxed text-ink-soft">Yes. Medishelf is one plan at $49 a month with every feature and unlimited staff logins included — no enterprise rate built for a multi-branch chain.</p>
               </div>
             </div>
           </ScrollReveal>

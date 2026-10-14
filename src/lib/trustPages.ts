@@ -29,7 +29,7 @@ export const TRUST_PAGES: TrustPage[] = [
     href: "/support",
     title: "Support & Service Levels",
     shortTitle: "Support & SLA",
-    summary: "Support channels, response times by plan, uptime target and escalation path.",
+    summary: "Support channels, response times, uptime target and escalation path.",
     group: "Help",
     lastUpdated: "2026-10-14",
   },

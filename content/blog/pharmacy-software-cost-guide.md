@@ -87,11 +87,11 @@ Compare options over **three years**, not one month:
 
 | Cost Item | Option A: Enterprise PMS | Option B: Simple Cloud Tool |
 | :--- | :--- | :--- |
-| Monthly fee | $350 | $50 |
+| Monthly fee | $350 | $49 |
 | Setup fee | $1,500 | $0 |
 | Required hardware | $1,200 | $0 (existing PC) |
 | Contract | 36 months | Monthly, cancel anytime |
-| **3-year total** | **$15,300** | **$1,800** |
+| **3-year total** | **$15,300** | **$1,764** |
 
 *Illustrative figures only, as actual prices vary by vendor and country.* The point isn't that one option is always right. It's that the headline price can hide a large difference.
 

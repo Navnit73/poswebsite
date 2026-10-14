@@ -93,6 +93,8 @@ const nextConfig = {
       { source: '/trust-center', destination: '/legal', permanent: true },
       { source: '/editorial', destination: '/editorial-policy', permanent: true },
       { source: '/privacy-policy', destination: '/privacy', permanent: true },
+      { source: '/register', destination: 'https://core.medishelf.co/auth/register', permanent: false },
+      { source: '/signup', destination: 'https://core.medishelf.co/auth/register', permanent: false },
     ];
   },
 };

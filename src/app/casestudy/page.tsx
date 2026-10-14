@@ -39,9 +39,9 @@ const CASESTUDY_FAQS = [
       "Across these five stores, migration ranged from a single afternoon (200 SKUs) to about three weeks (1,800 SKUs, done gradually between customers). The work is almost entirely data entry — product names, opening batches, expiry dates — not learning the interface, which is why staff at every store were checking out real sales within their first shift.",
   },
   {
-    question: "Which plan fits a store like mine?",
+    question: "Do bigger stores pay more?",
     answer:
-      "Dr. Joshi's single-assistant dispensary and City Pharmacy's three-person counter both run on the Starter plan, built for one store and a small team. Wellness Rx, with three branches and twelve staff logins, needed Growth for multi-store reporting and per-branch permissions. Match the plan to how many stores and staff you have today — you can move up a tier later without re-entering your catalogue.",
+      "No. Dr. Joshi's single-assistant dispensary, City Pharmacy's three-person counter and Wellness Rx's three branches with twelve staff logins all run on the same Medishelf plan at $49 a month, with every feature included — multi-store reporting and per-branch permissions too.",
   },
   {
     question: "What if I sell more than just medicine?",
@@ -190,7 +190,7 @@ export default function CaseStudyPage() {
                 <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">1 counter</span>
                 <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">3 staff</span>
                 <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">1,800 SKUs</span>
-                <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Starter plan</span>
+                <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Medishelf · $49/mo</span>
               </div>
 
               <p className="mt-5 text-sm leading-relaxed text-ink-soft">
@@ -289,7 +289,7 @@ export default function CaseStudyPage() {
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">3 branches</span>
                 <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">12 staff</span>
-                <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">Growth plan</span>
+                <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">Medishelf · $49/mo</span>
               </div>
 
               <p className="mt-5 text-sm leading-relaxed text-ink-soft">
@@ -299,7 +299,7 @@ export default function CaseStudyPage() {
                 Transferring stock between branches meant a phone call and a hope: whoever picked up would count what was on the shelf, read it out, and someone at the other end would write it down. It worked, but it left no record, and it depended on whoever happened to answer the phone that day.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                On Medishelf&apos;s Growth plan, all three stores now share one product catalogue with per-store inventory, so &quot;Paracetamol 650mg&quot; means the same thing everywhere. The owner checks a consolidated dashboard every morning, with low-stock and expiry alerts filtered by store, and role-based access means a cashier at Bellevue can&apos;t see Ballard&apos;s cost prices or margins.
+                On Medishelf, all three stores now share one product catalogue with per-store inventory, so &quot;Paracetamol 650mg&quot; means the same thing everywhere. The owner checks a consolidated dashboard every morning, with low-stock and expiry alerts filtered by store, and role-based access means a cashier at Bellevue can&apos;t see Ballard&apos;s cost prices or margins.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
                 Migrating three spreadsheets into one shared pharmacy store management system meant agreeing on naming first — a short exercise where the owner and the three store managers sat together and settled on one name per product, once. Stock transfers between branches now happen inside the system as a recorded movement, with a timestamp and the staff member who approved it.
@@ -325,7 +325,7 @@ export default function CaseStudyPage() {
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">200 SKUs</span>
                 <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">1 assistant</span>
-                <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Starter plan · $50/mo</span>
+                <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Medishelf · $49/mo</span>
               </div>
 
               <p className="mt-5 text-sm leading-relaxed text-ink-soft">
@@ -335,7 +335,7 @@ export default function CaseStudyPage() {
                 That reactive approach meant expired stock hid easily. A box pushed to the back of a shelf during a busy week could sit there for months, and the only way to find it was to physically go through every shelf — something that rarely happened outside of an annual audit.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                Medishelf&apos;s Starter plan, at $50 a month, gave the clinic batch-level tracking, automatic low-stock alerts, and a daily email summary of what sold and what&apos;s running low — all sized for a dispensary this size rather than a full retail pharmacy. The assistant, who had never used inventory software before, learned the POS terminal in half a day.
+                Medishelf, at $49 a month, gave the clinic batch-level tracking, automatic low-stock alerts, and a daily email summary of what sold and what&apos;s running low — all sized for a dispensary this size rather than a full retail pharmacy. The assistant, who had never used inventory software before, learned the POS terminal in half a day.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
                 Because the dispensary only carries around 200 SKUs, the entire opening stock list went into Medishelf in a single afternoon, with Dr. Joshi reading batch numbers and expiry dates off the shelf while the assistant typed them in — no formal training session, just real customers from day one.
@@ -370,8 +370,8 @@ export default function CaseStudyPage() {
                   <p className="mt-1 text-xs text-ink-soft">Expired stock sold</p>
                 </div>
                 <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
-                  <p className="font-display text-3xl font-bold text-brand-deep">$50</p>
-                  <p className="mt-1 text-xs text-ink-soft">Per month, Starter</p>
+                  <p className="font-display text-3xl font-bold text-brand-deep">$49</p>
+                  <p className="mt-1 text-xs text-ink-soft">Per month, all features</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -424,7 +424,7 @@ export default function CaseStudyPage() {
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">900+ SKUs</span>
                 <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">Medicine + general</span>
-                <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">Starter plan</span>
+                <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs text-ink-soft">Medishelf · $49/mo</span>
               </div>
 
               <p className="mt-5 text-sm leading-relaxed text-ink-soft">
@@ -460,7 +460,7 @@ export default function CaseStudyPage() {
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">15+ seasonal hires/yr</span>
                 <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">4 custom roles</span>
-                <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Starter plan</span>
+                <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-soft">Medishelf · $49/mo</span>
               </div>
 
               <p className="mt-5 text-sm leading-relaxed text-ink-soft">

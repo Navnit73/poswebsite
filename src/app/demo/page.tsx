@@ -58,6 +58,9 @@ export default function DemoPage() {
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
             Full access to Medishelf for 7 days. Explore batch tracking, FEFO billing, and automated inventory reports with no credit card required.
           </p>
+          <p className="mt-4 text-sm text-ink-soft">
+            Prefer to create your account directly? <a href="https://core.medishelf.co/auth/register" className="font-semibold text-brand-deep hover:underline">Sign up</a>
+          </p>
         </div>
       </section>
 

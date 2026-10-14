@@ -77,7 +77,7 @@ export default function TermsPage() {
             <ScrollReveal>
               <h2 className="font-display text-xl font-bold text-ink">4. Billing, trials, and price changes</h2>
               <div className="mt-3 space-y-3 text-sm leading-relaxed text-ink-soft">
-                <p>Every account starts with a 7-day free trial, no card required. Paid plans bill monthly or annually in advance. We give at least 30 days&apos; notice before any price increase reaches your next billing cycle — existing subscriptions are never repriced mid-term without warning.</p>
+                <p>Every account starts with a 7-day free trial, no card required. The Medishelf plan is $49 per month, billed monthly in advance. We give at least 30 days&apos; notice before any price increase reaches your next billing cycle — existing subscriptions are never repriced mid-term without warning.</p>
                 <p>If a payment fails, we retry for 7 days before suspending access; your data is kept safe throughout suspension and for 30 days after cancellation, per our <Link href="/refundPolicy" className="text-brand-deep hover:underline">Refund Policy</Link>.</p>
               </div>
             </ScrollReveal>
@@ -99,7 +99,7 @@ export default function TermsPage() {
             <ScrollReveal>
               <h2 className="font-display text-xl font-bold text-ink">7. Uptime and support</h2>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                We target 99.9% uptime and announce planned maintenance in advance. Response times by plan are listed on our <Link href="/support" className="text-brand-deep hover:underline">Support &amp; SLA</Link> page. Enterprise plans can include a formal uptime SLA with defined remedies — ask <Link href="/contact" className="text-brand-deep hover:underline">our team</Link> for details.
+                We target 99.9% uptime and announce planned maintenance in advance. Response times are listed on our <Link href="/support" className="text-brand-deep hover:underline">Support &amp; SLA</Link> page. Enterprise plans can include a formal uptime SLA with defined remedies — ask <Link href="/contact" className="text-brand-deep hover:underline">our team</Link> for details.
               </p>
             </ScrollReveal>
 

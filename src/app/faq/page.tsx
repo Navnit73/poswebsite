@@ -122,7 +122,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Can I control what each staff member can see and do?",
         answer:
-          "Yes. Role-based access control lets owners decide who can sell, receive stock, change prices or see profit reports. Growth and Enterprise plans include custom roles, and every change is recorded in the audit log.",
+          "Yes. Role-based access control lets owners decide who can sell, receive stock, change prices or see profit reports. Custom roles are included, and every change is recorded in the audit log.",
       },
     ],
   },
@@ -133,8 +133,8 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "How much does Medishelf cost?",
         answer:
-          "Starter is $50 per month for a single store with up to 3 staff logins. Growth is $99 per month for up to 3 stores with unlimited staff, custom roles, daily PDF reports and priority support. Enterprise is custom-priced for larger groups and adds unlimited stores, SSO and a dedicated account manager.",
-        link: { href: "/pricing", label: "Compare plans" },
+          "One plan: $49 per month, billed monthly, with every feature included — unlimited staff logins, custom roles, batch and expiry tracking, the POS terminal, all reports and daily PDF emails. No setup fees and no per-transaction charges.",
+        link: { href: "/pricing", label: "See pricing" },
       },
       {
         question: "Is there a free trial? Do I need a credit card?",
@@ -145,13 +145,13 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "What is your refund policy?",
         answer:
-          "Every plan has a 30-day money-back guarantee on your first payment. After 30 days, monthly plans run to the end of the paid cycle, and annual plans are refunded for the unused whole months. Refunds are initiated within 2 business days of approval.",
+          "Your first payment has a 30-day money-back guarantee. After 30 days, your subscription runs to the end of the paid monthly cycle. Refunds are initiated within 2 business days of approval.",
         link: { href: "/refundPolicy", label: "Read the full refund policy" },
       },
       {
-        question: "Can I switch plans or cancel anytime?",
+        question: "Can I cancel anytime?",
         answer:
-          "Yes. You can move between plans from account settings and the change is prorated for the current billing cycle. Cancellation is self-serve and takes effect at the end of the period you've paid for.",
+          "Yes. There are no contracts. Cancellation is self-serve and takes effect at the end of the period you've paid for.",
       },
       {
         question: "Will my price go up without warning?",
@@ -203,18 +203,18 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "How do I get help?",
         answer:
-          "Email support@medishelf.co. Starter plans include email support, Growth includes priority support, and Enterprise adds phone support and a dedicated account manager. Every reply comes from a person, not a bot.",
+          "Email support@medishelf.co. Every customer gets the same email support. Every reply comes from a person, not a bot.",
         link: { href: "/support", label: "See support levels" },
       },
       {
         question: "How quickly will you reply?",
         answer:
-          "We reply within one business day on every plan, and much faster for priority and urgent issues — the average first reply is under an hour during business hours. Counter-down incidents are handled ahead of everything else.",
+          "We reply within one business day, and much faster for priority and urgent issues — the average first reply is under an hour during business hours. Counter-down incidents are handled ahead of everything else.",
       },
       {
         question: "What uptime does Medishelf offer?",
         answer:
-          "We target 99.9% monthly uptime and announce planned maintenance in advance, scheduled outside typical pharmacy trading hours. Enterprise plans can include a formal uptime SLA with defined service credits.",
+          "We target 99.9% monthly uptime and announce planned maintenance in advance, scheduled outside typical pharmacy trading hours.",
       },
       {
         question: "Is the information on your blog medical advice?",

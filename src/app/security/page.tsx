@@ -46,7 +46,7 @@ export default function SecurityPage() {
     >
       <PolicySection id="approach" number={1} title="Our approach">
         <p>
-          Security at Medishelf is a design constraint, not a feature tier. Every plan — including Starter — gets the same isolation, encryption and logging. We follow a simple rule: collect only what the software needs, protect it in layers, and make it easy for you to take it with you.
+          Security at Medishelf is a design constraint, not a feature tier. Every account gets the same isolation, encryption and logging. We follow a simple rule: collect only what the software needs, protect it in layers, and make it easy for you to take it with you.
         </p>
         <Callout title="Honest about certifications">
           We don&apos;t display badges we haven&apos;t earned. Medishelf does not currently hold a SOC 2 or ISO 27001 certificate. If your organisation needs a security questionnaire completed, email{" "}
@@ -58,7 +58,7 @@ export default function SecurityPage() {
         <p>
           Each pharmacy is a separate tenant. Products, batches, sales, customers and staff are stored with a tenant identifier, and every database query is scoped to the signed-in user&apos;s tenant before it runs. One pharmacy cannot read, list or modify another&apos;s data — not through the interface, the API, or search.
         </p>
-        <p>Multi-store accounts on Growth and Enterprise share a tenant across their own stores only, with per-store permissions for staff.</p>
+        <p>Multi-store accounts share a tenant across their own stores only, with per-store permissions for staff.</p>
       </PolicySection>
 
       <PolicySection id="encryption" number={3} title="Encryption">
@@ -80,7 +80,6 @@ export default function SecurityPage() {
             <><strong className="text-ink">Rate-limited logins</strong> — repeated failed attempts are throttled to block password guessing.</>,
             <><strong className="text-ink">Role-based access control</strong> — owners decide who can sell, receive stock, change prices or view profit.</>,
             <><strong className="text-ink">Self-service password reset</strong> through time-limited, single-use email links.</>,
-            <><strong className="text-ink">Single sign-on (SSO)</strong> is available on Enterprise plans.</>,
             <><strong className="text-ink">Suspicious-login monitoring</strong> — we notify the account owner of unusual patterns we detect.</>,
           ]}
         />
@@ -100,7 +99,7 @@ export default function SecurityPage() {
 
       <PolicySection id="audit" number={6} title="Audit logging">
         <p>
-          If it changed, it&apos;s logged. Price edits, stock adjustments, voids, role changes and sign-ins are written to an audit log with the user, time and before/after values. Starter includes a basic audit log; Growth and Enterprise include the full log. Owners can review it at any time from the dashboard.
+          If it changed, it&apos;s logged. Price edits, stock adjustments, voids, role changes and sign-ins are written to an audit log with the user, time and before/after values. Every account includes the full log. Owners can review it at any time from the dashboard.
         </p>
       </PolicySection>
 

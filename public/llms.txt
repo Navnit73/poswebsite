@@ -8,7 +8,7 @@ Medishelf (https://medishelf.co) is modern, cloud-based pharmacy inventory manag
 - `/features`: Deep dive into product management, lot tracking, POS, RBAC, loyalty, reports, and security.
 - `/inventory`: Dedicated pharmacy inventory management, batch/expiry alerts, receiving, and stock movement logs.
 - `/sales`: High-speed keyboard-driven POS terminal with barcode scanning and split payments.
-- `/pricing`: Transparent store-based pricing (Starter at $50/mo, Growth at $99/mo) with a 7-day free trial.
+- `/pricing`: One simple plan at $49/month with every feature included.
 - `/casestudy`: Real-world case studies showing 62% reduction in drug expiry waste and fast onboarding.
 - `/demo`: Free trial signup (no credit card required).
 - `/aboutus`: Company mission and pharmacist-first engineering values.
