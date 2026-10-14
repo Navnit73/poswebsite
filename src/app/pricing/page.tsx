@@ -81,10 +81,10 @@ export default function PricingPage() {
 
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Pricing
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             SIMPLE, TRANSPARENT PRICING
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
@@ -151,8 +151,8 @@ export default function PricingPage() {
           <ScrollReveal>
             <h2 className="font-display text-3xl font-bold tracking-tight text-ink">Still deciding? Try it with your own data.</h2>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/demo" className="btn-focus rounded-lg bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">Start free trial</Link>
-              <Link href="/contact" className="btn-focus rounded-lg border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">Talk to sales</Link>
+              <Link href="/demo" className="btn-focus rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep">Start free trial</Link>
+              <Link href="/contact" className="btn-focus rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">Talk to sales</Link>
             </div>
           </ScrollReveal>
         </div>

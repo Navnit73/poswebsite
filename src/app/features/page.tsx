@@ -67,10 +67,10 @@ export default function FeaturesPage() {
       {/* Page Header */}
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Features
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             COMPLETE PHARMACY SOFTWARE MODULES
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
@@ -126,7 +126,7 @@ export default function FeaturesPage() {
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
               </span>
-              <span className="label-tag mt-3 block text-xs font-medium text-brand-deep">01 · PRODUCT DATA</span>
+              <span className="label-tag mt-3 block text-xs text-brand">01 · PRODUCT DATA</span>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">Built for what&apos;s actually on the label.</h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
                 A generic product form was never going to fit a pharmacy. Medishelf&apos;s product
@@ -139,7 +139,7 @@ export default function FeaturesPage() {
 
             <ScrollReveal className="mt-8 space-y-6 lg:mt-0">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft/70">Identity &amp; composition</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Identity &amp; composition</p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink">Generic name &amp; brand</span>
                   <span className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink">Barcode &amp; SKU</span>
@@ -150,7 +150,7 @@ export default function FeaturesPage() {
                 </div>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft/70">Regulatory &amp; clinical</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Regulatory &amp; clinical</p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink">Schedule class</span>
                   <span className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink">HSN / NDC codes</span>
@@ -160,7 +160,7 @@ export default function FeaturesPage() {
                 </div>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft/70">Store operations</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Store operations</p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink">Rack / shelf location</span>
                   <span className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink">Minimum stock level</span>
@@ -182,7 +182,7 @@ export default function FeaturesPage() {
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><path d="M20 6L9 17l-5-5"/></svg>
               </span>
-              <span className="label-tag mt-3 block text-xs font-medium text-brand-deep">02 · BATCH &amp; EXPIRY</span>
+              <span className="label-tag mt-3 block text-xs text-brand">02 · BATCH &amp; EXPIRY</span>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">Every batch, tracked to the unit.</h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
                 Products don&apos;t lose stock in one lump — they lose it in batches, at different
@@ -191,8 +191,8 @@ export default function FeaturesPage() {
                 straight from it to sell the earliest-expiring batch first (FEFO), automatically.
               </p>
               <dl className="mt-6 grid grid-cols-2 gap-4 text-sm">
-                <div><dt className="label-tag text-xs text-ink-soft/70">MOVEMENT TYPES</dt><dd className="mt-1 font-medium text-ink">Purchase · Sale · Damage · Return · Adjustment</dd></div>
-                <div><dt className="label-tag text-xs text-ink-soft/70">PER BATCH</dt><dd className="mt-1 font-medium text-ink">Cost price, selling price, supplier, expiry</dd></div>
+                <div><dt className="label-tag text-xs text-ink-soft">MOVEMENT TYPES</dt><dd className="mt-1 font-medium text-ink">Purchase · Sale · Damage · Return · Adjustment</dd></div>
+                <div><dt className="label-tag text-xs text-ink-soft">PER BATCH</dt><dd className="mt-1 font-medium text-ink">Cost price, selling price, supplier, expiry</dd></div>
               </dl>
               <ul className="mt-5 space-y-2 text-sm text-ink-soft">
                 <li className="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Low-stock alerts on the dashboard and a dedicated alerts page</li>
@@ -200,7 +200,7 @@ export default function FeaturesPage() {
                 <li className="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 shrink-0 text-brand"><path d="M20 6L9 17l-5-5"/></svg> Manual stock adjustments always require a reason, logged against the batch</li>
               </ul>
             </ScrollReveal>
-            <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-paper p-6 shadow-sm mt-8 lg:mt-0">
+            <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-paper p-6 mt-8 lg:mt-0">
               <p className="label-tag text-xs text-ink-soft">STOCK MOVEMENT LEDGER</p>
               <div className="mt-4 divide-y divide-line rounded-lg border border-line bg-surface font-mono text-xs">
                 <div className="flex justify-between px-4 py-3"><span>PURCHASE · AX-1187</span><span className="text-brand-deep">+500</span></div>
@@ -208,7 +208,7 @@ export default function FeaturesPage() {
                 <div className="flex justify-between px-4 py-3"><span>ADJUSTMENT · AX-1187</span><span className="text-rust">−2</span></div>
                 <div className="flex justify-between px-4 py-3 font-semibold text-ink"><span>BALANCE</span><span>212 units</span></div>
               </div>
-              <p className="mt-4 text-xs leading-relaxed text-ink-soft/80">
+              <p className="mt-4 text-xs leading-relaxed text-ink-soft">
                 Every row above is a real entry in a pharmacy stock management system, not a
                 summary — so a stock discrepancy can always be traced back to the exact
                 purchase, sale or adjustment that caused it.
@@ -226,7 +226,7 @@ export default function FeaturesPage() {
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h4M6 13h8"/></svg>
               </span>
-              <span className="label-tag mt-3 block text-xs font-medium text-brand-deep">03 · POS TERMINAL</span>
+              <span className="label-tag mt-3 block text-xs text-brand">03 · POS TERMINAL</span>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">Fast enough for a lunchtime queue.</h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
                 A pharmacy point of sale and inventory system only earns its place at the counter
@@ -255,35 +255,35 @@ export default function FeaturesPage() {
             </ScrollReveal>
 
             <ScrollReveal className="mt-8 grid gap-4 sm:grid-cols-2 lg:mt-0">
-              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-sm">
+              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5">
                 <p className="text-sm font-semibold text-ink">Search by name, barcode, or composition</p>
                 <p className="mt-1 text-xs text-ink-soft">Results appear as you type, with arrow-key navigation to the right item.</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-sm">
+              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5">
                 <p className="text-sm font-semibold text-ink">Automatic FEFO batch selection</p>
                 <p className="mt-1 text-xs text-ink-soft">A &quot;best expiry&quot; badge shows exactly which batch a sale will draw from.</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-sm">
+              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5">
                 <p className="text-sm font-semibold text-ink">Item and cart-level discounts</p>
                 <p className="mt-1 text-xs text-ink-soft">Apply a percentage to one line, or to the whole transaction.</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-sm">
+              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5">
                 <p className="text-sm font-semibold text-ink">Customer lookup at checkout</p>
                 <p className="mt-1 text-xs text-ink-soft">Link a sale to a customer to update loyalty points and lifetime spend.</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-sm">
+              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5">
                 <p className="text-sm font-semibold text-ink">Cash, card, UPI &amp; split payments</p>
                 <p className="mt-1 text-xs text-ink-soft">Take part-cash, part-card on the same invoice without a workaround.</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-sm">
+              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5">
                 <p className="text-sm font-semibold text-ink">Server-verified pricing</p>
                 <p className="mt-1 text-xs text-ink-soft">Every price is checked against the server before checkout, not just the screen.</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-sm">
+              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5">
                 <p className="text-sm font-semibold text-ink">Oversell protection</p>
                 <p className="mt-1 text-xs text-ink-soft">Two tills open on the same batch can never both check out the last unit.</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-sm">
+              <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5">
                 <p className="text-sm font-semibold text-ink">Auto-numbered invoices</p>
                 <p className="mt-1 text-xs text-ink-soft">Every sale gets a sequential invoice number, searchable in invoice history.</p>
               </div>
@@ -300,7 +300,7 @@ export default function FeaturesPage() {
               <div className="rounded-[var(--radius-card)] border border-line bg-ink p-6 text-paper">
                 <div className="flex items-center justify-between text-xs text-paper/60">
                   <span className="label-tag">CUSTOMER · PRIYA SHARMA</span>
-                  <span className="rounded-full bg-paper/10 px-2 py-0.5 font-medium text-amber">Loyal</span>
+                  <span className="rounded-full bg-paper/10 px-2 py-0.5 font-medium text-sky">Loyal</span>
                 </div>
                 <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
                   <div>
@@ -326,7 +326,7 @@ export default function FeaturesPage() {
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               </span>
-              <span className="label-tag mt-3 block text-xs font-medium text-brand-deep">04 · CUSTOMERS &amp; LOYALTY</span>
+              <span className="label-tag mt-3 block text-xs text-brand">04 · CUSTOMERS &amp; LOYALTY</span>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">Every regular customer, remembered automatically.</h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
                 A customer record updates itself at every sale — no separate loyalty spreadsheet,
@@ -351,7 +351,7 @@ export default function FeaturesPage() {
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V8a5 5 0 0110 0v3"/></svg>
               </span>
-              <span className="label-tag mt-3 block text-xs font-medium text-brand-deep">05 · ACCESS CONTROL</span>
+              <span className="label-tag mt-3 block text-xs text-brand">05 · ACCESS CONTROL</span>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">The cashier shouldn&apos;t see the P&amp;L.</h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
                 Four built-in roles cover most stores on day one, and the Owner role always keeps
@@ -361,7 +361,7 @@ export default function FeaturesPage() {
               </p>
               <div className="mt-6 space-y-3">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft/70">Permission modules</p>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Permission modules</p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     <span className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink">Products</span>
                     <span className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink">Inventory</span>
@@ -374,7 +374,7 @@ export default function FeaturesPage() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft/70">Actions per module</p>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Actions per module</p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     <span className="rounded-full border border-brand/25 bg-brand-mist px-3 py-1.5 text-xs font-medium text-brand-deep">View</span>
                     <span className="rounded-full border border-brand/25 bg-brand-mist px-3 py-1.5 text-xs font-medium text-brand-deep">Create</span>
@@ -385,19 +385,19 @@ export default function FeaturesPage() {
               </div>
             </ScrollReveal>
             <ScrollReveal className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 lg:mt-0">
-              <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center shadow-sm transition hover:border-brand/40">
+              <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center transition hover:border-brand/40">
                 <p className="font-display font-semibold text-ink">Owner</p>
                 <p className="mt-1 text-xs text-ink-soft">Full access, always</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center shadow-sm transition hover:border-brand/40">
+              <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center transition hover:border-brand/40">
                 <p className="font-display font-semibold text-ink">Manager</p>
                 <p className="mt-1 text-xs text-ink-soft">Store operations &amp; reports</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center shadow-sm transition hover:border-brand/40">
+              <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center transition hover:border-brand/40">
                 <p className="font-display font-semibold text-ink">Pharmacist</p>
                 <p className="mt-1 text-xs text-ink-soft">Products &amp; dispensing</p>
               </div>
-              <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center shadow-sm transition hover:border-brand/40">
+              <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center transition hover:border-brand/40">
                 <p className="font-display font-semibold text-ink">Cashier</p>
                 <p className="mt-1 text-xs text-ink-soft">POS terminal only</p>
               </div>
@@ -414,7 +414,7 @@ export default function FeaturesPage() {
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
               </span>
-              <span className="label-tag mt-3 block text-xs font-medium text-brand-deep">06 · REPORTS &amp; ANALYTICS</span>
+              <span className="label-tag mt-3 block text-xs text-brand">06 · REPORTS &amp; ANALYTICS</span>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">Five reports, one habit: check them daily.</h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
                 The dashboard opens on the five numbers a pharmacy owner actually checks each
@@ -422,11 +422,11 @@ export default function FeaturesPage() {
                 date range — today, yesterday, the last 7 or 30 days, or a full month.
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink shadow-sm">Sales report</div>
-                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink shadow-sm">Profit &amp; loss</div>
-                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink shadow-sm">Inventory value</div>
-                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink shadow-sm">Expiry report</div>
-                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink shadow-sm sm:col-span-2">Fast-moving items</div>
+                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink">Sales report</div>
+                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink">Profit &amp; loss</div>
+                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink">Inventory value</div>
+                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink">Expiry report</div>
+                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-sm font-medium text-ink sm:col-span-2">Fast-moving items</div>
               </div>
               <p className="mt-6 text-sm leading-relaxed text-ink-soft">
                 Turn on a daily PDF summary — revenue, profit, top products and low-stock alerts —
@@ -434,7 +434,7 @@ export default function FeaturesPage() {
               </p>
             </ScrollReveal>
 
-            <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-paper p-6 shadow-sm">
+            <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-paper p-6">
               <p className="label-tag text-xs text-ink-soft">DASHBOARD · TODAY</p>
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <div className="rounded-lg border border-line bg-surface p-4">
@@ -458,7 +458,7 @@ export default function FeaturesPage() {
                   <p className="mt-1 font-display text-xl font-bold text-amber">7 batches</p>
                 </div>
               </div>
-              <p className="mt-4 text-xs leading-relaxed text-ink-soft/80">
+              <p className="mt-4 text-xs leading-relaxed text-ink-soft">
                 The same five figures anchor the dashboard whether you check it once a day or
                 once an hour — no separate export needed to see where things stand.
               </p>
@@ -475,7 +475,7 @@ export default function FeaturesPage() {
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
               </span>
-              <span className="label-tag mt-3 block text-xs font-medium text-brand-deep">07 · AUDIT TRAIL</span>
+              <span className="label-tag mt-3 block text-xs text-brand">07 · AUDIT TRAIL</span>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">If it changed, it&apos;s logged.</h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
                 Every edit records a before-and-after state, the IP address and browser it
@@ -513,7 +513,7 @@ export default function FeaturesPage() {
             <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
             </span>
-            <span className="label-tag mt-3 block text-xs font-medium text-brand-deep">08 · SECURITY &amp; MULTI-STORE</span>
+            <span className="label-tag mt-3 block text-xs text-brand">08 · SECURITY &amp; MULTI-STORE</span>
             <h2 className="mt-3 font-display text-2xl font-bold text-ink">Your data, isolated from every other pharmacy on Medishelf.</h2>
             <p className="mt-4 text-sm leading-relaxed text-ink-soft">
               Medishelf is multi-tenant software: every product, batch, sale and customer record
@@ -558,8 +558,8 @@ export default function FeaturesPage() {
             <h2 className="font-display text-3xl font-bold tracking-tight text-ink">See it running on your own product list.</h2>
             <p className="mt-4 text-ink-soft">Or read how five small pharmacies put these modules to work in <Link href="/casestudy" className="font-semibold text-brand-deep hover:underline">real case studies</Link>.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/demo" className="btn-focus rounded-lg bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">Start free trial</Link>
-              <Link href="/pricing" className="btn-focus rounded-lg border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">View pricing</Link>
+              <Link href="/demo" className="btn-focus rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep">Start free trial</Link>
+              <Link href="/pricing" className="btn-focus rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">View pricing</Link>
             </div>
           </ScrollReveal>
         </div>

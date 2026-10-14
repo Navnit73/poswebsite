@@ -47,10 +47,10 @@ export default function BlogIndexPage() {
       />
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Blog
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             PHARMACY MANAGEMENT ARTICLES &amp; GUIDES
           </span>
           <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
@@ -84,13 +84,13 @@ export default function BlogIndexPage() {
           <div className="flex shrink-0 gap-3">
             <Link
               href="/"
-              className="btn-focus rounded-lg border border-line bg-surface px-4 py-2 text-xs font-semibold text-ink transition hover:border-brand/40"
+              className="btn-focus rounded-full border border-line bg-surface px-4 py-2 text-xs font-semibold text-ink transition hover:border-brand/40"
             >
               Explore Medishelf Home
             </Link>
             <Link
               href="/demo"
-              className="btn-focus rounded-lg bg-brand px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+              className="btn-focus rounded-full bg-brand px-4 py-2 text-xs font-semibold text-white transition hover:bg-brand-deep"
             >
               Start Free Trial
             </Link>
@@ -107,8 +107,8 @@ export default function BlogIndexPage() {
               {posts.map((post) => (
                 <ScrollReveal key={post.slug} className="h-full">
                   <Link href={`/blog/${post.slug}`} className="block h-full group">
-                    <article className="group rounded-[var(--radius-card)] border border-line bg-surface transition hover:border-brand/30 hover:shadow-md h-full flex flex-col overflow-hidden">
-                      <div className="h-44 bg-gradient-to-br from-brand-mist to-brand/20 shrink-0 flex items-center justify-center p-6 text-center">
+                    <article className="group rounded-[var(--radius-card)] border border-line bg-surface transition hover:border-brand/30 h-full flex flex-col overflow-hidden">
+                      <div className="h-44 bg-paper shrink-0 flex items-center justify-center p-6 text-center">
                         <span className="font-display text-lg font-bold text-brand-deep opacity-80 group-hover:scale-105 transition-transform">
                           {post.title}
                         </span>
@@ -125,7 +125,7 @@ export default function BlogIndexPage() {
                             {post.metaDescription}
                           </p>
                         </div>
-                        <div className="mt-auto pt-6 flex items-center justify-between text-xs text-ink-soft/70 border-t border-line/40">
+                        <div className="mt-auto pt-6 flex items-center justify-between text-xs text-ink-soft border-t border-line/40">
                           <span>{post.date}</span>
                           <span>{post.readTime} min read</span>
                         </div>
@@ -152,25 +152,25 @@ export default function BlogIndexPage() {
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
                 href="/"
-                className="btn-focus rounded-lg border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
+                className="btn-focus rounded-full border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
               >
                 Learn About Medishelf
               </Link>
               <Link
                 href="/inventory"
-                className="btn-focus rounded-lg border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
+                className="btn-focus rounded-full border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
               >
                 Inventory Module
               </Link>
               <Link
                 href="/sales"
-                className="btn-focus rounded-lg border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
+                className="btn-focus rounded-full border border-line bg-paper px-5 py-2.5 text-xs font-semibold text-ink transition hover:border-brand/40"
               >
                 POS Billing Terminal
               </Link>
               <Link
                 href="/demo"
-                className="btn-focus rounded-lg bg-brand px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+                className="btn-focus rounded-full bg-brand px-5 py-2.5 text-xs font-semibold text-white transition hover:bg-brand-deep"
               >
                 Start 7-Day Free Trial
               </Link>

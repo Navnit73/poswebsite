@@ -46,10 +46,10 @@ export default function ContactPage() {
       {/* Header */}
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Contact
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             WE&apos;RE HERE TO HELP
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">

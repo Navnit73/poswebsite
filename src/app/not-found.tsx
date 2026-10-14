@@ -23,13 +23,13 @@ export default function NotFound() {
         <div className="mt-8 flex justify-center gap-4">
           <Link
             href="/"
-            className="rounded-lg bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-deep transition"
+            className="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-deep transition"
           >
             Return to Homepage
           </Link>
           <Link
             href="/features"
-            className="rounded-lg border border-line bg-paper px-5 py-2.5 text-sm font-semibold text-ink hover:bg-brand-mist transition"
+            className="rounded-full border border-line bg-surface px-5 py-2.5 text-sm font-semibold text-ink hover:bg-brand-mist transition"
           >
             Explore Features
           </Link>

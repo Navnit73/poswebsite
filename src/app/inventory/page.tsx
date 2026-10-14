@@ -95,14 +95,14 @@ export default function InventoryPage() {
         <div className="mx-auto max-w-4xl px-5 text-center sm:px-6 lg:px-10">
           <nav
             aria-label="Breadcrumb"
-            className="label-tag flex flex-wrap items-center justify-center gap-1.5 text-xs text-ink-soft/70"
+            className="label-tag flex flex-wrap items-center justify-center gap-1.5 text-xs text-ink-soft"
           >
             <Link href="/" className="hover:text-brand-deep">Home</Link>
             <span aria-hidden="true">/</span>
             <Link href="/features" className="hover:text-brand-deep">Features</Link>
             <span aria-hidden="true">/</span> Inventory
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             PHARMACY INVENTORY &amp; BATCH MANAGEMENT
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
@@ -118,7 +118,7 @@ export default function InventoryPage() {
       <section className="py-16 sm:py-20" aria-labelledby="small-pharmacy-heading">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
           <ScrollReveal className="mx-auto max-w-2xl text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               RIGHT-SIZED, NOT SCALED DOWN
             </span>
             <h2 id="small-pharmacy-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
@@ -155,7 +155,7 @@ export default function InventoryPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="batch-tracking-heading">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-14 lg:px-10">
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">BATCH TRACKING</span>
+            <span className="label-tag text-xs text-brand">BATCH TRACKING</span>
             <h2 id="batch-tracking-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               Multiple batches per product, each with its own story.
             </h2>
@@ -190,23 +190,23 @@ export default function InventoryPage() {
               <div className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
                 <div>
                   <p className="text-sm font-medium text-ink">Batch AX-1187</p>
-                  <p className="label-tag text-xs text-ink-soft/70">Expires 2026-08-01 · Cost $72 · MRP $96</p>
+                  <p className="label-tag text-xs text-ink-soft">Expires 2026-08-01 · Cost $72 · MRP $96</p>
                 </div>
                 <span className="label-tag rounded-full bg-rust/10 px-2.5 py-1 text-[11px] font-semibold text-rust">Best expiry</span>
               </div>
               <div className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
                 <div>
                   <p className="text-sm font-medium text-ink">Batch AX-1204</p>
-                  <p className="label-tag text-xs text-ink-soft/70">Expires 2027-02-14 · Cost $70 · MRP $96</p>
+                  <p className="label-tag text-xs text-ink-soft">Expires 2027-02-14 · Cost $70 · MRP $96</p>
                 </div>
-                <span className="label-tag text-xs text-ink-soft/70">214 units</span>
+                <span className="label-tag text-xs text-ink-soft">214 units</span>
               </div>
               <div className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
                 <div>
                   <p className="text-sm font-medium text-ink">Batch AX-1250</p>
-                  <p className="label-tag text-xs text-ink-soft/70">Expires 2027-09-30 · Cost $68 · MRP $96</p>
+                  <p className="label-tag text-xs text-ink-soft">Expires 2027-09-30 · Cost $68 · MRP $96</p>
                 </div>
-                <span className="label-tag text-xs text-ink-soft/70">560 units</span>
+                <span className="label-tag text-xs text-ink-soft">560 units</span>
               </div>
             </div>
           </ScrollReveal>
@@ -217,7 +217,7 @@ export default function InventoryPage() {
       <section className="py-16 sm:py-20" aria-labelledby="receiving-heading">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
           <ScrollReveal className="mx-auto max-w-2xl text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">RECEIVING &amp; ADJUSTMENTS</span>
+            <span className="label-tag text-xs text-brand">RECEIVING &amp; ADJUSTMENTS</span>
             <h2 id="receiving-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               Two screens cover the whole stock room.
             </h2>
@@ -248,7 +248,7 @@ export default function InventoryPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="comparison-heading">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
           <ScrollReveal className="mx-auto max-w-2xl text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">SPREADSHEETS VS. MEDISHELF</span>
+            <span className="label-tag text-xs text-brand">SPREADSHEETS VS. MEDISHELF</span>
             <h2 id="comparison-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               Why a small pharmacy outgrows a spreadsheet fast.
             </h2>
@@ -314,7 +314,7 @@ export default function InventoryPage() {
             </div>
           </ScrollReveal>
           <ScrollReveal className="lg:order-2">
-            <span className="label-tag text-xs font-medium text-brand-deep">FULL AUDIT TRAIL</span>
+            <span className="label-tag text-xs text-brand">FULL AUDIT TRAIL</span>
             <h2 id="ledger-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               Every movement, from purchase to patient.
             </h2>
@@ -343,7 +343,7 @@ export default function InventoryPage() {
       <section className="py-16 sm:py-20" aria-labelledby="alerts-heading">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">SMART ALERTS</span>
+            <span className="label-tag text-xs text-brand">SMART ALERTS</span>
             <h2 id="alerts-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               Never be surprised by an empty shelf again.
             </h2>
@@ -412,7 +412,7 @@ export default function InventoryPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="valuation-heading">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-14 lg:px-10">
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">INVENTORY VALUE</span>
+            <span className="label-tag text-xs text-brand">INVENTORY VALUE</span>
             <h2 id="valuation-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               Know what&apos;s on the shelf, in money and in units.
             </h2>
@@ -427,19 +427,19 @@ export default function InventoryPage() {
             <p className="label-tag text-xs text-ink-soft">INVENTORY SNAPSHOT</p>
             <div className="mt-4 grid grid-cols-2 gap-3 sm:gap-4">
               <div className="rounded-lg border border-line bg-surface p-4">
-                <p className="label-tag text-[11px] text-ink-soft/70">Total value</p>
+                <p className="label-tag text-[11px] text-ink-soft">Total value</p>
                 <p className="mt-1 font-display text-xl font-bold text-ink">$48,210</p>
               </div>
               <div className="rounded-lg border border-line bg-surface p-4">
-                <p className="label-tag text-[11px] text-ink-soft/70">SKUs tracked</p>
+                <p className="label-tag text-[11px] text-ink-soft">SKUs tracked</p>
                 <p className="mt-1 font-display text-xl font-bold text-ink">612</p>
               </div>
               <div className="rounded-lg border border-line bg-surface p-4">
-                <p className="label-tag text-[11px] text-ink-soft/70">Low stock</p>
+                <p className="label-tag text-[11px] text-ink-soft">Low stock</p>
                 <p className="mt-1 font-display text-xl font-bold text-rust">9 items</p>
               </div>
               <div className="rounded-lg border border-line bg-surface p-4">
-                <p className="label-tag text-[11px] text-ink-soft/70">Expiring in 30d</p>
+                <p className="label-tag text-[11px] text-ink-soft">Expiring in 30d</p>
                 <p className="mt-1 font-display text-xl font-bold text-amber">14 batches</p>
               </div>
             </div>
@@ -451,7 +451,7 @@ export default function InventoryPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="testimonial-heading">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
           <ScrollReveal className="mx-auto max-w-2xl text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">FROM THE COUNTER</span>
+            <span className="label-tag text-xs text-brand">FROM THE COUNTER</span>
             <h2 id="testimonial-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               What small pharmacy owners notice first.
             </h2>
@@ -461,7 +461,7 @@ export default function InventoryPage() {
               <blockquote className="text-sm leading-relaxed text-ink-soft">
                 &quot;We stopped losing stock to expiry write-offs within the first month. The best-expiry badge at the counter does most of the work for my staff.&quot;
               </blockquote>
-              <figcaption className="label-tag mt-4 text-xs text-ink-soft/70">
+              <figcaption className="label-tag mt-4 text-xs text-ink-soft">
                 Owner, independent pharmacy · 1 location
               </figcaption>
             </ScrollReveal>
@@ -469,7 +469,7 @@ export default function InventoryPage() {
               <blockquote className="text-sm leading-relaxed text-ink-soft">
                 &quot;Our old spreadsheet took an hour to reconcile every week. Now the stock movement ledger does it in the background, and I trust the numbers on the dashboard.&quot;
               </blockquote>
-              <figcaption className="label-tag mt-4 text-xs text-ink-soft/70">
+              <figcaption className="label-tag mt-4 text-xs text-ink-soft">
                 Pharmacist-in-charge · small community pharmacy
               </figcaption>
             </ScrollReveal>
@@ -477,7 +477,7 @@ export default function InventoryPage() {
               <blockquote className="text-sm leading-relaxed text-ink-soft">
                 &quot;It&apos;s the first inventory system we&apos;ve used that didn&apos;t feel built for a hospital pharmacy chain. Setup took an afternoon, not a week.&quot;
               </blockquote>
-              <figcaption className="label-tag mt-4 text-xs text-ink-soft/70">
+              <figcaption className="label-tag mt-4 text-xs text-ink-soft">
                 Store manager · retail pharmacy
               </figcaption>
             </ScrollReveal>
@@ -489,7 +489,7 @@ export default function InventoryPage() {
       <section className="py-16 sm:py-20" aria-labelledby="faq-heading">
         <div className="mx-auto max-w-3xl px-5 sm:px-6 lg:px-10">
           <ScrollReveal className="text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">FAQ</span>
+            <span className="label-tag text-xs text-brand">FAQ</span>
             <h2 id="faq-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               Common questions from small pharmacy owners.
             </h2>
@@ -504,7 +504,7 @@ export default function InventoryPage() {
       <section className="border-t border-line py-16 sm:py-20" aria-labelledby="getting-started-heading">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
           <ScrollReveal className="mx-auto max-w-2xl text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">GETTING STARTED</span>
+            <span className="label-tag text-xs text-brand">GETTING STARTED</span>
             <h2 id="getting-started-heading" className="mt-3 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
               Three steps from spreadsheet to live inventory.
             </h2>
@@ -549,10 +549,10 @@ export default function InventoryPage() {
               Free for the first 14 days. No hospital-scale contract, no per-branch pricing — just inventory management sized for a small pharmacy.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/demo" className="btn-focus rounded-lg bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">
+              <Link href="/demo" className="btn-focus rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep">
                 Start free trial
               </Link>
-              <Link href="/sales" className="btn-focus rounded-lg border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">
+              <Link href="/sales" className="btn-focus rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">
                 Explore POS terminal →
               </Link>
             </div>

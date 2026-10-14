@@ -42,7 +42,7 @@ export default function RefundPolicyPage() {
 
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Refund Policy
           </nav>
           <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">Refund Policy</h1>
@@ -55,7 +55,7 @@ export default function RefundPolicyPage() {
           <div className="space-y-10">
             <ScrollReveal className="rounded-[var(--radius-card)] border-2 border-brand bg-brand-mist p-6">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand text-white">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
                 </div>
                 <div>

@@ -48,7 +48,7 @@ export default function ContactForm() {
 
   return (
     <div className="mt-14 mx-auto max-w-2xl">
-      <div className="rounded-[var(--radius-card)] border border-line bg-surface p-8 shadow-sm sm:p-10">
+      <div className="rounded-[var(--radius-card)] border border-line bg-surface p-8 sm:p-10">
         <h2 className="font-display text-2xl font-bold text-ink">Send us a message</h2>
         <p className="mt-2 text-sm text-ink-soft">Fill this out and we&apos;ll route it to the right person. We reply within an hour.</p>
 
@@ -67,7 +67,7 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Your full name"
-                  className="mt-2 w-full rounded-lg border border-line bg-paper px-4 py-3.5 text-sm text-ink placeholder:text-ink-soft/50 shadow-sm focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                  className="mt-2 w-full rounded-xl border border-line bg-paper px-4 py-3.5 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
                 />
               </div>
               <div>
@@ -82,7 +82,7 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="you@pharmacy.com"
-                  className="mt-2 w-full rounded-lg border border-line bg-paper px-4 py-3.5 text-sm text-ink placeholder:text-ink-soft/50 shadow-sm focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                  className="mt-2 w-full rounded-xl border border-line bg-paper px-4 py-3.5 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
                 />
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function ContactForm() {
                 name="topic"
                 value={formData.topic}
                 onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
-                className="mt-2 w-full rounded-lg border border-line bg-paper px-4 py-3.5 text-sm text-ink shadow-sm focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                className="mt-2 w-full rounded-xl border border-line bg-paper px-4 py-3.5 text-sm text-ink focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
               >
                 <option value="">Select a topic…</option>
                 <option value="General inquiry">General inquiry</option>
@@ -120,17 +120,17 @@ export default function ContactForm() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Tell us about your pharmacy and how we can help…"
-                className="mt-2 w-full rounded-lg border border-line bg-paper px-4 py-3.5 text-sm text-ink placeholder:text-ink-soft/50 shadow-sm focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                className="mt-2 w-full rounded-xl border border-line bg-paper px-4 py-3.5 text-sm text-ink placeholder:text-ink-soft/50 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
               ></textarea>
             </div>
             <button
               type="submit"
               disabled={status === "loading"}
-              className="btn-focus w-full rounded-lg bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep disabled:opacity-50"
+              className="btn-focus w-full rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep disabled:opacity-50"
             >
               {status === "loading" ? "Sending message…" : "Send message"}
             </button>
-            <p className="text-center text-xs text-ink-soft/70">
+            <p className="text-center text-xs text-ink-soft">
               By submitting, you agree to our <Link href="/privacy" className="underline hover:text-brand-deep">Privacy Policy</Link>. We never share this with third parties.
             </p>
           </form>
@@ -146,7 +146,7 @@ export default function ContactForm() {
             <button
               type="button"
               onClick={handleReset}
-              className="mt-6 rounded-lg border border-line bg-paper px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-brand-mist"
+              className="mt-6 rounded-full border border-line bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-brand-mist"
             >
               Send another message
             </button>

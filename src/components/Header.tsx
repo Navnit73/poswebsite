@@ -20,18 +20,18 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+    <header className="sticky top-0 z-50 border-b border-black/[0.08] bg-white/80 backdrop-blur-xl backdrop-saturate-[1.8]">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6 lg:px-10">
         <Link href="/" className="flex items-center gap-2.5 group">
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="1" y="1" width="32" height="32" rx="9" fill="#0E2321"/>
-            <path d="M17 8v18M8 17h18" stroke="#F5F7F4" strokeWidth="3.4" strokeLinecap="round"/>
-            <circle cx="25.5" cy="8.5" r="3.4" fill="#E8A33D"/>
+          <svg width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="1" y="1" width="32" height="32" rx="9" fill="#1d1d1f"/>
+            <path d="M17 8v18M8 17h18" stroke="#ffffff" strokeWidth="3.4" strokeLinecap="round"/>
+            <circle cx="25.5" cy="8.5" r="3.4" fill="#2997ff"/>
           </svg>
-          <span className="font-display text-lg font-bold tracking-tight text-ink">Medishelf</span>
+          <span className="font-display text-[17px] font-semibold tracking-tight text-ink">Medishelf</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
           {NAV_ITEMS.map((item) => {
             const currentPath = pathname || "";
             const isActive = currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href));
@@ -39,9 +39,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition hover:text-brand-deep ${
-                  isActive ? "text-brand-deep font-semibold" : "text-ink-soft"
-                }`}
+                className={`text-[13px] transition hover:text-ink ${isActive ? "text-ink font-semibold" : "text-ink/70"}`}
               >
                 {item.label}
               </Link>
@@ -52,7 +50,7 @@ export default function Header() {
         <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/demo"
-            className="btn-focus rounded-lg bg-brand px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+            className="btn-focus rounded-full bg-brand px-4 py-1.5 text-[13px] font-normal text-white hover:bg-brand-deep"
           >
             Start free trial
           </Link>
@@ -63,7 +61,7 @@ export default function Header() {
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileMenuOpen}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="btn-focus rounded-lg p-2 text-ink lg:hidden"
+          className="btn-focus rounded-full p-2 text-ink lg:hidden"
         >
           {mobileMenuOpen ? (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -81,7 +79,7 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-line bg-paper lg:hidden">
+        <div className="border-t border-black/[0.08] bg-white lg:hidden">
           <nav className="flex flex-col gap-1 px-6 py-4" aria-label="Mobile">
             {NAV_ITEMS.map((item) => {
               const currentPath = pathname || "";
@@ -91,9 +89,7 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`rounded-lg px-3 py-2.5 text-sm font-medium hover:bg-brand-mist ${
-                    isActive ? "text-brand-deep font-semibold" : "text-ink-soft"
-                  }`}
+                  className={`rounded-lg px-3 py-3 text-[17px] hover:bg-paper ${isActive ? "text-ink font-semibold" : "text-ink/80"}`}
                 >
                   {item.label}
                 </Link>
@@ -103,7 +99,7 @@ export default function Header() {
               <Link
                 href="/demo"
                 onClick={() => setMobileMenuOpen(false)}
-                className="rounded-lg bg-brand px-3 py-2.5 text-center text-sm font-semibold text-white"
+                className="rounded-full bg-brand px-3 py-2.5 text-center text-sm font-semibold text-white"
               >
                 Start free trial
               </Link>

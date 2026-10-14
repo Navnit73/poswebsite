@@ -197,96 +197,39 @@ export default function HomePage() {
 
       {/* HERO SECTION */}
       <section className="relative overflow-hidden">
-        <div
-          className="pointer-events-none absolute -top-24 right-0 h-[420px] w-[420px] rounded-full bg-brand/10 blur-3xl"
-          aria-hidden="true"
-        />
 
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-6 sm:py-16 lg:grid-cols-2 lg:items-center lg:gap-10 lg:px-10 lg:py-24">
-          <div className="order-2 lg:order-1">
-            <span className="label-tag inline-flex items-center gap-2 rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium leading-none text-brand-deep">
+          <div>
+            <span className="label-tag inline-flex items-center gap-2 text-xs text-brand">
               BUILT FOR INDEPENDENT &amp; SMALL PHARMACIES
             </span>
 
-            <h1 className="mt-5 font-display text-[clamp(1.85rem,4.8vw,3.4rem)] font-bold leading-[1.15] tracking-tight text-ink">
+            <h1 className="mt-4 font-display text-[clamp(2.25rem,5.2vw,3.75rem)] font-semibold leading-[1.07] tracking-[-0.03em] text-ink">
               Simple Pharmacy Inventory Software for Small Pharmacies
             </h1>
 
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-soft sm:text-lg">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft sm:text-xl">
               Medishelf is{" "}
-              <strong className="font-semibold text-ink">
-                small pharmacy inventory software
-              </strong>{" "}
-              built specifically for independent pharmacies, community chemists, and local drugstores. Manage medicine inventory, stock levels, fast counter POS sales, purchases, suppliers, and daily pharmacy operations from one simple, unified system.
+              <strong className="font-semibold text-ink">small pharmacy inventory software</strong>{" "}
+              for independent pharmacies and chemists. Track every batch and expiry date, bill faster at the counter, and see live stock in one simple system.
             </p>
 
-            <ul className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-3 sm:gap-3">
-              <li className="flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2.5 text-sm text-ink-soft">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="shrink-0 text-brand"
-                  aria-hidden="true"
-                >
-                  <rect x="2" y="7" width="20" height="14" rx="2" />
-                  <path d="M16 3v4M8 3v4M2 11h20" />
-                </svg>
-                High-speed POS checkout
-              </li>
-              <li className="flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2.5 text-sm text-ink-soft">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="shrink-0 text-brand"
-                  aria-hidden="true"
-                >
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M12 7v5l3 2" />
-                </svg>
-                Automatic FEFO batch tracking
-              </li>
-              <li className="flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2.5 text-sm text-ink-soft">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="shrink-0 text-brand"
-                  aria-hidden="true"
-                >
-                  <path d="M3 3v18h18" />
-                  <path d="M7 15l4-6 3 3 5-7" />
-                </svg>
-                Audit-ready stock reports
-              </li>
-            </ul>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/demo"
-                className="btn-focus w-full rounded-lg bg-brand px-6 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep sm:w-auto"
+                className="btn-focus w-full rounded-full bg-brand px-7 py-3.5 text-center text-[15px] font-semibold text-white hover:bg-brand-deep sm:w-auto"
               >
                 Start Free Trial
               </Link>
               <Link
                 href="/features"
-                className="btn-focus w-full rounded-lg border border-line bg-surface px-6 py-3.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40 sm:w-auto"
+                className="btn-focus w-full rounded-full border border-brand px-7 py-3.5 text-center text-[15px] font-semibold text-brand hover:bg-brand hover:text-white sm:w-auto"
               >
                 See How It Works
               </Link>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-soft/80">
+            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-soft">
               <span className="flex items-center gap-1.5">
                 <svg
                   width="16"
@@ -330,21 +273,16 @@ export default function HomePage() {
                 >
                   <path d="M20 6L9 17l-5-5" />
                 </svg>
-                Live in an afternoon
+                Plans from $50/month
               </span>
             </div>
           </div>
 
-          <ScrollReveal className="relative order-1 lg:order-2">
+          <ScrollReveal className="relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Soft ambient background glow */}
-              <div
-                className="pointer-events-none absolute -inset-2 rounded-2xl bg-gradient-to-tr from-brand/20 via-amber/15 to-brand-mist/40 opacity-70 blur-2xl"
-                aria-hidden="true"
-              />
 
               {/* Sleek browser window container */}
-              <div className="relative overflow-hidden rounded-2xl border border-line bg-surface shadow-[0_14px_45px_-12px_rgba(41,37,36,0.12)] ring-1 ring-black/[0.04]">
+              <div className="relative overflow-hidden rounded-2xl border border-line bg-surface shadow-[3px_5px_30px_0_rgba(0,0,0,0.22)]">
                 {/* Browser window top bar */}
                 <div className="flex items-center justify-between border-b border-line bg-paper/90 px-4 py-2.5 backdrop-blur">
                   <div className="flex items-center gap-1.5">
@@ -378,7 +316,7 @@ export default function HomePage() {
       </section>
 
       {/* TRUST STRIP */}
-      <section className="border-y border-line bg-surface py-8">
+      <section className="bg-surface py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <p className="text-center text-xs font-medium uppercase tracking-wider text-ink-soft/60">
             Trusted by independent pharmacies, community chemists &amp; local medical stores
@@ -394,13 +332,13 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 1: PHARMACY INVENTORY MANAGEMENT MADE SIMPLE */}
-      <section className="py-20">
+      <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               PHARMACY INVENTORY CONTROL
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Pharmacy Inventory Management Made Simple
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -450,43 +388,43 @@ export default function HomePage() {
       </section>
 
       {/* STATS STRIP */}
-      <section className="border-t border-line py-16">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 lg:grid-cols-4 lg:px-10">
+      <section className="bg-ink py-16 lg:py-20">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-10 px-6 lg:grid-cols-4 lg:px-10">
           <ScrollReveal className="text-center">
-            <p className="font-display text-4xl font-bold text-brand-deep">
+            <p className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               <CountUp to={12000} suffix="+" />
             </p>
-            <p className="mt-2 text-sm text-ink-soft">Medicine SKUs tracked in active stores</p>
+            <p className="mt-2 text-sm text-white/60">Medicine SKUs tracked in active stores</p>
           </ScrollReveal>
           <ScrollReveal className="text-center">
-            <p className="font-display text-4xl font-bold text-brand-deep">
+            <p className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               <CountUp to={45} suffix="%" />
             </p>
-            <p className="mt-2 text-sm text-ink-soft">Fewer stockouts and expiry losses</p>
+            <p className="mt-2 text-sm text-white/60">Fewer stockouts and expiry losses</p>
           </ScrollReveal>
           <ScrollReveal className="text-center">
-            <p className="font-display text-4xl font-bold text-brand-deep">
+            <p className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               <CountUp to={3.2} decimals={1} suffix="s" />
             </p>
-            <p className="mt-2 text-sm text-ink-soft">Average counter checkout speed</p>
+            <p className="mt-2 text-sm text-white/60">Average counter checkout speed</p>
           </ScrollReveal>
           <ScrollReveal className="text-center">
-            <p className="font-display text-4xl font-bold text-brand-deep">
+            <p className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               <CountUp to={99.9} decimals={1} suffix="%" />
             </p>
-            <p className="mt-2 text-sm text-ink-soft">Cloud uptime &amp; reliable data security</p>
+            <p className="mt-2 text-sm text-white/60">Cloud uptime &amp; reliable data security</p>
           </ScrollReveal>
         </div>
       </section>
 
       {/* SECTION 2: MANAGE MEDICINE AND DRUG INVENTORY */}
-      <section className="border-t border-line bg-surface py-20">
+      <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2 lg:px-10">
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               BATCH &amp; EXPIRY TRACKING
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Manage Medicine and Drug Inventory
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -567,7 +505,7 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-paper p-6 shadow-sm">
+          <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-paper p-6">
             <div className="flex items-center justify-between text-xs text-ink-soft">
               <span className="label-tag">PRODUCT · AMOXICILLIN 500MG</span>
               <span className="rounded-full bg-brand-mist px-2 py-0.5 font-medium text-brand-deep">
@@ -578,7 +516,7 @@ export default function HomePage() {
               <div className="flex items-center justify-between px-4 py-3">
                 <div>
                   <p className="text-sm font-medium text-ink">Batch AX-1187 · Rack B-04</p>
-                  <p className="label-tag text-xs text-ink-soft/70">Expires 2026-08-01 · 45 units left</p>
+                  <p className="label-tag text-xs text-ink-soft">Expires 2026-08-01 · 45 units left</p>
                 </div>
                 <span className="label-tag rounded-full bg-rust/10 px-2.5 py-1 text-[11px] font-semibold text-rust">
                   Best expiry (FEFO)
@@ -587,16 +525,16 @@ export default function HomePage() {
               <div className="flex items-center justify-between px-4 py-3">
                 <div>
                   <p className="text-sm font-medium text-ink">Batch AX-1204 · Rack B-04</p>
-                  <p className="label-tag text-xs text-ink-soft/70">Expires 2027-02-14</p>
+                  <p className="label-tag text-xs text-ink-soft">Expires 2027-02-14</p>
                 </div>
-                <span className="label-tag text-xs text-ink-soft/70">214 units</span>
+                <span className="label-tag text-xs text-ink-soft">214 units</span>
               </div>
               <div className="flex items-center justify-between px-4 py-3">
                 <div>
                   <p className="text-sm font-medium text-ink">Batch AX-1250 · Rack B-04</p>
-                  <p className="label-tag text-xs text-ink-soft/70">Expires 2027-09-30</p>
+                  <p className="label-tag text-xs text-ink-soft">Expires 2027-09-30</p>
                 </div>
-                <span className="label-tag text-xs text-ink-soft/70">560 units</span>
+                <span className="label-tag text-xs text-ink-soft">560 units</span>
               </div>
             </div>
             <div className="mt-4 flex items-center justify-between rounded-lg bg-brand-mist/50 px-3 py-2 text-xs text-brand-deep">
@@ -608,7 +546,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 3: PHARMACY POS AND INVENTORY IN ONE SYSTEM */}
-      <section className="py-20">
+      <section className="py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2 lg:px-10">
           <ScrollReveal className="order-2 rounded-[var(--radius-card)] border border-line bg-ink p-6 text-paper lg:order-1 shadow-lg">
             <div className="flex items-center justify-between text-xs text-paper/60">
@@ -645,15 +583,15 @@ export default function HomePage() {
             </div>
             <div className="mt-4 flex items-center justify-between rounded-lg bg-paper/10 px-3 py-2 text-xs">
               <span>Paid via Card / Split Payment</span>
-              <span className="text-amber">✓ Stock deducted atomically</span>
+              <span className="text-sky">✓ Stock deducted atomically</span>
             </div>
           </ScrollReveal>
 
           <ScrollReveal className="order-1 lg:order-2">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               COUNTER POS &amp; BILLING
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Pharmacy POS and Inventory in One System
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -745,13 +683,13 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 4: PHARMACY STOCK MANAGEMENT & CONTROL */}
-      <section className="border-t border-line bg-surface py-20">
+      <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               STOCK OPTIMIZATION
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Pharmacy Stock Management and Control
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -797,13 +735,13 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 5: PURCHASING AND SUPPLIER MANAGEMENT */}
-      <section className="border-t border-line py-20">
+      <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               PROCUREMENT &amp; VENDORS
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Purchasing and Supplier Management
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -868,13 +806,13 @@ export default function HomePage() {
       </section>
 
       {/* OPERATIONAL WALKTHROUGH: A DAY INSIDE MEDISHELF */}
-      <section className="border-t border-line bg-surface py-20">
+      <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               DAILY PHARMACY WORKFLOW
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               What a Day Inside Medishelf Looks Like
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -924,13 +862,13 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 6: BUILT FOR SMALL AND INDEPENDENT PHARMACIES */}
-      <section className="border-t border-line py-20">
+      <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               WHO WE SERVE
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Built for Small and Independent Pharmacies
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -992,13 +930,13 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 7: WHY CHOOSE MEDISHELF (COMPARISON) */}
-      <section className="border-t border-line bg-surface py-20">
+      <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               SYSTEM COMPARISON
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Why Choose Medishelf?
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -1014,17 +952,17 @@ export default function HomePage() {
             <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-paper p-6">
               <h3 className="font-display font-semibold text-ink">Spreadsheets &amp; Paper</h3>
               <ul className="mt-3 space-y-2 text-sm text-ink-soft">
-                <li className="flex gap-2 text-rust">
-                  <span>✕</span> No automatic expiry date notifications
+                <li className="flex gap-2">
+                  <span className="text-rust" aria-hidden="true">✕</span> No automatic expiry date notifications
                 </li>
-                <li className="flex gap-2 text-rust">
-                  <span>✕</span> Prone to manual formula and entry mistakes
+                <li className="flex gap-2">
+                  <span className="text-rust" aria-hidden="true">✕</span> Prone to manual formula and entry mistakes
                 </li>
-                <li className="flex gap-2 text-rust">
-                  <span>✕</span> Disconnected from checkout terminal
+                <li className="flex gap-2">
+                  <span className="text-rust" aria-hidden="true">✕</span> Disconnected from checkout terminal
                 </li>
-                <li className="flex gap-2 text-rust">
-                  <span>✕</span> No multi-staff concurrency protection
+                <li className="flex gap-2">
+                  <span className="text-rust" aria-hidden="true">✕</span> No multi-staff concurrency protection
                 </li>
               </ul>
             </ScrollReveal>
@@ -1032,22 +970,22 @@ export default function HomePage() {
             <ScrollReveal className="rounded-[var(--radius-card)] border border-line bg-paper p-6">
               <h3 className="font-display font-semibold text-ink">Generic Retail POS</h3>
               <ul className="mt-3 space-y-2 text-sm text-ink-soft">
-                <li className="flex gap-2 text-rust">
-                  <span>✕</span> No native batch lot or expiry tracking
+                <li className="flex gap-2">
+                  <span className="text-rust" aria-hidden="true">✕</span> No native batch lot or expiry tracking
                 </li>
-                <li className="flex gap-2 text-rust">
-                  <span>✕</span> Lacks generic drug and dosage fields
+                <li className="flex gap-2">
+                  <span className="text-rust" aria-hidden="true">✕</span> Lacks generic drug and dosage fields
                 </li>
-                <li className="flex gap-2 text-rust">
-                  <span>✕</span> Cannot enforce FEFO dispensing rules
+                <li className="flex gap-2">
+                  <span className="text-rust" aria-hidden="true">✕</span> Cannot enforce FEFO dispensing rules
                 </li>
-                <li className="flex gap-2 text-rust">
-                  <span>✕</span> Requires double data entry in separate tools
+                <li className="flex gap-2">
+                  <span className="text-rust" aria-hidden="true">✕</span> Requires double data entry in separate tools
                 </li>
               </ul>
             </ScrollReveal>
 
-            <ScrollReveal className="rounded-[var(--radius-card)] border-2 border-brand bg-paper p-6 shadow-md">
+            <ScrollReveal className="rounded-[var(--radius-card)] border-2 border-brand bg-surface p-6">
               <div className="flex items-center justify-between">
                 <h3 className="font-display font-semibold text-ink">Medishelf Software</h3>
                 <span className="label-tag rounded-full bg-brand-mist px-2 py-0.5 text-[11px] font-semibold text-brand-deep">
@@ -1055,17 +993,17 @@ export default function HomePage() {
                 </span>
               </div>
               <ul className="mt-3 space-y-2 text-sm text-ink">
-                <li className="flex gap-2 text-brand">
-                  <span>✓</span> Automatic FEFO batch &amp; expiry tracking
+                <li className="flex gap-2">
+                  <span className="text-brand" aria-hidden="true">✓</span> Automatic FEFO batch &amp; expiry tracking
                 </li>
-                <li className="flex gap-2 text-brand">
-                  <span>✓</span> Instant POS billing synced with inventory
+                <li className="flex gap-2">
+                  <span className="text-brand" aria-hidden="true">✓</span> Instant POS billing synced with inventory
                 </li>
-                <li className="flex gap-2 text-brand">
-                  <span>✓</span> Automated low-stock and reorder alerts
+                <li className="flex gap-2">
+                  <span className="text-brand" aria-hidden="true">✓</span> Automated low-stock and reorder alerts
                 </li>
-                <li className="flex gap-2 text-brand">
-                  <span>✓</span> Cloud-based with daily PDF audit reports
+                <li className="flex gap-2">
+                  <span className="text-brand" aria-hidden="true">✓</span> Cloud-based with daily PDF audit reports
                 </li>
               </ul>
             </ScrollReveal>
@@ -1074,13 +1012,13 @@ export default function HomePage() {
       </section>
 
       {/* FEATURE HIGHLIGHTS */}
-      <section className="py-20">
+      <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">
+            <span className="label-tag text-xs text-brand">
               ALL-IN-ONE CAPABILITIES
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Everything Your Pharmacy Needs from Counter to Back Office
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
@@ -1194,7 +1132,7 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="border-t border-line bg-brand-deep py-20 text-paper">
+      <section className="bg-ink py-20 text-white lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
           <ScrollReveal>
             <svg
@@ -1202,7 +1140,7 @@ export default function HomePage() {
               height="28"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="mx-auto text-amber"
+              className="mx-auto text-sky"
               aria-hidden="true"
             >
               <path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z" />
@@ -1226,11 +1164,11 @@ export default function HomePage() {
       </section>
 
       {/* PRICING PREVIEW */}
-      <section className="py-20">
+      <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <ScrollReveal className="text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">PRICING</span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <span className="label-tag text-xs text-brand">PRICING</span>
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Transparent Pricing Built for Small Pharmacies
             </h2>
             <p className="mt-3 text-ink-soft">
@@ -1255,22 +1193,22 @@ export default function HomePage() {
               </Link>
             </ScrollReveal>
 
-            <ScrollReveal className="rounded-[var(--radius-card)] border-2 border-brand bg-surface p-7 shadow-md">
-              <span className="label-tag rounded-full bg-brand-mist px-2.5 py-1 text-[11px] font-semibold text-brand-deep">
+            <ScrollReveal className="relative rounded-[var(--radius-card)] border-2 border-brand bg-surface p-7">
+              <span className="label-tag absolute -top-3 left-7 rounded-full bg-brand px-2.5 py-1 text-[11px] font-semibold text-white">
                 Most Popular
               </span>
-              <h3 className="mt-3 font-display font-semibold text-ink">Growth</h3>
+              <h3 className="font-display font-semibold text-ink">Growth</h3>
               <p className="mt-3 font-display text-3xl font-bold text-ink">
-                $100<span className="text-base font-normal text-ink-soft">/mo</span>
+                $99<span className="text-base font-normal text-ink-soft">/mo</span>
               </p>
               <p className="mt-1 text-sm text-ink-soft">
                 Up to 3 store locations, unlimited staff accounts, and consolidated sales reporting.
               </p>
               <Link
-                href="/pricing"
-                className="btn-focus mt-6 block rounded-lg bg-brand py-2.5 text-center text-sm font-semibold text-white transition hover:bg-brand-deep"
+                href="/demo"
+                className="btn-focus mt-6 block rounded-full bg-brand py-2.5 text-center text-sm font-semibold text-white transition hover:bg-brand-deep"
               >
-                View Plan Details
+                Start free trial
               </Link>
             </ScrollReveal>
 
@@ -1292,11 +1230,11 @@ export default function HomePage() {
       </section>
 
       {/* FAQ SECTION */}
-      <section className="border-t border-line bg-surface py-20">
+      <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6 lg:px-10">
           <ScrollReveal className="text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">FAQ</span>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
+            <span className="label-tag text-xs text-brand">FAQ</span>
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-[2.5rem] sm:leading-[1.1]">
               Frequently Asked Questions
             </h2>
             <p className="mt-3 text-sm text-ink-soft">
@@ -1311,25 +1249,25 @@ export default function HomePage() {
       </section>
 
       {/* FINAL CONVERSION CTA */}
-      <section className="border-t border-line py-20">
+      <section className="bg-ink py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
           <ScrollReveal>
-            <h2 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-white sm:text-5xl sm:leading-[1.08]">
               Stop Losing Money to Expired Medicines and Stockouts
             </h2>
-            <p className="mt-4 text-lg text-ink-soft">
+            <p className="mx-auto mt-5 max-w-2xl text-lg text-white/70">
               Join independent and community pharmacies using Medishelf to automate stock control, speed up counter checkout, and protect profit margins.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Link
                 href="/demo"
-                className="btn-focus rounded-lg bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+                className="btn-focus rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep"
               >
                 Start Free Trial
               </Link>
               <Link
                 href="/contact"
-                className="btn-focus rounded-lg border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40"
+                className="btn-focus rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white hover:border-white/70"
               >
                 Talk to Sales
               </Link>

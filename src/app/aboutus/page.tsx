@@ -45,10 +45,10 @@ export default function AboutUsPage() {
       {/* Header */}
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> About us
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             OUR STORY &amp; MISSION
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
@@ -64,7 +64,7 @@ export default function AboutUsPage() {
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-2 lg:items-center lg:px-10">
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">MISSION</span>
+            <span className="label-tag text-xs text-brand">MISSION</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">
               Inventory software that fits a pharmacy, not the other way around.
             </h2>
@@ -103,7 +103,7 @@ export default function AboutUsPage() {
       <section className="border-t border-line bg-surface py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">VALUES</span>
+            <span className="label-tag text-xs text-brand">VALUES</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">What we believe in.</h2>
           </ScrollReveal>
 
@@ -166,10 +166,10 @@ export default function AboutUsPage() {
             <h2 className="font-display text-3xl font-bold tracking-tight text-ink">Want to know more?</h2>
             <p className="mt-4 text-lg text-ink-soft">We&apos;d love to hear about your pharmacy and show you how Medishelf fits.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/demo" className="btn-focus rounded-lg bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">
+              <Link href="/demo" className="btn-focus rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep">
                 Start free trial
               </Link>
-              <Link href="/contact" className="btn-focus rounded-lg border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">
+              <Link href="/contact" className="btn-focus rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">
                 Get in touch
               </Link>
             </div>

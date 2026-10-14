@@ -112,7 +112,7 @@ export default function BlogPostPage({ params }: PageProps) {
       />
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag mb-4 text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag mb-4 text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span>{" "}
             <Link href="/blog" className="hover:text-brand-deep">Blog</Link> <span aria-hidden="true">/</span> {post.category}
           </nav>
@@ -130,7 +130,7 @@ export default function BlogPostPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24">
+      <section className="bg-surface py-16 lg:py-24">
         <article className="mx-auto max-w-3xl px-6 lg:px-10">
           <div
             className="markdown-content"
@@ -157,13 +157,13 @@ export default function BlogPostPage({ params }: PageProps) {
               <div className="flex shrink-0 gap-2.5 sm:flex-col">
                 <Link
                   href="/"
-                  className="btn-focus rounded-lg border border-line bg-surface px-4 py-2 text-center text-xs font-semibold text-ink transition hover:border-brand/40"
+                  className="btn-focus rounded-full border border-line bg-surface px-4 py-2 text-center text-xs font-semibold text-ink transition hover:border-brand/40"
                 >
                   Explore Medishelf
                 </Link>
                 <Link
                   href="/demo"
-                  className="btn-focus rounded-lg bg-brand px-4 py-2 text-center text-xs font-semibold text-white shadow-sm transition hover:bg-brand-deep"
+                  className="btn-focus rounded-full bg-brand px-4 py-2 text-center text-xs font-semibold text-white transition hover:bg-brand-deep"
                 >
                   Start Free Trial
                 </Link>

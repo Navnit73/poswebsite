@@ -87,10 +87,10 @@ export default function CaseStudyPage() {
       {/* Header */}
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Case studies
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             REAL PHARMACY SUCCESS STORIES
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
@@ -99,7 +99,7 @@ export default function CaseStudyPage() {
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
             Five small pharmacies, five different starting points, one pharmacy inventory management system that fit all of them — from a single counter in Austin to a community clinic dispensary in Travis County.
           </p>
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft/80">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
             Each story below comes from a store that was already running something — a paper register, a spreadsheet, a general retail POS, a plain notebook — before it switched, because a near miss or a slow training week made the cost of the old system visible for the first time.
           </p>
         </div>
@@ -122,35 +122,35 @@ export default function CaseStudyPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <p className="text-center text-xs font-medium uppercase tracking-wider text-ink-soft/60">Jump to a story</p>
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-            <a href="#city-pharmacy" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <a href="#city-pharmacy" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="mx-auto text-brand"><path d="M4 21V10M20 21V10M2 10l2-6h16l2 6M8 21v-6a2 2 0 012-2h4a2 2 0 012 2v6"/></svg>
               <p className="mt-3 font-display text-2xl font-bold text-brand-deep">62%</p>
               <p className="mt-1 text-xs text-ink-soft">Less expiry waste</p>
               <p className="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">City Pharmacy</p>
             </a>
 
-            <a href="#wellness-rx" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <a href="#wellness-rx" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="mx-auto text-brand"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="8.5" y="14" width="7" height="7" rx="1"/></svg>
               <p className="mt-3 font-display text-2xl font-bold text-brand-deep">45%</p>
               <p className="mt-1 text-xs text-ink-soft">Fewer stockouts</p>
               <p className="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">Wellness Rx</p>
             </a>
 
-            <a href="#joshi-clinic" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <a href="#joshi-clinic" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="mx-auto text-brand"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12h6M12 9v6"/></svg>
               <p className="mt-3 font-display text-2xl font-bold text-brand-deep">0</p>
               <p className="mt-1 text-xs text-ink-soft">Expired stock sold</p>
               <p className="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">Joshi Clinic</p>
             </a>
 
-            <a href="#greencross" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <a href="#greencross" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="mx-auto text-brand"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
               <p className="mt-3 font-display text-2xl font-bold text-brand-deep">2.4s</p>
               <p className="mt-1 text-xs text-ink-soft">Avg checkout</p>
               <p className="mt-2 text-[11px] font-medium uppercase tracking-wide text-ink-soft/60 group-hover:text-brand-deep">GreenCross</p>
             </a>
 
-            <a href="#apex-pharmacy" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+            <a href="#apex-pharmacy" className="group rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center transition hover:-translate-y-0.5 hover:border-brand/40">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="mx-auto text-brand"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               <p className="mt-3 font-display text-2xl font-bold text-brand-deep">1 day</p>
               <p className="mt-1 text-xs text-ink-soft">To train new staff</p>
@@ -164,7 +164,7 @@ export default function CaseStudyPage() {
       <section className="border-t border-line py-16">
         <div className="mx-auto max-w-5xl px-6 lg:px-10">
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">WHY THESE FIVE</span>
+            <span className="label-tag text-xs text-brand">WHY THESE FIVE</span>
             <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-ink">We picked stores that don&apos;t look alike on purpose.</h2>
             <p className="mt-4 max-w-3xl text-sm leading-relaxed text-ink-soft">
               It would be easy to fill this page with five nearly identical urban pharmacies. Instead, these five cover the actual range of stores that end up on Medishelf: a solo counter, a small chain, a rural clinic dispensary, a mixed medical store, and a family business with constant staff turnover. If your store doesn&apos;t match any of them exactly, it&apos;s probably closer to one than you&apos;d expect — a pharmacy stock management system either solves the batch-and-expiry problem at your scale, or it doesn&apos;t, and store size changes that less than people assume.
@@ -182,7 +182,7 @@ export default function CaseStudyPage() {
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><path d="M4 21V10M20 21V10M2 10l2-6h16l2 6M8 21v-6a2 2 0 012-2h4a2 2 0 012 2v6"/></svg>
                 </span>
-                <span className="label-tag text-xs font-medium text-brand-deep">INDEPENDENT PHARMACY · AUSTIN, TX</span>
+                <span className="label-tag text-xs text-brand">INDEPENDENT PHARMACY · AUSTIN, TX</span>
               </div>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">City Pharmacy cut expiry write-offs by 62% in 90 days.</h2>
 
@@ -222,7 +222,7 @@ export default function CaseStudyPage() {
               </div>
 
               <div className="mt-6 grid grid-cols-2 gap-4">
-                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center shadow-sm">
+                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
                   <p className="font-display text-3xl font-bold text-brand-deep">62%</p>
                   <p className="mt-2 text-xs text-ink-soft">Less expiry waste</p>
                 </div>
@@ -250,7 +250,7 @@ export default function CaseStudyPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
             <ScrollReveal className="order-2 lg:order-1 lg:sticky lg:top-24">
               <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center shadow-sm">
+                <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
                   <p className="font-display text-3xl font-bold text-brand-deep">3</p>
                   <p className="mt-1 text-xs text-ink-soft">Stores on one account</p>
                 </div>
@@ -282,7 +282,7 @@ export default function CaseStudyPage() {
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="8.5" y="14" width="7" height="7" rx="1"/></svg>
                 </span>
-                <span className="label-tag text-xs font-medium text-brand-deep">SMALL CHAIN · SEATTLE, WA</span>
+                <span className="label-tag text-xs text-brand">SMALL CHAIN · SEATTLE, WA</span>
               </div>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">Wellness Rx unified 3 stores under one dashboard.</h2>
 
@@ -318,7 +318,7 @@ export default function CaseStudyPage() {
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12h6M12 9v6"/></svg>
                 </span>
-                <span className="label-tag text-xs font-medium text-brand-deep">COMMUNITY CLINIC PHARMACY · TRAVIS COUNTY, TX</span>
+                <span className="label-tag text-xs text-brand">COMMUNITY CLINIC PHARMACY · TRAVIS COUNTY, TX</span>
               </div>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">A 200-SKU dispensary went from a notebook to a live dashboard.</h2>
 
@@ -357,7 +357,7 @@ export default function CaseStudyPage() {
               </div>
 
               <div className="mt-6 grid grid-cols-2 gap-4">
-                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center shadow-sm">
+                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
                   <p className="font-display text-3xl font-bold text-brand-deep">200</p>
                   <p className="mt-1 text-xs text-ink-soft">SKUs tracked</p>
                 </div>
@@ -385,7 +385,7 @@ export default function CaseStudyPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
             <ScrollReveal className="order-2 lg:order-1 lg:sticky lg:top-24">
               <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center shadow-sm">
+                <div className="rounded-[var(--radius-card)] border border-line bg-paper p-5 text-center">
                   <p className="font-display text-3xl font-bold text-brand-deep">2.4s</p>
                   <p className="mt-1 text-xs text-ink-soft">Avg checkout time</p>
                 </div>
@@ -417,7 +417,7 @@ export default function CaseStudyPage() {
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><path d="M6 2l1.5 4h9L18 2M4 8h16l-1.5 12a2 2 0 012 1.8H7.5A2 2 0 015.5 20L4 8z"/><path d="M9 12h6"/></svg>
                 </span>
-                <span className="label-tag text-xs font-medium text-brand-deep">MEDICAL STORE · DALLAS, TX</span>
+                <span className="label-tag text-xs text-brand">MEDICAL STORE · DALLAS, TX</span>
               </div>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">GreenCross replaced a generic POS that couldn&apos;t see expiry dates.</h2>
 
@@ -453,7 +453,7 @@ export default function CaseStudyPage() {
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-mist text-brand-deep">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                 </span>
-                <span className="label-tag text-xs font-medium text-brand-deep">FAMILY-RUN PHARMACY · HOUSTON, TX</span>
+                <span className="label-tag text-xs text-brand">FAMILY-RUN PHARMACY · HOUSTON, TX</span>
               </div>
               <h2 className="mt-3 font-display text-2xl font-bold text-ink">Apex Pharmacy trains new hires in a day, not a week.</h2>
 
@@ -489,7 +489,7 @@ export default function CaseStudyPage() {
               </div>
 
               <div className="mt-6 grid grid-cols-2 gap-4">
-                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center shadow-sm">
+                <div className="rounded-[var(--radius-card)] border border-line bg-surface p-5 text-center">
                   <p className="font-display text-3xl font-bold text-brand-deep">1 day</p>
                   <p className="mt-1 text-xs text-ink-soft">To train new staff</p>
                 </div>
@@ -515,7 +515,7 @@ export default function CaseStudyPage() {
       <section className="border-t border-line bg-surface py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">WHAT THEY HAD IN COMMON</span>
+            <span className="label-tag text-xs text-brand">WHAT THEY HAD IN COMMON</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Different stores, the same three problems.</h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
               A single counter in Austin, a three-store chain in Seattle, a community dispensary in Travis County, a medical store in Dallas, and a family pharmacy in Houston — the shops couldn&apos;t look more different. But every one of them came to Medishelf carrying the same three problems, just at a different scale.
@@ -546,7 +546,7 @@ export default function CaseStudyPage() {
             </ScrollReveal>
           </div>
 
-          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-ink-soft/80">
+          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-ink-soft">
             A note on the numbers: figures above come from each store&apos;s own before-and-after comparison, self-reported by the owner or pharmacist and measured against their prior system over the 90 days following go-live, unless stated otherwise. Results vary by store size, product mix and how consistently staff use batch tracking at receiving — a pharmacy inventory management software can only be as accurate as the stock entered into it.
           </p>
         </div>
@@ -556,7 +556,7 @@ export default function CaseStudyPage() {
       <section className="py-20">
         <div className="mx-auto max-w-3xl px-6 lg:px-10">
           <ScrollReveal className="text-center">
-            <span className="label-tag text-xs font-medium text-brand-deep">BEFORE YOU SWITCH</span>
+            <span className="label-tag text-xs text-brand">BEFORE YOU SWITCH</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Questions these five stores asked us first</h2>
           </ScrollReveal>
 
@@ -573,10 +573,10 @@ export default function CaseStudyPage() {
             <h2 className="font-display text-3xl font-bold tracking-tight">Ready to write your own case study?</h2>
             <p className="mt-4 text-lg text-paper/70">Start with a 7-day free trial and see the difference in your first month.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/demo" className="btn-focus rounded-lg bg-white px-7 py-3.5 text-sm font-semibold text-brand-deep shadow-sm transition hover:bg-paper">
+              <Link href="/demo" className="btn-focus rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-brand-deep transition hover:bg-paper">
                 Start free trial
               </Link>
-              <Link href="/contact" className="btn-focus rounded-lg border border-paper/30 px-7 py-3.5 text-sm font-semibold text-paper transition hover:border-paper/60">
+              <Link href="/contact" className="btn-focus rounded-full border border-paper/30 px-7 py-3.5 text-sm font-semibold text-paper transition hover:border-paper/60">
                 Talk to sales
               </Link>
             </div>

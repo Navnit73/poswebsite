@@ -42,7 +42,7 @@ export default function PrivacyPage() {
 
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Privacy Policy
           </nav>
           <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">Privacy Policy</h1>

@@ -46,10 +46,10 @@ export default function DemoPage() {
       {/* Header */}
       <section className="border-b border-line bg-surface py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span> Free trial
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             7-DAY FREE TRIAL
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
@@ -109,10 +109,10 @@ export default function DemoPage() {
 
             <div className="mt-4 rounded-[var(--radius-card)] border border-line bg-paper p-5">
               <div className="flex items-start gap-3">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="mt-0.5 shrink-0 text-amber"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="mt-0.5 shrink-0 text-brand"><path d="M7 7h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7zm9 0h5v5c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H16V7z"/></svg>
                 <div>
                   <p className="text-sm leading-relaxed text-ink-soft">&quot;We imported 1,200 SKUs from a spreadsheet and were billing by lunchtime. I didn&apos;t think it would be that quick.&quot;</p>
-                  <p className="mt-2 text-xs text-ink-soft/70">— Pharmacist owner, Chicago, IL</p>
+                  <p className="mt-2 text-xs text-ink-soft">— Pharmacist owner, Chicago, IL</p>
                 </div>
               </div>
             </div>

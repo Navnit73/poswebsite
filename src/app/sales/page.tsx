@@ -47,11 +47,11 @@ export default function SalesPage() {
       {/* Page Header */}
       <section className="border-b border-line bg-surface py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft/70">
+          <nav aria-label="Breadcrumb" className="label-tag text-xs text-ink-soft">
             <Link href="/" className="hover:text-brand-deep">Home</Link> <span aria-hidden="true">/</span>
             <Link href="/features" className="hover:text-brand-deep">Features</Link> <span aria-hidden="true">/</span> POS Terminal
           </nav>
-          <span className="label-tag mt-4 inline-block rounded-[var(--radius-label)] border border-brand/25 bg-brand-mist px-2.5 py-1 text-[11px] font-medium text-brand-deep">
+          <span className="label-tag mt-4 inline-block text-xs text-brand">
             PHARMACY POINT OF SALE &amp; BILLING
           </span>
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl">
@@ -72,7 +72,7 @@ export default function SalesPage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-10">
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">WHY IT&apos;S DIFFERENT</span>
+            <span className="label-tag text-xs text-brand">WHY IT&apos;S DIFFERENT</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">A small pharmacy runs on thinner margins and fewer hands.</h2>
             <div className="mt-5 space-y-4 leading-relaxed text-ink-soft">
               <p>
@@ -96,7 +96,7 @@ export default function SalesPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-10">
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">A TYPICAL AFTERNOON</span>
+            <span className="label-tag text-xs text-brand">A TYPICAL AFTERNOON</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">What a busy hour looks like at a small pharmacy.</h2>
             <div className="mt-5 space-y-4 leading-relaxed text-ink-soft">
               <p>
@@ -117,7 +117,7 @@ export default function SalesPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">KEYBOARD-FIRST</span>
+            <span className="label-tag text-xs text-brand">KEYBOARD-FIRST</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Every action is one key away.</h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
               The POS terminal was designed for cashiers who can&apos;t afford to take their hands off the keyboard. Every critical action has a function key shortcut, so a small pharmacy team stays fast even during the after-work rush, when the queue is longest and patience is shortest. New staff usually pick up the full shortcut set within a single shift.
@@ -178,12 +178,12 @@ export default function SalesPage() {
             </div>
             <div className="mt-4 flex items-center justify-between rounded-lg bg-paper/10 px-3 py-2 text-xs">
               <span>Paid via UPI</span>
-              <span className="text-amber">✓ Verified server-side</span>
+              <span className="text-sky">✓ Verified server-side</span>
             </div>
           </ScrollReveal>
 
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">SERVER-SIDE VERIFICATION</span>
+            <span className="label-tag text-xs text-brand">SERVER-SIDE VERIFICATION</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Prices verified on every line item.</h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
               When a sale is submitted, the server re-calculates every line item from the database price, batch cost, and applicable tax rate. If the client-side total doesn&apos;t match, the sale is rejected. This prevents price manipulation at the register — a real risk for a small pharmacy that cannot afford a daily cash reconciliation team to catch errors after the fact.
@@ -204,7 +204,7 @@ export default function SalesPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">FEFO BATCH SELECTION</span>
+            <span className="label-tag text-xs text-brand">FEFO BATCH SELECTION</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Never sell an expired batch by mistake.</h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
               A small pharmacy usually holds one or two batches of each product, not shelves of surplus stock. That makes expiry management a daily concern rather than a monthly clean-up. When a cashier searches for a product, the terminal automatically ranks batches First-Expiry-First-Out and marks the one to sell with a &quot;Best expiry&quot; badge, so the right box leaves the shelf without anyone checking dates by hand.
@@ -237,7 +237,7 @@ export default function SalesPage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">PAYMENTS</span>
+            <span className="label-tag text-xs text-brand">PAYMENTS</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Cash, card, UPI — or all three at once.</h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
               Customers at a small pharmacy pay however they have money on them at that moment — part cash, part UPI, sometimes a card for the rest. The terminal supports every combination without forcing the cashier to run separate transactions.
@@ -275,7 +275,7 @@ export default function SalesPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <ScrollReveal className="max-w-2xl">
-            <span className="label-tag text-xs font-medium text-brand-deep">BUILT FOR THE JOB</span>
+            <span className="label-tag text-xs text-brand">BUILT FOR THE JOB</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Everything a small pharmacy needs, nothing it doesn&apos;t.</h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
               Generic retail POS software is built for shops that sell shirts and snacks, not medicine. It treats every product the same, has no idea what a batch or an expiry date is, and leaves prescription handling to a notebook by the register. Here&apos;s what changes with a terminal built specifically for a small pharmacy.
@@ -309,7 +309,7 @@ export default function SalesPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
             <ScrollReveal>
-              <span className="label-tag text-xs font-medium text-brand-deep">SWITCHING OVER</span>
+              <span className="label-tag text-xs text-brand">SWITCHING OVER</span>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">Moving off a register or a notebook takes one afternoon.</h2>
               <p className="mt-4 leading-relaxed text-ink-soft">
                 Most small pharmacy owners put off switching software because they picture weeks of setup and a staff that refuses to learn a new screen. In practice, the move takes far less time than closing the shop for inventory day.
@@ -358,7 +358,7 @@ export default function SalesPage() {
       <section className="border-t border-line bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6 lg:px-10">
           <ScrollReveal>
-            <span className="label-tag text-xs font-medium text-brand-deep">QUESTIONS</span>
+            <span className="label-tag text-xs text-brand">QUESTIONS</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink">What small pharmacy owners ask before switching.</h2>
             <div className="mt-8 divide-y divide-line border-y border-line">
               <div className="py-5">
@@ -399,10 +399,10 @@ export default function SalesPage() {
               Load your real product list and see how a small pharmacy checkout should feel — fast at the counter, accurate on the shelf.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/demo" className="btn-focus rounded-lg bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-deep">
+              <Link href="/demo" className="btn-focus rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-deep">
                 Start free trial
               </Link>
-              <Link href="/inventory" className="btn-focus rounded-lg border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">
+              <Link href="/inventory" className="btn-focus rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-ink transition hover:border-brand/40">
                 ← Explore inventory module
               </Link>
             </div>

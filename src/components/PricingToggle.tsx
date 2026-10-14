@@ -43,7 +43,7 @@ export default function PricingToggle() {
             </p>
             <Link
               href="/demo"
-              className="btn-focus mt-6 block rounded-lg border border-line py-2.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40"
+              className="btn-focus mt-6 block rounded-full border border-line py-2.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40"
             >
               Start free trial
             </Link>
@@ -86,7 +86,7 @@ export default function PricingToggle() {
             </p>
             <Link
               href="/demo"
-              className="btn-focus mt-6 block rounded-lg bg-brand py-2.5 text-center text-sm font-semibold text-white transition hover:bg-brand-deep"
+              className="btn-focus mt-6 block rounded-full bg-brand py-2.5 text-center text-sm font-semibold text-white transition hover:bg-brand-deep"
             >
               Start free trial
             </Link>
@@ -123,7 +123,7 @@ export default function PricingToggle() {
             <p className="mt-5 font-display text-4xl font-bold text-ink">Custom</p>
             <Link
               href="/contact"
-              className="btn-focus mt-6 block rounded-lg border border-line py-2.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40"
+              className="btn-focus mt-6 block rounded-full border border-line py-2.5 text-center text-sm font-semibold text-ink transition hover:border-brand/40"
             >
               Talk to sales
             </Link>
