@@ -92,14 +92,14 @@ export default function TermsPage() {
             <ScrollReveal>
               <h2 className="font-display text-xl font-bold text-ink">6. Acceptable use</h2>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                To keep the platform safe for every pharmacy on it, you agree not to reverse-engineer the Service, access another tenant&apos;s data, use it unlawfully, introduce malware, or resell access without our written consent. These rules exist to protect your data as much as ours.
+                To keep the platform safe for every pharmacy on it, you agree not to reverse-engineer the Service, access another tenant&apos;s data, use it unlawfully, introduce malware, or resell access without our written consent. These rules exist to protect your data as much as ours. The full rules are in our <Link href="/acceptable-use" className="text-brand-deep hover:underline">Acceptable Use Policy</Link>, which forms part of these Terms.
               </p>
             </ScrollReveal>
 
             <ScrollReveal>
               <h2 className="font-display text-xl font-bold text-ink">7. Uptime and support</h2>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                We target 99.9% uptime and announce planned maintenance in advance. Enterprise plans can include a formal uptime SLA with defined remedies — ask <Link href="/contact" className="text-brand-deep hover:underline">our team</Link> for details.
+                We target 99.9% uptime and announce planned maintenance in advance. Response times by plan are listed on our <Link href="/support" className="text-brand-deep hover:underline">Support &amp; SLA</Link> page. Enterprise plans can include a formal uptime SLA with defined remedies — ask <Link href="/contact" className="text-brand-deep hover:underline">our team</Link> for details.
               </p>
             </ScrollReveal>
 

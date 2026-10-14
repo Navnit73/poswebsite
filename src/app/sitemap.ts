@@ -18,6 +18,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: "/privacy", priority: 0.5, changeFrequency: "monthly" },
     { route: "/refundPolicy", priority: 0.5, changeFrequency: "monthly" },
     { route: "/tmc", priority: 0.5, changeFrequency: "monthly" },
+    { route: "/faq", priority: 0.75, changeFrequency: "monthly" },
+    { route: "/support", priority: 0.6, changeFrequency: "monthly" },
+    { route: "/security", priority: 0.6, changeFrequency: "monthly" },
+    { route: "/legal", priority: 0.5, changeFrequency: "monthly" },
+    { route: "/editorial-policy", priority: 0.5, changeFrequency: "monthly" },
+    { route: "/accessibility", priority: 0.4, changeFrequency: "monthly" },
+    { route: "/cookie-policy", priority: 0.4, changeFrequency: "monthly" },
+    { route: "/acceptable-use", priority: 0.4, changeFrequency: "monthly" },
+    { route: "/disclaimer", priority: 0.4, changeFrequency: "monthly" },
   ];
 
   const routes: MetadataRoute.Sitemap = staticPages.map((page) => ({

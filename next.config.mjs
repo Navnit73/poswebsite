@@ -44,11 +44,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/refundpolicy',
-        destination: '/refundPolicy',
-        permanent: true,
-      },
-      {
         source: '/terms',
         destination: '/tmc',
         permanent: true,
@@ -88,6 +83,16 @@ const nextConfig = {
         destination: '/sales',
         permanent: true,
       },
+      { source: '/faqs', destination: '/faq', permanent: true },
+      { source: '/help', destination: '/faq', permanent: true },
+      { source: '/cookies', destination: '/cookie-policy', permanent: true },
+      { source: '/cookie', destination: '/cookie-policy', permanent: true },
+      { source: '/aup', destination: '/acceptable-use', permanent: true },
+      { source: '/sla', destination: '/support', permanent: true },
+      { source: '/trust', destination: '/legal', permanent: true },
+      { source: '/trust-center', destination: '/legal', permanent: true },
+      { source: '/editorial', destination: '/editorial-policy', permanent: true },
+      { source: '/privacy-policy', destination: '/privacy', permanent: true },
     ];
   },
 };

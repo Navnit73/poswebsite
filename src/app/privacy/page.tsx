@@ -115,7 +115,7 @@ export default function PrivacyPage() {
             <ScrollReveal>
               <h2 className="font-display text-xl font-bold text-ink">8. Cookies</h2>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                We use essential cookies for login sessions and anonymized analytics cookies to see how the product is used. No advertising or cross-site tracking cookies. Disable non-essential cookies anytime in your browser settings.
+                We use essential cookies for login sessions and anonymized analytics cookies to see how the product is used. No advertising or cross-site tracking cookies. Disable non-essential cookies anytime in your browser settings. Every cookie we set is listed in our <Link href="/cookie-policy" className="text-brand-deep hover:underline">Cookie Policy</Link>, and our security controls are detailed on the <Link href="/security" className="text-brand-deep hover:underline">Security</Link> page.
               </p>
             </ScrollReveal>
 

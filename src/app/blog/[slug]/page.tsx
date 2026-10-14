@@ -72,8 +72,9 @@ export default function BlogPostPage({ params }: PageProps) {
     author: {
       "@type": "Organization",
       name: "Medishelf Editorial Team",
-      url: "https://medishelf.co/aboutus",
+      url: "https://medishelf.co/editorial-policy",
     },
+    publishingPrinciples: "https://medishelf.co/editorial-policy",
     publisher: {
       "@type": "Organization",
       name: "Medishelf",
@@ -122,9 +123,16 @@ export default function BlogPostPage({ params }: PageProps) {
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-5xl leading-tight">
             {post.title}
           </h1>
-          <div className="mt-6 flex items-center gap-4 text-xs font-medium text-ink-soft">
-            <span>{post.date}</span>
-            <span>•</span>
+          <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-medium text-ink-soft">
+            <span>
+              By{" "}
+              <Link href="/editorial-policy" className="text-ink hover:text-brand-deep hover:underline">
+                Medishelf Editorial Team
+              </Link>
+            </span>
+            <span aria-hidden="true">•</span>
+            <time dateTime={post.parsedDate.toISOString()}>{post.date}</time>
+            <span aria-hidden="true">•</span>
             <span>{post.readTime} min read</span>
           </div>
         </div>
@@ -137,8 +145,22 @@ export default function BlogPostPage({ params }: PageProps) {
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
 
+          {/* Editorial transparency note (E-E-A-T) */}
+          <aside
+            aria-label="About this guide"
+            className="mt-14 rounded-xl border border-line bg-paper p-5 text-sm leading-relaxed text-ink-soft"
+          >
+            <p className="font-semibold text-ink">How this guide was written</p>
+            <p className="mt-1.5">
+              Researched and written by the Medishelf Editorial Team, fact-checked by a second reviewer against primary sources, and published on {post.date}. Read our{" "}
+              <Link href="/editorial-policy" className="font-medium text-brand-deep hover:underline">editorial policy</Link>. This article is general pharmacy-operations information, not medical, legal or tax advice —{" "}
+              <Link href="/disclaimer" className="font-medium text-brand-deep hover:underline">see our disclaimer</Link>. Spotted an error?{" "}
+              <a href="mailto:support@medishelf.co?subject=Blog%20correction" className="font-medium text-brand-deep hover:underline">Let us know</a>.
+            </p>
+          </aside>
+
           {/* Contextual Product Box linking back to Homepage and Trial */}
-          <div className="mt-14 rounded-xl border border-line bg-paper p-6 sm:p-8">
+          <div className="mt-8 rounded-xl border border-line bg-paper p-6 sm:p-8">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <span className="label-tag text-xs font-semibold text-brand-deep">

@@ -16,9 +16,20 @@ Medishelf (https://medishelf.co) is modern, cloud-based pharmacy inventory manag
 - `/blog`: Educational articles on pharmaceutical inventory control, FEFO picking, and medical store management.
 
 ## Legal & Compliance
+- `/legal`: Trust Center hub linking every policy, security and support page.
 - `/privacy`: Privacy Policy and HIPAA-ready data isolation standards.
 - `/tmc`: Terms and Conditions.
 - `/refundPolicy`: 30-day money-back guarantee and data export policy.
+- `/cookie-policy`: Full list of cookies (essential, Google Analytics 4, Microsoft Clarity) and opt-out options.
+- `/acceptable-use`: Acceptable Use Policy for pharmacies and staff.
+- `/disclaimer`: Content is not medical, legal, regulatory or tax advice; how to read case studies.
+
+## Trust & Help
+- `/faq`: Categorized FAQ on setup, inventory, POS, pricing, data/security and support.
+- `/support`: Support channels, response targets by plan and severity, 99.9% uptime target.
+- `/security`: Tenant isolation, TLS 1.3 / AES-256 encryption, bcrypt, audit logs, incident response, vulnerability disclosure.
+- `/editorial-policy`: How blog guides are researched, fact-checked, updated and corrected.
+- `/accessibility`: WCAG 2.1 AA accessibility statement and feedback route.
 
 ## Technical Architecture
 - Framework: Next.js (App Router), React, TypeScript

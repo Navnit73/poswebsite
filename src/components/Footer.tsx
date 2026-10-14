@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { TRUST_PAGES } from "@/lib/trustPages";
+
+const legalLinks = TRUST_PAGES.filter((p) => p.group === "Legal").map((p) => ({ label: p.shortTitle, href: p.href }));
 
 const COLUMNS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -16,24 +19,24 @@ const COLUMNS: { heading: string; links: { label: string; href: string }[] }[] =
     links: [
       { label: "About us", href: "/aboutus" },
       { label: "Case studies", href: "/casestudy" },
-      { label: "Blog & guides", href: "/blog" },
       { label: "Contact", href: "/contact" },
+      { label: "Trust center", href: "/legal" },
+    ],
+  },
+  {
+    heading: "Resources",
+    links: [
+      { label: "Blog & guides", href: "/blog" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Support & SLA", href: "/support" },
+      { label: "Security", href: "/security" },
+      { label: "Editorial policy", href: "/editorial-policy" },
+      { label: "Accessibility", href: "/accessibility" },
     ],
   },
   {
     heading: "Legal",
-    links: [
-      { label: "Privacy policy", href: "/privacy" },
-      { label: "Terms & conditions", href: "/tmc" },
-      { label: "Refund policy", href: "/refundPolicy" },
-    ],
-  },
-  {
-    heading: "Contact",
-    links: [
-      { label: "sales@medishelf.co", href: "mailto:sales@medishelf.co" },
-      { label: "support@medishelf.co", href: "mailto:support@medishelf.co" },
-    ],
+    links: legalLinks,
   },
 ];
 
@@ -56,6 +59,17 @@ export default function Footer() {
             <p className="mt-4 max-w-xs text-[13px] leading-relaxed">
               Pharmacy inventory, batch tracking and point of sale, built for independent pharmacies in the USA, UK, Europe, Australia and beyond.
             </p>
+            <ul className="mt-5 space-y-1.5 text-[13px]">
+              <li>
+                <span className="text-ink">Sales:</span>{" "}
+                <a href="mailto:sales@medishelf.co" className="transition hover:text-ink hover:underline">sales@medishelf.co</a>
+              </li>
+              <li>
+                <span className="text-ink">Support:</span>{" "}
+                <a href="mailto:support@medishelf.co" className="transition hover:text-ink hover:underline">support@medishelf.co</a>
+              </li>
+              <li>Austin, Texas, United States</li>
+            </ul>
           </div>
 
           {COLUMNS.map((col) => (
@@ -78,7 +92,10 @@ export default function Footer() {
 
         <div className="flex flex-col items-start justify-between gap-3 pt-6 text-xs md:flex-row md:items-center">
           <p>Copyright © {currentYear} Medishelf Software. All rights reserved.</p>
-          <p>Information on this site is not medical advice.</p>
+          <p>
+            Information on this site is not medical advice.{" "}
+            <Link href="/disclaimer" className="underline-offset-2 hover:text-ink hover:underline">Read our disclaimer</Link>.
+          </p>
         </div>
       </div>
     </footer>
